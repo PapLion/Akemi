@@ -1,0 +1,29 @@
+{
+  "name": "akemi-frontend",
+  "version": "0.0.1",
+  "description": "Akemi-Ai-My-Child",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PapLion/Akemi.git"
+  },
+  "keywords": [
+    "ai"
+  ],
+  "author": "Dani, Sofi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PapLion/Akemi/issues"
+  },
+  "homepage": "https://github.com/PapLion/Akemi#readme",
+  "devDependencies": {
+    "electron": "^35.1.5"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akemi-chan Chat ✨</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Bangers&family=Indie+Flower&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+  <div class="animated-bg"></div>
+  <div class="manga-decorations"></div>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="manga-corner top-left"></div>
+      <div class="manga-corner top-right"></div>
+      <div class="header-left">
+        <div class="avatar-container">
+          <img src="akemi.png" alt="Akemi" class="avatar">
+          <div class="avatar-sparkle"></div>
+        </div>
+        <div class="header-info">
+          <div class="name">Akemi-chan <span class="kawaii-emoji">♡</span></div>
+          <div class="status-container">
+            <div class="status">Status</div>
+            <div class="emotion">Emotion</div>
+          </div>
+        </div>
+      </div>
+      <div class="theme-toggle">🌙</div>
+    </div>
+    
+    <div class="chat-messages" id="chat-messages">
+      <!-- Los mensajes se agregarán aquí dinámicamente -->
+      <div class="manga-sfx sfx-1">ドキドキ</div>
+      <div class="manga-sfx sfx-2">キラキラ</div>
+      <div class="manga-sfx sfx-3">わくわく</div>
+    </div>
+    
+    <div class="chat-input-container">
+      <div class="manga-corner bottom-left"></div>
+      <div class="manga-corner bottom-right"></div>
+      <input type="text" id="message-input" placeholder="Escribe un mensaje... (｡･ω･｡)">
+      <div class="input-buttons">
+        <button id="send-button" class="send-btn">📩</button>
+        <button id="stt-button" class="stt-btn">🎤</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
