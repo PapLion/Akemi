@@ -85,7 +85,7 @@ V1 evita deliberadamente:
 - **Build:** CMake.
 - **Simulación:** fixed timestep independiente del render.
 - **Modo visual:** raylib.
-- **Modo entrenamiento/experimentos:** headless, sin inicializar raylib.
+- **Modo experimentos:** headless, sin inicializar raylib.
 - **Aleatoriedad:** generador seeded único propiedad de `Simulation`.
 
 ## 1.2. Modelo orientado a objetos
@@ -159,19 +159,53 @@ Representa un individuo vivo. Coordina sus propios subsistemas, pero no controla
 
 Es read-only respecto a la simulación. Puede observar y dibujar estado, pero nunca modifica posición, energía, comportamiento ni reglas.
 
-## 1.4. Fixed timestep
+## 1.4. Fixed timestep y escalas temporales
 
-El tiempo lógico nunca depende del FPS.
+El tiempo de física/control nunca depende del FPS.
 
 Valor inicial recomendado:
 
 ```text
-simulationHz = 50
-fixedDt = 0.02 s biológicos simulados por tick base
-renderHz ≈ 60 FPS
+physicsHz = 50
+fixedDt   = 0.02 simulation-seconds
+renderHz  ≈ 60 FPS
 ```
 
-La escala temporal visual podrá multiplicarse ejecutando múltiples ticks antes de renderizar.
+**Importante:** `fixedDt` no significa que V1 deba gastar 50 ticks por cada segundo real de las 2–3 semanas biológicas de vida del animal. Eso haría innecesariamente caro el primer prototipo.
+
+V1 separa dos conceptos:
+
+1. **Fast clock:** física, cuerpo, sensores y red neuronal. Siempre avanza con `fixedDt` estable.
+2. **Slow biological rates:** metabolismo, digestión, desarrollo, reproducción y envejecimiento. Sus rates son configurables y pueden estar temporalmente comprimidos manteniendo el orden causal.
+
+La configuración contiene un `TimeProfile` que multiplica únicamente rates lentos:
+
+```text
+physiologyRateScale
+developmentRateScale
+reproductionRateScale
+agingRateScale
+```
+
+Esto permite ver una vida completa en un tiempo humano razonable sin hacer que un segmento corporal atraviese medio mapa por tick.
+
+### Perfil V1 comprimido
+
+Objetivos iniciales de calibración, no afirmaciones biológicas exactas:
+
+```text
+egg -> adult:       aproximadamente 8–12 minutos a 1x visual
+adult median life:  aproximadamente 20–30 minutos a 1x visual
+DMP observable:     aproximadamente cada 2–4 segundos visuales en animal alimentado
+```
+
+Los ratios internos deben mantener orden y causalidad —alimentación antes de absorción, desarrollo antes de adultez, adultez antes de reproducción— aunque V1 no preserve todavía todos los ratios temporales reales.
+
+Un perfil de validación biológica más lento puede añadirse cambiando configuración, sin cambiar código.
+
+### Aceleración headless
+
+Acelerar ejecución significa ejecutar más fixed ticks, nunca aumentar `fixedDt`:
 
 Incorrecto:
 
@@ -182,12 +216,11 @@ dt *= 1000
 Correcto:
 
 ```text
-for 1000 iterations:
+for many iterations:
     simulation.tick(fixedDt)
-renderOnce()
 ```
 
-Esto evita tunneling y diferencias entre simulación visual y headless.
+Esto mantiene idénticas física y decisiones entre modo visual y headless.
 
 ---
 
@@ -214,7 +247,7 @@ Las posiciones son `Vector2` continuos, no celdas discretas para el cuerpo.
 
 El mundo soportará dos modos simples:
 
-- `Toroidal`: salir por un borde introduce al organismo por el borde opuesto. Modo recomendado para ecosistema general porque evita comportamiento artificial de esquina.
+- `Toroidal`: salir por un borde introduce al organismo por el borde opuesto. Recomendado para ecosistema general porque evita comportamiento artificial de esquina.
 - `Closed`: paredes físicas. Útil para tests de nose-touch y navegación.
 
 No se implementa mundo infinito ni generación procedural por chunks en V1.
@@ -222,8 +255,6 @@ No se implementa mundo infinito ni generación procedural por chunks en V1.
 ## 2.3. Representación espacial de campos
 
 Los fenómenos ambientales continuos se representan mediante grids escalares de baja resolución con interpolación bilinear.
-
-Ejemplos:
 
 ```text
 FoodDensity(x, y)
@@ -269,7 +300,7 @@ La comida solo disminuye cuando:
 
 ### Regeneración
 
-La densidad bacteriana puede regenerarse lentamente mediante un `foodRegrowthRate` configurable. Esto evita tener que generar NPCs y permite equilibrio ecológico.
+La densidad bacteriana puede regenerarse lentamente mediante `foodRegrowthRate` configurable. En assays que imitan una lawn fija, el regrowth puede ser cero.
 
 ## 2.5. Química
 
@@ -281,13 +312,13 @@ V1 usa tres familias funcionales:
 
 El attractant alimentario puede derivarse de `FoodDensity` mediante difusión discreta simplificada.
 
-La pheromone de dauer es depositada por organismos vivos, difunde localmente y decae con el tiempo. Por tanto su concentración se convierte naturalmente en aproximación de densidad poblacional.
+La pheromone de dauer es depositada por organismos vivos, difunde localmente y decae con el tiempo. Su concentración funciona como aproximación de densidad poblacional.
 
 ## 2.6. Temperatura
 
 `TemperatureField` devuelve una temperatura continua por posición.
 
-V1 debe soportar al menos:
+V1 soporta al menos:
 
 - temperatura uniforme;
 - gradiente lineal;
@@ -311,7 +342,7 @@ V1 utiliza un rango de preferencia configurable inspirado en aerotaxis de *C. el
 
 No se requiere dinámica de gases real.
 
-Como extensión sencilla, zonas bacterianas densas pueden reducir ligeramente el oxígeno local.
+Como extensión sencilla dentro de V1, zonas bacterianas densas pueden reducir ligeramente el oxígeno local si el escenario lo activa.
 
 ## 2.8. Entorno mecánico
 
@@ -382,7 +413,7 @@ El primer nodo es cabeza; el último es cola.
 
 ## 3.3. Restricciones físicas
 
-Se utiliza una física simple tipo position-based dynamics / Verlet:
+Se utiliza una física sencilla tipo position-based dynamics / Verlet:
 
 1. integrar movimiento;
 2. aplicar resistencia del medio;
@@ -424,7 +455,7 @@ Esto se documenta explícitamente como **abstracción física del substrato**, n
 
 ## 3.6. Motor outputs
 
-El cuerpo recibe un `MotorCommand` continuo:
+El organismo recibe un `MotorCommand` continuo:
 
 ```text
 forwardDrive    [0,1]
@@ -434,7 +465,9 @@ headSweepDrive  [0,1]
 pumpDrive       [0,1]
 ```
 
-El cuerpo nunca recibe Norte/Sur/Este/Oeste.
+`pumpDrive` se dirige al sistema faríngeo; los demás alimentan biomecánica corporal.
+
+El cerebro nunca recibe ni produce Norte/Sur/Este/Oeste.
 
 ## 3.7. Patrones observables requeridos
 
@@ -504,7 +537,7 @@ Un pump exitoso:
 3. genera un `DigestivePacket`;
 4. consume una pequeña cantidad de energía.
 
-## 4.4. DigestivePacket
+## 4.4. `DigestivePacket`
 
 Para soportar alimento variable sin sobrecomplicar el intestino:
 
@@ -524,14 +557,14 @@ Por tick:
 
 - parte de su contenido se absorbe;
 - parte se convierte en residuos;
-- `transitRemaining` disminuye;
+- `transitRemaining` disminuye con `physiologyRateScale`;
 - al finalizar tránsito, el residuo pasa a `wasteLoad`.
 
-No existe una mecánica arbitraria de “comió demasiado y explota el intestino”. Si `gutLoad` alcanza capacidad, la ingesta simplemente pierde eficiencia o se detiene.
+No existe una mecánica arbitraria de “comió demasiado y explota el intestino”. Si `gutLoad` alcanza capacidad, la ingesta pierde eficiencia o se detiene.
 
 ## 4.5. Energía
 
-Balance por tick:
+Balance por actualización fisiológica:
 
 ```text
 energyDelta
@@ -569,7 +602,7 @@ Estado excesivamente alto puede aumentar ligeramente coste locomotor/metabólico
 
 La defecación es un proceso fisiológico automático, no un output neuronal de alto nivel.
 
-V1 conserva un `DefecationMotorProgram` simplificado con periodo basal aproximado de 45 segundos biológicos en condiciones de alimentación abundante.
+V1 conserva un `DefecationMotorProgram` simplificado. En el perfil comprimido el periodo visual objetivo es de aproximadamente 2–4 segundos en animal alimentado; el parámetro se calibra separadamente del reloj físico. Un perfil biológico puede usar un periodo cercano a ~45 segundos.
 
 En cada ciclo:
 
@@ -624,7 +657,7 @@ mortalityHazard
   + accumulatedDamageHazard
 ```
 
-Cada tick se evalúa con RNG seeded.
+Cada tick se evalúa con RNG seeded y `agingRateScale`.
 
 La genética puede cambiar parámetros del hazard, pero dos individuos genéticamente idénticos no tienen obligación de morir al mismo tick.
 
@@ -763,7 +796,7 @@ Recomendación inicial:
 5 motor/behavior outputs
 ```
 
-El número exacto vive en `BrainConfig`, pero V1 de referencia utilizará 12 neuronas recurrentes.
+El número exacto de inputs deriva de `SensoryState`; la implementación de referencia utiliza 12 neuronas recurrentes.
 
 ## 6.3. Dinámica CTRNN
 
@@ -948,7 +981,7 @@ preferredTemperature
      * feedingContext
 ```
 
-La actualización es lenta, simulando memoria de temperatura de cultivo de manera funcional.
+La actualización es lenta respecto al cerebro, simulando memoria de temperatura de cultivo de manera funcional.
 
 ## 7.6. Food memory
 
@@ -1033,6 +1066,7 @@ developmentRate
     * temperatureFactor
     * nutritionFactor
     * stressFactor
+    * developmentRateScale
 ```
 
 No existen etapas inventadas L1.5/L2.5/L3.5.
@@ -1214,7 +1248,8 @@ El progreso del huevo depende principalmente de:
 
 - temperatura;
 - provision maternal;
-- condiciones letales extremas.
+- condiciones letales extremas;
+- `developmentRateScale`.
 
 Al completar `embryoProgress`, el huevo eclosiona y `Population` crea un `Worm` en L1.
 
@@ -1250,8 +1285,6 @@ Los scores pueden calcularse como métricas, pero no son el dios de la simulaci�
 ## 10.2. Genome
 
 `Genome` almacena solamente estado heredable.
-
-Familias de parámetros:
 
 ### Body genes
 
@@ -1299,10 +1332,12 @@ thermalLearningRate
 ### Development genes
 
 ```text
-developmentRateScale
+developmentRateScaleGene
 dauerSensitivity
 stressDevelopmentPenalty
 ```
+
+`developmentRateScaleGene` es una variación individual alrededor del `TimeProfile`; no sustituye el multiplicador global de simulación.
 
 ### Reproduction genes
 
@@ -1391,16 +1426,16 @@ Puede implementarse más tarde un modo de selección artificial separado, pero n
 
 ## 10.7. Population safety guard
 
-Para evitar que un bug de reproducción consuma toda la RAM:
+Para evitar que un bug de reproducción consuma toda la RAM existe:
 
 ```text
 maxPopulationSafety
 ```
 
-no mata organismos silenciosamente. Si se supera:
+No mata organismos silenciosamente. Si se supera:
 
 - la simulación pausa o finaliza;
-- registra error/guard trigger.
+- registra el guard trigger.
 
 Esto es una protección del software, no una regla biológica.
 
@@ -1415,7 +1450,7 @@ Esto es una protección del software, no una regla biológica.
 - raylib activo;
 - simulation core idéntico;
 - render cada frame;
-- velocidad 0.25x / 1x / 5x / 20x configurable;
+- velocidad de ejecución configurable;
 - pausa;
 - single-step.
 
@@ -1433,6 +1468,7 @@ Una ejecución está definida por:
 ```text
 seed
 SimulationConfig
+TimeProfile
 initial genomes
 initial world state
 ```
@@ -1443,7 +1479,7 @@ No se exige reproducibilidad bit-perfect entre arquitecturas de CPU distintas.
 
 ## 11.3. Renderer
 
-Visuales iniciales deliberadamente simples:
+Visuales iniciales deliberadamente simples.
 
 ### Worm
 
@@ -1550,7 +1586,7 @@ No es necesario guardar cada frame.
 
 ## 11.7. Scenarios
 
-Los experimentos viven como configuraciones/factories conocidas, por ejemplo:
+Los experimentos viven como configuraciones/factories conocidas:
 
 ```text
 baseline_ecosystem
@@ -1573,8 +1609,6 @@ No se necesita un editor visual de escenarios en V1.
 # 12. Integración final
 
 ## 12.1. Orden de un tick
-
-Orden V1 propuesto:
 
 ```text
 1. Simulation increments global tick
@@ -1606,6 +1640,8 @@ Orden V1 propuesto:
 9. Renderer reads state if visual frame is due
 ```
 
+Los sistemas lentos aplican su `TimeProfile` al rate, no al `fixedDt` físico.
+
 ## 12.2. Why consequences precede learning
 
 El aprendizaje debe recibir lo que realmente ocurrió:
@@ -1622,7 +1658,7 @@ No debe actualizar pesos antes de saber si una acción produjo alimento, daño o
 
 ## 12.3. Data transfer structs
 
-Para mantener código entendible, se utilizan pocos structs de transferencia.
+Se utilizan pocos structs de transferencia.
 
 ### `SensoryState`
 
@@ -1769,23 +1805,33 @@ uterineEggCount()
 
 # 13. Configuración inicial de referencia
 
-Los siguientes valores no pretenden ser medidas biológicas finales; son **defaults de ingeniería** para iniciar implementación y posteriormente calibrar comportamiento sin modificar arquitectura.
+Estos valores son **defaults de ingeniería** para iniciar implementación y calibración, no medidas biológicas finales.
 
 ```text
-simulationHz               = 50
-renderHz                   = 60
-worldSize                  = 1000 x 1000
-fieldGrid                  = 128 x 128
-bodySegments               = 12
-physicsConstraintIterations = 4
-brainRecurrentNeurons      = 12
-initialPopulation          = 32
-boundaryMode               = Toroidal
+physicsHz                    = 50
+renderHz                     = 60
+worldSize                    = 1000 x 1000
+fieldGrid                    = 128 x 128
+bodySegments                 = 12
+physicsConstraintIterations  = 4
+brainRecurrentNeurons        = 12
+initialPopulation            = 32
+boundaryMode                 = Toroidal
 ```
 
-Todos los rates biológicos importantes deben expresarse respecto a tiempo simulado, no frames.
+### Perfil temporal V1
 
-Para desarrollo, la configuración debe poder comprimirse temporalmente sin alterar el orden relativo del ciclo. Un escenario de debug puede hacer que una vida dure minutos de reloj; un escenario de validación puede mapear tiempos a escalas biológicas más cercanas a laboratorio.
+El primer perfil debe calibrarse para estos targets:
+
+```text
+Egg -> Adult                 = 24 000–36 000 ticks
+Adult median lifespan        = 60 000–90 000 ticks
+DMP period, fed              = 100–200 ticks
+```
+
+A 50 Hz esto produce aproximadamente los objetivos visuales de la sección 1.4 y mantiene ejecuciones headless viables.
+
+Las tasas exactas de cada stage se distribuyen dentro de esos targets según configuración; no se codifican como constantes dispersas por clases.
 
 ---
 
@@ -1795,7 +1841,7 @@ V1 no está terminada porque “compila”. Está terminada cuando los subsistem
 
 ## 14.1. Physics / locomotion
 
-### Test: forward locomotion
+### Forward locomotion
 
 Dado un worm sano en medio uniforme y forward drive estable:
 
@@ -1804,16 +1850,16 @@ Dado un worm sano en medio uniforme y forward drive estable:
 - no se separan segmentos;
 - movimiento no depende de FPS.
 
-### Test: reversal
+### Reversal
 
 Al activar reverse drive:
 
 - la propagación de la onda cambia;
 - el worm se desplaza en sentido contrario relativo al eje corporal.
 
-### Test: strong turn
+### Strong turn
 
-Turn bias alto debe producir curvatura fuerte y reorientación omega-like sin teletransportar la cabeza.
+Turn bias alto produce curvatura fuerte y reorientación omega-like sin teletransportar la cabeza.
 
 ## 14.2. Feeding
 
@@ -1838,7 +1884,7 @@ En ausencia de alimento:
 En organismo alimentado:
 
 - waste se acumula;
-- DMP ocurre aproximadamente con el periodo configurado;
+- DMP ocurre aproximadamente con el periodo del `TimeProfile`;
 - waste disminuye tras expulsión.
 
 ## 14.5. Chemotaxis
@@ -1891,7 +1937,7 @@ En gradiente de O2:
 
 ## 14.11. Development
 
-Un huevo viable:
+Un huevo viable completa:
 
 ```text
 Egg -> L1 -> L2 -> L3 -> L4 -> Adult
@@ -1901,21 +1947,13 @@ Cada transición larvaria contiene lethargus y pumping suspendido.
 
 ## 14.12. Dauer induction
 
-Con:
-
-- food bajo;
-- pheromone alta;
-- temperatura que favorece dauer;
-
-la probabilidad de:
+Con food bajo, pheromone alta y temperatura que favorece dauer, aumenta fuertemente la probabilidad de:
 
 ```text
 L1 -> L2d -> Dauer
 ```
 
-aumenta fuertemente.
-
-Un adult nunca entra repentinamente en dauer por ver un peligro.
+Un adulto nunca entra repentinamente en dauer por ver un peligro.
 
 ## 14.13. Dauer recovery
 
@@ -2001,7 +2039,8 @@ C.E-PSVAML V1 se considera funcionalmente terminada cuando:
 31. ambos modos usan exactamente el mismo simulation core;
 32. una seed permite reproducir ejecuciones para debugging;
 33. los escenarios aislados anteriores pasan de forma consistente;
-34. el código puede entenderse siguiendo las clases y el orden de tick sin arquitectura genérica adicional.
+34. los slow biological rates pueden comprimirse sin alterar el fixed timestep de física/control;
+35. el código puede entenderse siguiendo las clases y el orden de tick sin arquitectura genérica adicional.
 
 ---
 
@@ -2037,6 +2076,7 @@ Esta sección preserva la intención histórica y evita reintroducir errores dur
 | Feed-forward network sin memoria | Sustituida por CTRNN recurrente pequeña. |
 | Simular futuro de hijos es “computacionalmente imposible” | Corregido. Headless fixed-tick permite múltiples vidas; no es necesario para selection base. |
 | Acelerar simulación aumentando `dt` | Eliminado. Se ejecutan más fixed ticks por frame. |
+| 50 ticks por cada segundo de todas las semanas biológicas | Eliminado. Física/control usan fixed tick; procesos lentos usan `TimeProfile` comprimible. |
 
 ---
 
@@ -2048,7 +2088,7 @@ Estas funciones no son necesarias para validar el objetivo actual y su omisión 
 - neuronas nombradas una a una y sinapsis reales completas;
 - gap junctions detalladas;
 - canales iónicos específicos;
-- señalización molecular de dauer (DAF/TGF-beta/insulin/steroid pathways) detallada;
+- señalización molecular de dauer detallada;
 - anatomía celular de la gónada;
 - meiosis/recombinación diploide real;
 - machos y mating;
@@ -2218,6 +2258,6 @@ nacer
 
 No existe un “best worm” central ni una función de reward obligatoria. El entorno y la reproducción generan las presiones selectivas.
 
-El mismo core se ejecutará visualmente con raylib o acelerado sin render en modo headless.
+El mismo core se ejecutará visualmente con raylib o acelerado sin render en modo headless. Los procesos lentos pueden usar un perfil temporal comprimido sin comprometer la estabilidad del loop de física/control.
 
 La prioridad de V1 es que **todo el organismo exista de extremo a extremo**. La fidelidad microscópica y el pulido se añaden después únicamente cuando aporten valor experimental.
