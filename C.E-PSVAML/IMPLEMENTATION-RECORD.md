@@ -30,3 +30,7 @@ Ruling: use persistent Random& in reserve test instead of temporary Random(7) ea
 ## Task 6
 RED: missing SensorySystem.h. GREEN: sensory 3/3, full CTest 24/24.
 Self-review: only head-local field samples and body/physiology summaries; deltas initialize to zero and track preceding samples. No global coordinates in SensoryState. Temperature in physical degrees supports thermal learning; neural packing normalizes units in Task 7. No frozen design changes.
+
+## Task 7
+RED: missing NervousSystem.h. GREEN: nervous 5/5; full CTest 29/29.
+Self-review: synchronous Euler from prior activations, exact two-neuron numerical fixture, tau/dimension/finite-weight validation, 100,000 bounded steps. Priors are solely weights/biases. Fixed 18 features retain local thermal/O2 errors, use redundant raw temperature/O2 slots for stress/development and preserve temporal chemical gain. Source parameter object is copied into mutable individual parameters. No World/position interface.
