@@ -26,3 +26,7 @@ Ruling (test fixture, not frozen design): plan's reverse test starts x=200 in a 
 RED: missing Physiology.h. GREEN: five physiology tests, full CTest 21/21.
 Self-review: pump withdraws food and costs energy; packets delay absorption; reserves mobilize before starvation; DMP has posterior/anterior/expulsion phases; cause-specific stress/death and seeded age hazard. Same-seed age death replays, different seed changes death tick. No HP/reward/instant feeding energy.
 Ruling: use persistent Random& in reserve test instead of temporary Random(7) each iteration. CE_TESTING variant compiles identical core sources with test-only setters consistently to avoid ODR mismatch; production core excludes them. Growth/reproductive allocation consumers are integrated in their later tasks.
+
+## Task 6
+RED: missing SensorySystem.h. GREEN: sensory 3/3, full CTest 24/24.
+Self-review: only head-local field samples and body/physiology summaries; deltas initialize to zero and track preceding samples. No global coordinates in SensoryState. Temperature in physical degrees supports thermal learning; neural packing normalizes units in Task 7. No frozen design changes.
