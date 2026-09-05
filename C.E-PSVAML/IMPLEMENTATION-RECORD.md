@@ -34,3 +34,8 @@ Self-review: only head-local field samples and body/physiology summaries; deltas
 ## Task 7
 RED: missing NervousSystem.h. GREEN: nervous 5/5; full CTest 29/29.
 Self-review: synchronous Euler from prior activations, exact two-neuron numerical fixture, tau/dimension/finite-weight validation, 100,000 bounded steps. Priors are solely weights/biases. Fixed 18 features retain local thermal/O2 errors, use redundant raw temperature/O2 slots for stress/development and preserve temporal chemical gain. Source parameter object is copied into mutable individual parameters. No World/position interface.
+
+## Task 8
+RED: missing LearningSystem.h. GREEN: learning 4/4; full CTest 33/33.
+Self-review: eligibility uses actual packed neural inputs and postsynaptic activation, valence uses physiological consequences (toxic damage currently included in damageDelta); no external reward method. Only individual effective chemical input weights change; source parameters unchanged. Food trace and thermal memory acquired.
+Ruling: plan habituation example only called modulate and implicitly assumed harmlessness before consequences. Frozen tick/consequence causality takes priority: revised test runs neural action and explicit zero-damage consequence each iteration; separate test confirms observation alone never habituates. No frozen contract change.
