@@ -64,3 +64,7 @@ Ruling: availableReproductiveResources is an amount transferred from Physiology 
 RED: missing Worm.h. GREEN: Worm 2/2; full CTest 42/42.
 Review: explicit frozen order, current absorption feeds current learning, inherited genome remains isolated, offspring energy plus reserve equals provision. Paid growth adjusts constraint rest lengths/mass, never translates body coordinates. Prior development state gates current pumping/movement; newly updated development effects apply on the following physics/physiology tick. Death prevents further reproduction.
 Rulings: Task 5 deferred growth/reproductive consumers; integration requires minimal resource-transfer, birth-provision and developmental multiplier methods in Physiology, and rest-length/mass configuration in Body. Defaults preserve isolated Tasks 1-9 behavior; all remain green. Oxygen preference uses world normalized 0.5. Learning fixture supplies the same explicit chemical cue to both worms because no World update had generated food odor; only one receives actual absorption. No frozen change.
+
+## Task 13 - VALIDATED
+RED: missing Population.h. GREEN: Population 2/2; full CTest 44/44.
+Review: stable vectors and monotonic IDs, egg ID survives hatching, actual provision passed to L1, lineage retained after thermal death. Safety counts worms plus eggs; rejects new entities without culling; hatching replaces an entity and does not trigger the guard. Birth means hatching, not fertilization. No frozen deviation.
