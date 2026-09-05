@@ -4,6 +4,13 @@
 #include <cmath>
 namespace ce {
 Physiology::Physiology(PhysiologyParameters p,const TimeProfile& t):parameters_(p),time_(t){}
+void Physiology::initializeProvision(float provision) { energy_=std::max(0.f,provision)*0.5f;reserve_=std::max(0.f,provision)*0.5f; }
+float Physiology::allocateResources(float requested) {
+    const float paid=std::min(std::max(0.f,requested),std::max(0.f,energy_-0.2f));energy_-=paid;return paid;
+}
+void Physiology::setDevelopmentEffects(float metabolism,float aging,float resistance) {
+    metabolismMultiplier_=metabolism;agingMultiplier_=aging;resistanceMultiplier_=resistance;
+}
 float Physiology::gutLoad() const {float m=0;for(const auto& p:packets_)m+=p.totalMass;return m;}
 ActionConsequences Physiology::tryPump(World& world,Vector2 mouth,float drive,double dt) {
     ActionConsequences result;
@@ -42,7 +49,7 @@ void Physiology::updateMetabolism(float actionCost,float temperature,double dt,R
     const float elapsed=float(std::max(0.,dt*time_.physiologyRateScale));
     const float oldStarvation=starvation_,oldThermal=thermal_;
     const float factor=std::exp(std::clamp((temperature-20)*0.04f,-1.f,1.f));
-    energy_-=elapsed*(parameters_.baseMetabolicRate*factor+std::max(0.f,actionCost)+0.01f*(thermal_+starvation_));
+    energy_-=elapsed*(parameters_.baseMetabolicRate*factor*metabolismMultiplier_+std::max(0.f,actionCost)+0.01f*(thermal_+starvation_)*metabolismMultiplier_);
     if(energy_<0.2f) {
         float mobilized=std::min(reserve_,std::max(0.f,(0.2f-energy_)/parameters_.reserveMobilizationEfficiency));
         reserve_-=mobilized;energy_+=mobilized*parameters_.reserveMobilizationEfficiency;
@@ -51,22 +58,22 @@ void Physiology::updateMetabolism(float actionCost,float temperature,double dt,R
         float stored=std::min(energy_-1,(parameters_.reserveCapacity-reserve_)/parameters_.reserveStorageEfficiency);
         energy_-=stored;reserve_+=stored*parameters_.reserveStorageEfficiency;
     }
-    if(energy_<=0&&reserve_<=0)starvation_+=elapsed*0.03f/parameters_.starvationTolerance;
+    if(energy_<=0&&reserve_<=0)starvation_+=elapsed*0.03f/(parameters_.starvationTolerance*resistanceMultiplier_);
     else starvation_=std::max(0.f,starvation_-elapsed*0.01f);
     energy_=std::max(0.f,energy_);
     const float thermalExcess=std::max(0.f,std::abs(temperature-20)-10);
-    thermal_=std::max(0.f,thermal_+elapsed*(thermalExcess>0?thermalExcess*0.01f/parameters_.thermalTolerance:-0.01f));
-    age_+=dt*time_.agingRateScale;agingDamage_=float(age_/parameters_.agingHazardTimeScale)*0.001f;
+    thermal_=std::max(0.f,thermal_+elapsed*(thermalExcess>0?thermalExcess*0.01f/(parameters_.thermalTolerance*resistanceMultiplier_):-0.01f));
+    age_+=dt*time_.agingRateScale*agingMultiplier_;agingDamage_=float(age_/parameters_.agingHazardTimeScale)*0.001f;
     consequences_.starvationDelta+=starvation_-oldStarvation;consequences_.thermalStressDelta+=thermal_-oldThermal;
     if(starvation_>=1)death_=DeathCause::Starvation;
     else if(thermal_>=1)death_=DeathCause::Thermal;
     else {
         const double hazard=parameters_.agingHazardBase*std::exp(std::clamp((age_-parameters_.agingHazardOnset)/parameters_.agingHazardTimeScale,-30.,20.))*(1+thermal_+starvation_+mechanical_+agingDamage_);
-        if(rng.chance(-std::expm1(-hazard*dt*time_.agingRateScale)))death_=DeathCause::Aging;
+        if(rng.chance(-std::expm1(-hazard*dt*time_.agingRateScale*agingMultiplier_)))death_=DeathCause::Aging;
     }
 }
 void Physiology::applyMechanicalDamage(float amount) {
-    if(isDead())return;const float damage=std::max(0.f,amount);mechanical_+=damage;consequences_.damageDelta+=damage;
+    if(isDead())return;const float damage=std::max(0.f,amount)/resistanceMultiplier_;mechanical_+=damage;consequences_.damageDelta+=damage;
     if(mechanical_>=1)death_=DeathCause::Mechanical;
 }
 void Physiology::updateDefecation(double dt) {

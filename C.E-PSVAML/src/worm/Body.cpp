@@ -21,6 +21,10 @@ Body::Body(Vector2 head,int count,BodyParameters p,int iterations):parameters_(p
 void Body::applyMotorCommand(const MotorCommand& c) {
     command_={std::clamp(c.forwardDrive,0.f,1.f),std::clamp(c.reverseDrive,0.f,1.f),std::clamp(c.turnBias,-1.f,1.f),std::clamp(c.headSweepDrive,0.f,1.f),std::clamp(c.pumpDrive,0.f,1.f)};
 }
+void Body::setSizeAndMass(float segmentLength,float radius,float mass) {
+    parameters_.segmentLength=segmentLength;parameters_.radius=radius;
+    for(auto& node:nodes_)node.mass=std::max(0.01f,mass);
+}
 Vector2 Body::midBodyPosition() const {
     Vector2 p{};for(const auto& n:nodes_) p=add(p,n.position);return mul(p,1.f/nodes_.size());
 }

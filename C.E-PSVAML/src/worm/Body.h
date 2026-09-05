@@ -15,6 +15,7 @@ public:
     Body(Vector2 headPosition,int segmentCount,BodyParameters parameters,int constraintIterations);
     void applyMotorCommand(const MotorCommand&);
     void updatePhysics(World&,double dt);
+    void setSizeAndMass(float segmentLength,float radius,float mass);
     Vector2 headPosition() const { return nodes_.front().position; }
     Vector2 midBodyPosition() const;
     const std::vector<Vector2>& bodySegments() const { return segments_; }

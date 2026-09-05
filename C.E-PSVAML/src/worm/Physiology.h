@@ -17,6 +17,9 @@ public:
     InternalState summaryForBrain() const;
     ActionConsequences consequencesForLearning() const { return consequences_; }
     void beginTick() { consequences_={}; }
+    void initializeProvision(float provision);
+    float allocateResources(float requested);
+    void setDevelopmentEffects(float metabolism,float aging,float resistance);
     bool isDead() const { return death_!=DeathCause::None; }
     DeathCause deathCause() const { return death_; }
     float availableEnergy() const { return energy_; }
@@ -41,5 +44,6 @@ private:
     double age_=0,dmpTime_=0;
     ActionConsequences consequences_;
     DeathCause death_=DeathCause::None;
+    float metabolismMultiplier_=1,agingMultiplier_=1,resistanceMultiplier_=1;
 };
 }
