@@ -10,3 +10,8 @@ All six planned files and three CMake targets match the plan. Fresh Windows GCC 
 RED: CoreTests compilation failed because core/Random.h did not exist.
 GREEN: build passed; CTest 5/5 passed (0 failures).
 Self-review: canonical types/defaults match plan, mt19937_64 owns seeded state, probabilities clamp, uniform/normal replay tested. Slow rates do not modify fixedDt. No frozen contract deviation.
+
+## Task 3
+RED: WorldTests failed to compile without World.h. Added regression RED for missing vibration decay, then corrected its envelope.
+GREEN: World 5/5; full CTest 10/10, 0 failures. Build and diff check pass.
+Self-review: bilinear local sampling; actual consumed mass equals sum of cell decrements; quality properties remain separate; seeded-free deterministic fields; bounded explicit diffusion substeps; uniform/linear/radial temperature; oxygen and localized mechanical stimuli. Core includes raylib Vector2 type without linking rendering code. Toroidal coordinates normalize before sampling; field diffusion uses closed/no-flux stencil as allowed by plan. No frozen design change.
