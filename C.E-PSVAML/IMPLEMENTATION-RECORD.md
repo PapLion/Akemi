@@ -48,3 +48,9 @@ Static review of commit 1fcfc39 found only the planned Task 9 sources/tests plus
 ## Incomplete final acceptance
 No full-life scenario, visual/headless integration, whole-system determinism, final clean Task-18 build or calibration has been performed. The Definition of Done is NOT fulfilled. Subsystem evidence exists for body, local sensors, pumping/digestion/metabolism/DMP, and isolated learning; none establishes the complete organism.
 Recommended independent review once execution resumes: Body PBD/drag and toroidal boundaries; physiology resource accounting and forthcoming growth/reproduction costs; CTRNN input packing/priors/stability; consequence eligibility and inherited-state isolation; unexecuted development/Dauer transitions. Later Tasks 11/12/15/18 require full integration review.
+
+## Task 10 - VALIDATED
+Preflight: clean ce-psvaml-v1-tasks-2-18, remote already contained 703a78a. Single baseline CTest run: 35/35 PASS. No reopening Tasks 1-9.
+RED: GenomeTests failed for missing Genome.h. GREEN: Genome 2/2; full CTest 37/37.
+Review: named hereditary fields cover frozen 10.2; sensor gains applied to copied neural parameters; bounded Gaussian mutation uses passed RNG, independent neural sigma, no learned/physiological state. No changes to prior subsystem implementations.
+Ruling: explicit C++17 equality instead of C++20 defaulted equality from plan example. Neural tau mutation lower bound 0.04 preserves stability at fixedDt 0.02. No frozen deviation.
