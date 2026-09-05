@@ -73,3 +73,7 @@ Review: stable vectors and monotonic IDs, egg ID survives hatching, actual provi
 RED: missing Scenario.h. GREEN: Scenario 2/2; full CTest 46/46.
 Review: all eleven frozen names, explicit local fields/stimuli/population; unknown names return before mutation or RNG use. Baseline positions use passed seeded RNG. Reproduction starts adult with sperm; recovery starts Dauer.
 Ruling: initial-stage scenario blueprints replay DevelopmentSystem transitions during construction and late-L4 sperm initialization, without adding a runtime stage setter or a defensive Dauer action. This setup history does not claim a measured full-life assay; Task 18 must exercise actual integrated transitions. No frozen deviation.
+
+## Task 15 - VALIDATED
+RED: missing Simulation.h. GREEN: Simulation 2/2; full CTest 48/48 (39.48 seconds).
+Review: single persistent RNG, stable entity order, frozen global tick, constant dt with physicsHz validation, no visual dependency. 10,000 direct ticks match 100x100 grouped ticks with read-only digest calls; seed 778 diverges from 777. Digest includes world grid samples, food, body/physiology/neural states, eggs and lineage. Mutable setup access is rejected after tick zero. No frozen deviation. Digest is a debugging fingerprint, not serialization or a cross-platform floating-point guarantee.
