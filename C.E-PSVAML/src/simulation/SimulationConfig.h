@@ -8,6 +8,11 @@ struct TimeProfile {
     double developmentRateScale = 1.0;
     double reproductionRateScale = 1.0;
     double agingRateScale = 1.0;
+    double larvalGrowingSeconds = 120.0;
+    double moltSeconds = 12.0;
+    double embryoSeconds = 60.0;
+    double dauerIntegrationSeconds = 30.0;
+    double dauerRecoverySeconds = 30.0;
 };
 struct MutationConfig {
     double parameterProbability = 0.02;

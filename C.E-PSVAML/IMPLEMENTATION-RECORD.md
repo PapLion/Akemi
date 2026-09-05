@@ -39,3 +39,15 @@ Self-review: synchronous Euler from prior activations, exact two-neuron numerica
 RED: missing LearningSystem.h. GREEN: learning 4/4; full CTest 33/33.
 Self-review: eligibility uses actual packed neural inputs and postsynaptic activation, valence uses physiological consequences (toxic damage currently included in damageDelta); no external reward method. Only individual effective chemical input weights change; source parameters unchanged. Food trace and thermal memory acquired.
 Ruling: plan habituation example only called modulate and implicitly assumed harmlessness before consequences. Frozen tick/consequence causality takes priority: revised test runs neural action and explicit zero-damage consequence each iteration; separate test confirms observation alone never habituates. No frozen contract change.
+
+## Task 9 - BLOCKED, NOT ACCEPTED
+RED confirmed: DevelopmentTests failed to compile before DevelopmentSystem.h existed.
+Implementation and tests written; compilation and link succeeded. Catch2 test discovery could not run the resulting executable. Direct --list-tests and a build retry both reproduced Windows rejection: "Una directiva de Control de aplicaciones bloqueo este archivo".
+Read-only Windows CodeIntegrity evidence: events 3077 and 3033, 2026-09-04 21:13:58-59 local, state ce_psvaml_tests.exe did not meet signing requirements / violated policy. Event 3118 identifies Smart App Control. No security policy was changed or bypassed.
+Task 9 is saved as WIP, not GREEN or complete. Last fully verified suite belongs to Task 8: 33/33 passing. Tasks 10-18 were not started because the sequential verification gate cannot be satisfied.
+Static self-review: complete normal larval progression with four lethargus intervals; Dauer integration during L1/L2, no adult entry, sustained recovery, L4 after recovery, no neural defensive control. TimeProfile centralizes durations without changing fixedDt. These claims still need executable validation and later Worm composition.
+Resume in an execution environment approved to run locally built C++ test executables; rerun Task 9 tests/full suite before accepting or continuing. No model/reasoning change was requested or used.
+
+## Incomplete final acceptance
+No full-life scenario, visual/headless integration, whole-system determinism, final clean Task-18 build or calibration has been performed. The Definition of Done is NOT fulfilled. Subsystem evidence exists for body, local sensors, pumping/digestion/metabolism/DMP, and isolated learning; none establishes the complete organism.
+Recommended independent review once execution resumes: Body PBD/drag and toroidal boundaries; physiology resource accounting and forthcoming growth/reproduction costs; CTRNN input packing/priors/stability; consequence eligibility and inherited-state isolation; unexecuted development/Dauer transitions. Later Tasks 11/12/15/18 require full integration review.
