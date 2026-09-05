@@ -40,13 +40,10 @@ RED: missing LearningSystem.h. GREEN: learning 4/4; full CTest 33/33.
 Self-review: eligibility uses actual packed neural inputs and postsynaptic activation, valence uses physiological consequences (toxic damage currently included in damageDelta); no external reward method. Only individual effective chemical input weights change; source parameters unchanged. Food trace and thermal memory acquired.
 Ruling: plan habituation example only called modulate and implicitly assumed harmlessness before consequences. Frozen tick/consequence causality takes priority: revised test runs neural action and explicit zero-damage consequence each iteration; separate test confirms observation alone never habituates. No frozen contract change.
 
-## Task 9 - BLOCKED, NOT ACCEPTED
-RED confirmed: DevelopmentTests failed to compile before DevelopmentSystem.h existed.
-Implementation and tests written; compilation and link succeeded. Catch2 test discovery could not run the resulting executable. Direct --list-tests and a build retry both reproduced Windows rejection: "Una directiva de Control de aplicaciones bloqueo este archivo".
-Read-only Windows CodeIntegrity evidence: events 3077 and 3033, 2026-09-04 21:13:58-59 local, state ce_psvaml_tests.exe did not meet signing requirements / violated policy. Event 3118 identifies Smart App Control. No security policy was changed or bypassed.
-Task 9 is saved as WIP, not GREEN or complete. Last fully verified suite belongs to Task 8: 33/33 passing. Tasks 10-18 were not started because the sequential verification gate cannot be satisfied.
-Static self-review: complete normal larval progression with four lethargus intervals; Dauer integration during L1/L2, no adult entry, sustained recovery, L4 after recovery, no neural defensive control. TimeProfile centralizes durations without changing fixedDt. These claims still need executable validation and later Worm composition.
-Resume in an execution environment approved to run locally built C++ test executables; rerun Task 9 tests/full suite before accepting or continuing. No model/reasoning change was requested or used.
+## Task 9 - VALIDATED
+Clean Windows GCC 16.2 / Ninja Release build completed successfully in an external build tree. Full CTest passed: 35/35 test cases, 0 failures. Direct executable summary: 575127 assertions in 35 test cases. Task-specific filter `*Development*` passed: 2/2 test cases, 127 assertions.
+Task 9 acceptance criteria passed: normal progression L1 -> L2 -> L3 -> L4 -> Adult with four lethargus periods; Dauer induction through L2d; pumping/metabolism suppression in Dauer; sustained favorable recovery through DauerRecovery and L4 to Adult; adults do not re-enter Dauer under adverse cues. Tasks 1-8 remain green in the same full suite.
+Static review of commit 1fcfc39 found only the planned Task 9 sources/tests plus CMake and this record; no frozen specification files were changed and `git diff --check` passed. Warnings are limited to upstream raylib/CMake compatibility diagnostics; no project compilation errors. Tasks 10-18 remain unstarted.
 
 ## Incomplete final acceptance
 No full-life scenario, visual/headless integration, whole-system determinism, final clean Task-18 build or calibration has been performed. The Definition of Done is NOT fulfilled. Subsystem evidence exists for body, local sensors, pumping/digestion/metabolism/DMP, and isolated learning; none establishes the complete organism.
