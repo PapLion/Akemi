@@ -15,6 +15,8 @@ add_library(ce_psvaml_core STATIC src/core/Version.cpp src/core/Random.cpp
     src/world/ScalarField.cpp src/world/FoodField.cpp
     src/world/MechanicalEnvironment.cpp src/world/World.cpp src/worm/Body.cpp src/worm/Physiology.cpp src/worm/SensorySystem.cpp src/worm/NervousSystem.cpp src/worm/LearningSystem.cpp src/worm/DevelopmentSystem.cpp src/worm/Genome.cpp src/worm/Egg.cpp src/worm/ReproductiveSystem.cpp src/worm/Worm.cpp src/simulation/Population.cpp src/simulation/Scenario.cpp src/simulation/Simulation.cpp src/simulation/BehaviorClassifier.cpp src/simulation/MetricsRecorder.cpp)
 target_include_directories(ce_psvaml_core PUBLIC src ${raylib_SOURCE_DIR}/src)
-add_executable(ce_psvaml src/main.cpp)
+target_sources(ce_psvaml_core PRIVATE src/simulation/CommandLine.cpp)
+add_executable(ce_psvaml src/main.cpp src/render/Renderer.cpp)
 target_link_libraries(ce_psvaml PRIVATE ce_psvaml_core raylib)
 add_subdirectory(src/tests)
+add_test(NAME headless_smoke COMMAND ce_psvaml --headless --seed 1 --scenario baseline_ecosystem --ticks 10000)

@@ -82,3 +82,8 @@ Review: single persistent RNG, stable entity order, frozen global tick, constant
 RED: missing MetricsRecorder.h. GREEN: Metrics 1/1; full CTest 49/49 (27.57 seconds).
 Review: frozen CSV columns, per-tick individual accumulation, 100-tick population windows, final death observation before removal, retained lineage/descendant counts, text birth/death events. Behavior classification uses speed, rolling reversal/turn estimates, pumping and food memory only in telemetry. File flush leaves core digest unchanged. Fixed Windows fixture cleanup by closing read streams first.
 Ruling: traitMeans/traitVariance order is body stiffness, structural mass, basal metabolism, development rate, plasticity rate, reproductive allocation; stageDistribution follows DevelopmentStage enum order. No database/event bus and no frozen deviation.
+
+## Task 17 - VALIDATED
+RED: missing CommandLine.h. GREEN: CLI 2/2; full CTest including headless_smoke 52/52 (32.90 seconds).
+Review: headless never initializes raylib window, fixed ticks per frame, pause/single-step, const-only renderer, seven field overlays, organism debug panel, explicit CLI numeric/flag failures. Real raylib 5.5 GLFW/OpenGL 3.3 Intel UHD initialization and 100-tick exit PASS. reproduction_assay seed 99 at tick 100: visual and headless both digest 17128848772829224968, one worm, zero eggs, no guard.
+Ruling: headless with no --ticks defaults to the planned 250,000-tick run. Output goes to output/<scenario>-<seed>. No frozen deviation.
