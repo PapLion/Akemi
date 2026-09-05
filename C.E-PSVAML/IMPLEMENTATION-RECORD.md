@@ -15,3 +15,9 @@ Self-review: canonical types/defaults match plan, mt19937_64 owns seeded state, 
 RED: WorldTests failed to compile without World.h. Added regression RED for missing vibration decay, then corrected its envelope.
 GREEN: World 5/5; full CTest 10/10, 0 failures. Build and diff check pass.
 Self-review: bilinear local sampling; actual consumed mass equals sum of cell decrements; quality properties remain separate; seeded-free deterministic fields; bounded explicit diffusion substeps; uniform/linear/radial temperature; oxygen and localized mechanical stimuli. Core includes raylib Vector2 type without linking rendering code. Toroidal coordinates normalize before sampling; field diffusion uses closed/no-flux stencil as allowed by plan. No frozen design change.
+
+## Task 4
+RED: PhysicsTests could not compile without Body.h.
+GREEN: six physics tests; full CTest 16/16, 0 failures. 10,000-tick finite/continuous strong-turn run passed.
+Self-review: angle gradients sum to zero; inverse-mass PBD constraints preserve center of mass; only anisotropic substrate damping produces net locomotion. Zero wave and isotropic-drag controls verify absence of direct commanded translation. Rig wraps together including previous positions; local displacement excludes boundary wrapping.
+Ruling (test fixture, not frozen design): plan's reverse test starts x=200 in a 1000-wide torus and wrapped after real negative displacement (reported +740). Signed-coordinate displacement requires no seam crossing. Enlarged only that test arena/start position; a separate original-size toroidal crossing test preserves constraints and checks physical displacement. No physics adjustment made to hide the result.
