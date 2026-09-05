@@ -54,3 +54,8 @@ Preflight: clean ce-psvaml-v1-tasks-2-18, remote already contained 703a78a. Sing
 RED: GenomeTests failed for missing Genome.h. GREEN: Genome 2/2; full CTest 37/37.
 Review: named hereditary fields cover frozen 10.2; sensor gains applied to copied neural parameters; bounded Gaussian mutation uses passed RNG, independent neural sigma, no learned/physiological state. No changes to prior subsystem implementations.
 Ruling: explicit C++17 equality instead of C++20 defaulted equality from plan example. Neural tau mutation lower bound 0.04 preserves stability at fixedDt 0.02. No frozen deviation.
+
+## Task 11 - VALIDATED
+RED: missing ReproductiveSystem.h. GREEN: Reproduction 3/3; full CTest 40/40. Diff whitespace check PASS.
+Review: one-time late-L4 sperm initialization, adult-only maturation/fertilization, one sperm and one paid resource unit consumed per fertilization, uterine delay before laying, finite sperm exhaustion. Provisioning is capped by investment and depends on nutrition/stress; copied or mutated hereditary genome never includes provisioning. Egg viability and development respond to temperature and provision.
+Ruling: availableReproductiveResources is an amount transferred from Physiology each tick, not an inexhaustible balance or rate. Optional passed Random enables mutation at fertilization; omitting it is a mutation-disabled fixture, not a separate RNG. Resource transfer integration belongs to Task 12. No frozen deviation.
