@@ -21,7 +21,7 @@ bool World::resolveCollision(Vector2& p,float radius) const {
     return mechanical_.resolveCollision(p,radius)||hit;
 }
 void World::update(double dt) {
-    food_.regrow(dt,foodRegrowthRate_);
+    food_.regrow(dt,foodRegrowthRate_,foodCapacity_);
     if(derivedOdor_) {
         const float blend=1-std::exp(-float(dt));
         for(int y=0;y<foodOdor_.height();++y) for(int x=0;x<foodOdor_.width();++x) {
@@ -30,6 +30,8 @@ void World::update(double dt) {
         }
         foodOdor_.diffuseAndDecay(0.4f,0,dt);
     }
+    if(pheromoneSourceRate_>0)for(int y=0;y<dauerPheromone_.height();++y)for(int x=0;x<dauerPheromone_.width();++x)
+        dauerPheromone_.setCell(x,y,dauerPheromone_.cell(x,y)+pheromoneSourceRate_*static_cast<float>(dt));
     dauerPheromone_.diffuseAndDecay(0.2f,0.1f,dt); mechanical_.update(dt);
 }
 }

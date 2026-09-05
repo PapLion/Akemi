@@ -26,6 +26,7 @@ public:
     float forwardSpeed() const { return speed_; }
     float distanceMovedLastTick() const { return distance_; }
     std::vector<float> segmentLengths() const;
+    float totalMass() const { float sum=0;for(const auto& node:nodes_)sum+=node.mass;return sum; }
 private:
     void constrainLength();
     void constrainBending();

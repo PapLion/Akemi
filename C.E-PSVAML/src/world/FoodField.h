@@ -10,7 +10,7 @@ public:
     float sampleToxicity(Vector2 p) const { return toxicity_.sample(p); }
     void paintPatch(Vector2 center,float radius,float density,float nutrition,float digestibility,float toxicity);
     float consume(Vector2 p,float requestedMass);
-    void regrow(double dt,float rate);
+    void regrow(double dt,float rate,float capacity=1);
     float totalMass() const;
     const ScalarField& density() const { return density_; }
 private:

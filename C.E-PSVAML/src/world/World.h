@@ -30,7 +30,8 @@ public:
     void setOxygenLinear(Vector2 d,float lo,float hi) { oxygen_.linear(d,lo,hi); }
     void setPheromoneUniform(float p) { dauerPheromone_.fill(p); }
     void setRepellentUniform(float p) { repellent_.fill(p); }
-    void setFoodRegrowthRate(float r) { foodRegrowthRate_=r; }
+    void setFoodRegrowthRate(float r,float capacity=1) { foodRegrowthRate_=r;foodCapacity_=capacity; }
+    void setPheromoneSourceRate(float rate) { pheromoneSourceRate_=rate; }
 private:
     SimulationConfig config_;
     FoodField food_;
@@ -38,5 +39,6 @@ private:
     MechanicalEnvironment mechanical_;
     bool derivedOdor_=true;
     float foodRegrowthRate_=0;
+    float foodCapacity_=1,pheromoneSourceRate_=0;
 };
 }

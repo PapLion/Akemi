@@ -21,7 +21,7 @@ bool Scenario::apply(std::string_view name,World& world,Population& population,R
     DevelopmentStage stage=DevelopmentStage::L1;
     if(name=="reproduction_assay")stage=DevelopmentStage::Adult;
     if(name=="dauer_recovery_assay")stage=DevelopmentStage::Dauer;
-    if(name!="starvation_assay" && name!="dauer_induction_assay") {
+    if(name!="starvation_assay" && name!="dauer_induction_assay" && name!="habituation_assay") {
         world.food().paintPatch(center,extent,1,1,1,0);world.setFoodRegrowthRate(0.05f);
     }
     if(name=="chemotaxis_assay" || name=="associative_learning_assay")world.setFoodOdorLinear({1,0},0,1);
@@ -30,8 +30,8 @@ bool Scenario::apply(std::string_view name,World& world,Population& population,R
     if(name=="nose_touch_assay")world.mechanical().addObstacle({{center.x+1,center.y},2});
     if(name=="habituation_assay")world.mechanical().addSource({center,extent,1,0,1,0.1});
     if(name=="dauer_induction_assay") {
-        world.food().paintPatch(center,extent,0.05f,1,1,0);world.setFoodRegrowthRate(0.01f);
-        world.setPheromoneUniform(1);world.setTemperatureUniform(25);
+        world.food().paintPatch(center,extent,0.05f,1,1,0);world.setFoodRegrowthRate(0.01f,0.05f);
+        world.setPheromoneUniform(1);world.setPheromoneSourceRate(0.1f);world.setTemperatureUniform(25);
     }
     population.spawnWorm({center,genome,0,0,stage},0,cfg);return true;
 }

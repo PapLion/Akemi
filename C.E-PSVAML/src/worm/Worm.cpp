@@ -50,7 +50,7 @@ void Worm::tick(World& world,double dt,Random& rng) {
     physiology_.setDevelopmentEffects(development_.metabolismMultiplier(),development_.agingMultiplier(),development_.stressResistanceMultiplier());
     const float target=development_.targetBodyScale();
     if(target>bodyScale_)bodyScale_+=physiology_.allocateResources((target-bodyScale_)*genome_.structuralMassScale)/genome_.structuralMassScale;
-    const auto bp=genome_.bodyParameters();body_.setSizeAndMass(bp.segmentLength*bodyScale_,bp.radius*bodyScale_,bp.structuralMassScale*bodyScale_+physiology_.lipidReserve()*0.1f);
+    const auto bp=genome_.bodyParameters();body_.setSizeAndMass(bp.segmentLength*bodyScale_,bp.radius*bodyScale_,(bp.structuralMassScale*bodyScale_+physiology_.lipidReserve()*0.1f+physiology_.gutLoad())/config_.bodySegments);
     ReproductionInputs in;in.isAdult=development_.isReproductivelyAdult();in.stage=development_.stage();in.stageProgress=development_.stageProgress();
     in.nutritionState=nutrition;in.stressState=stress;in.parentId=id_;in.generation=generation_;in.position=body_.headPosition();
     if(in.isAdult && reproduction_.spermRemaining()>0 && reproduction_.reproductiveResources()<2)
@@ -62,6 +62,7 @@ WormDebugState Worm::getReadOnlyDebugState() const {
     WormDebugState s;s.id=id_;s.parentId=parentId_;s.generation=generation_;s.birthTick=birthTick_;
     s.stage=development_.stage();s.phase=development_.phase();s.stageProgress=development_.stageProgress();s.molts=development_.completedLethargusCount();s.bodyScale=bodyScale_;
     s.energy=physiology_.availableEnergy();s.reserve=physiology_.lipidReserve();s.gutLoad=physiology_.gutLoad();s.waste=physiology_.wasteLoad();
+    s.bodyMass=body_.totalMass();
     s.starvationStress=physiology_.starvationStress();s.thermalStress=physiology_.thermalStress();s.mechanicalDamage=physiology_.mechanicalDamage();s.toxicDamage=physiology_.toxicDamage();s.biologicalAge=physiology_.biologicalAge();s.dmpPhase=physiology_.dmpPhase();
     s.sperm=reproduction_.spermRemaining();s.uterineEggs=reproduction_.uterineEggCount();s.eggsLaid=eggsLaid_;s.preferredTemperature=learning_.preferredTemperature();s.habituation=learning_.habituationLevel();s.foodMemory=learning_.recentFoodMemory();s.lastLearningValence=learning_.lastInternalValence();
     s.neuralNorm=brain_.stateNorm();s.neuralStates=brain_.states();s.effectiveInputWeights=brain_.effectiveInputWeights();s.segments=body_.bodySegments();s.speed=body_.forwardSpeed();
