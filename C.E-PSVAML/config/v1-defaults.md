@@ -12,7 +12,9 @@ Measured with GCC 16.2, C++17, Release, fixedDt 0.02:
 | Fed adult median lifetime, seeds 11/22/33/44/55 | 87,772 | 60,000–90,000 |
 | Fed defecation period | 150 | 100–200 |
 
-No slow-rate adjustment was needed. Calibration assays use smaller field grids (16 x 16) with controlled uniform food, keeping all organism parameters and fixedDt unchanged. The final baseline runtime uses the complete default 128 x 128 world. Adult lifetime calibration replenishes food to isolate aging; it is not a claim that an unfed animal survives that long.
+No organism TimeProfile adjustment was needed. Calibration assays use smaller field grids (16 x 16) with controlled uniform food, keeping all organism parameters and fixedDt unchanged. The final baseline runtime uses the complete default 128 x 128 world. Adult lifetime calibration replenishes food to isolate aging; it is not a claim that an unfed animal survives that long.
+
+Baseline food regeneration is 0.0002 per second. The initial 0.02 setting hit the 10,000-entity safety guard after tick 80,000 in the required seed-12345 run. This environmental rate was reduced to enforce a finite resource budget; no organisms are culled and the safety limit remains unchanged. Full-horizon acceptance of this calibration is recorded in IMPLEMENTATION-RECORD.md.
 
 Default reproductive investment is one paid physiological resource unit per fertilization, 20 sperm initialized once during late L4, a 20-second condition-modulated oocyte maturation interval and a five-second condition-modulated uterine holding interval. Provision is capped by investment. Offspring energy plus reserve equals provision; learned state is initialized fresh. Scenario founders receive two initial resource units.
 

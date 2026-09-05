@@ -14,7 +14,7 @@ bool Scenario::apply(std::string_view name,World& world,Population& population,R
     if(name=="baseline_ecosystem") {
         for(Vector2 pos:std::vector<Vector2>{{cfg.worldWidth*0.25f,cfg.worldHeight*0.25f},{cfg.worldWidth*0.75f,cfg.worldHeight*0.75f}})
             world.food().paintPatch(pos,extent*0.22f,1,1,1,0);
-        world.setFoodRegrowthRate(0.02f);
+        world.setFoodRegrowthRate(0.0002f);
         for(int i=0;i<cfg.initialPopulation;++i)population.spawnWorm({{float(rng.uniform01()*cfg.worldWidth),float(rng.uniform01()*cfg.worldHeight)},genome},0,cfg);
         return true;
     }
