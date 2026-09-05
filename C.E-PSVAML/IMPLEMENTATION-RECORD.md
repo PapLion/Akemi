@@ -21,3 +21,8 @@ RED: PhysicsTests could not compile without Body.h.
 GREEN: six physics tests; full CTest 16/16, 0 failures. 10,000-tick finite/continuous strong-turn run passed.
 Self-review: angle gradients sum to zero; inverse-mass PBD constraints preserve center of mass; only anisotropic substrate damping produces net locomotion. Zero wave and isotropic-drag controls verify absence of direct commanded translation. Rig wraps together including previous positions; local displacement excludes boundary wrapping.
 Ruling (test fixture, not frozen design): plan's reverse test starts x=200 in a 1000-wide torus and wrapped after real negative displacement (reported +740). Signed-coordinate displacement requires no seam crossing. Enlarged only that test arena/start position; a separate original-size toroidal crossing test preserves constraints and checks physical displacement. No physics adjustment made to hide the result.
+
+## Task 5
+RED: missing Physiology.h. GREEN: five physiology tests, full CTest 21/21.
+Self-review: pump withdraws food and costs energy; packets delay absorption; reserves mobilize before starvation; DMP has posterior/anterior/expulsion phases; cause-specific stress/death and seeded age hazard. Same-seed age death replays, different seed changes death tick. No HP/reward/instant feeding energy.
+Ruling: use persistent Random& in reserve test instead of temporary Random(7) each iteration. CE_TESTING variant compiles identical core sources with test-only setters consistently to avoid ODR mismatch; production core excludes them. Growth/reproductive allocation consumers are integrated in their later tasks.
