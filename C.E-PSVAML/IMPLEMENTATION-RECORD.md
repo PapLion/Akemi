@@ -68,3 +68,8 @@ Rulings: Task 5 deferred growth/reproductive consumers; integration requires min
 ## Task 13 - VALIDATED
 RED: missing Population.h. GREEN: Population 2/2; full CTest 44/44.
 Review: stable vectors and monotonic IDs, egg ID survives hatching, actual provision passed to L1, lineage retained after thermal death. Safety counts worms plus eggs; rejects new entities without culling; hatching replaces an entity and does not trigger the guard. Birth means hatching, not fertilization. No frozen deviation.
+
+## Task 14 - VALIDATED
+RED: missing Scenario.h. GREEN: Scenario 2/2; full CTest 46/46.
+Review: all eleven frozen names, explicit local fields/stimuli/population; unknown names return before mutation or RNG use. Baseline positions use passed seeded RNG. Reproduction starts adult with sperm; recovery starts Dauer.
+Ruling: initial-stage scenario blueprints replay DevelopmentSystem transitions during construction and late-L4 sperm initialization, without adding a runtime stage setter or a defensive Dauer action. This setup history does not claim a measured full-life assay; Task 18 must exercise actual integrated transitions. No frozen deviation.

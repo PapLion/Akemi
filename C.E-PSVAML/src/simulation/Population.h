@@ -2,7 +2,7 @@
 #include "worm/Worm.h"
 #include "simulation/LineageRecord.h"
 namespace ce {
-struct InitialWormBlueprint { Vector2 position{};Genome genome;EntityId parentId=0;std::uint32_t generation=0; };
+struct InitialWormBlueprint { Vector2 position{};Genome genome;EntityId parentId=0;std::uint32_t generation=0;DevelopmentStage stage=DevelopmentStage::L1; };
 class Population {
 public:
     explicit Population(std::size_t maximum):maximum_(maximum) {}

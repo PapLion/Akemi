@@ -9,7 +9,7 @@ void Population::recordBirth(EntityId id,EntityId parent,std::uint32_t generatio
 }
 EntityId Population::spawnWorm(const InitialWormBlueprint& bp,std::uint64_t tick,const SimulationConfig& cfg) {
     if(!canCreate())return 0;
-    const auto id=nextId_++;worms_.emplace_back(id,bp.parentId,bp.generation,tick,bp.position,bp.genome,cfg);
+    const auto id=nextId_++;worms_.emplace_back(id,bp.parentId,bp.generation,tick,bp.position,bp.genome,cfg,2,bp.stage);
     recordBirth(id,bp.parentId,bp.generation,tick);return id;
 }
 EntityId Population::addEgg(const EggBlueprint& bp,std::uint64_t tick) {

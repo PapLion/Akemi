@@ -8,7 +8,7 @@ namespace ce {
 class Worm {
 public:
     Worm(EntityId id,EntityId parentId,std::uint32_t generation,std::uint64_t birthTick,
-         Vector2 position,const Genome&,const SimulationConfig&,float maternalProvision=2);
+         Vector2 position,const Genome&,const SimulationConfig&,float maternalProvision=2,DevelopmentStage initialStage=DevelopmentStage::L1);
     void tick(World&,double dt,Random&);
     bool isAlive() const { return !physiology_.isDead(); }
     DeathCause deathCause() const { return physiology_.deathCause(); }

@@ -2,13 +2,28 @@
 #include "world/World.h"
 #include <algorithm>
 #include <cmath>
+#include <stdexcept>
 namespace ce {
 namespace { BodyParameters newbornBody(const Genome& g) { auto p=g.bodyParameters();p.segmentLength*=0.4f;p.radius*=0.4f;p.structuralMassScale*=0.4f;return p; } }
-Worm::Worm(EntityId id,EntityId parent,std::uint32_t generation,std::uint64_t tick,Vector2 pos,const Genome& g,const SimulationConfig& c,float provision):
+Worm::Worm(EntityId id,EntityId parent,std::uint32_t generation,std::uint64_t tick,Vector2 pos,const Genome& g,const SimulationConfig& c,float provision,DevelopmentStage initialStage):
     id_(id),parentId_(parent),generation_(generation),birthTick_(tick),genome_(g),config_(c),
     body_(pos,c.bodySegments,newbornBody(g),c.physicsConstraintIterations),physiology_(g.physiologyParameters(),c.time),
     brain_(g.neuralParameters()),learning_(g.learningParameters(),20),development_(g.developmentParameters(),c.time),
-    reproduction_(g.reproductionParameters(),c.time,g) { physiology_.initializeProvision(provision); }
+    reproduction_(g.reproductionParameters(),c.time,g) {
+    physiology_.initializeProvision(provision);
+    // Scenario-only initial history uses the real developmental transition rules.
+    DevelopmentInputs history;
+    if(initialStage==DevelopmentStage::Dauer){history.foodAvailability=0;history.dauerPheromone=1;history.temperature=25;}
+    for(int i=0;development_.stage()!=initialStage && i<1000000;++i) {
+        development_.update(history,c.fixedDt);
+        ReproductionInputs in;in.stage=development_.stage();in.stageProgress=development_.stageProgress();
+        reproduction_.update(in,0);
+    }
+    if(development_.stage()!=initialStage)throw std::invalid_argument("unreachable initial development stage");
+    bodyScale_=development_.targetBodyScale();auto bp=g.bodyParameters();bp.segmentLength*=bodyScale_;bp.radius*=bodyScale_;bp.structuralMassScale*=bodyScale_;
+    body_=Body(pos,c.bodySegments,bp,c.physicsConstraintIterations);
+    physiology_.setDevelopmentEffects(development_.metabolismMultiplier(),development_.agingMultiplier(),development_.stressResistanceMultiplier());
+}
 void Worm::tick(World& world,double dt,Random& rng) {
     if(!isAlive())return;
     // Frozen causal order: observation -> temporal processing -> brain -> action -> physics.
