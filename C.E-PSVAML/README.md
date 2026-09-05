@@ -18,6 +18,8 @@ Scenarios: `baseline_ecosystem`, `chemotaxis_assay`, `thermotaxis_assay`, `aerot
 
 ## Frozen Definition of Done evidence
 
+Final acceptance (2026-09-05, source bd4740a): **35/35 DoD items fulfilled**. Clean Release build passed; CTest 63/63, Catch2 62 cases / 575486 assertions. The default-world baseline seed 12345 completed 250000 ticks with exit 0, digest 8205094381958857740, 3493 worms, 833 eggs and no safety guard. CSV balances reconcile, generation 6 was reached, and no NaN/Inf entries were found. Detailed evidence and limitations are recorded in [IMPLEMENTATION-RECORD.md](IMPLEMENTATION-RECORD.md).
+
 Names below identify actual Catch2 cases (leading group plus distinguishing text), source contracts or runtime checks. Assays are controlled engineering checks of the V1 abstractions, not validation of biological fidelity.
 
 | DoD | Requirement | Evidence |
