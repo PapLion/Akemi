@@ -12,6 +12,8 @@ struct WormDebugState {
     float starvationStress=0,thermalStress=0,mechanicalDamage=0,toxicDamage=0;
     double biologicalAge=0;
     int sperm=0,molts=0;std::size_t uterineEggs=0;
+    std::uint64_t eggsLaid=0;
+    float reversalRateEstimate=0,strongTurnRateEstimate=0;
     float preferredTemperature=20,habituation=0,foodMemory=0,lastLearningValence=0,neuralNorm=0,speed=0;
     DmpPhase dmpPhase=DmpPhase::Rest;
     DeathCause deathCause=DeathCause::None;

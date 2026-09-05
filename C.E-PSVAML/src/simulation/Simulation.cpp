@@ -7,6 +7,7 @@ Simulation::Simulation(SimulationConfig cfg,std::uint64_t seed,std::string scena
     if(cfg.physicsHz<=0 || !std::isfinite(cfg.fixedDt) || std::abs(cfg.fixedDt-1.0/cfg.physicsHz)>1e-12 || cfg.fixedDt>0.04)
         throw std::invalid_argument("fixedDt must match physicsHz and remain stable for neural tau");
     if(!Scenario::apply(scenario_,world_,population_,rng_,config_))throw std::invalid_argument("unknown scenario");
+    metrics_.sample(*this);
 }
 World& Simulation::worldForScenarioSetup() { if(tick_)throw std::logic_error("setup has ended");return world_; }
 Population& Simulation::populationForScenarioSetup() { if(tick_)throw std::logic_error("setup has ended");return population_; }
@@ -17,7 +18,10 @@ void Simulation::tick() {
     population_.collectLaidEggs(tick_);
     population_.advanceEggs(world_,config_.fixedDt,config_.time);
     population_.hatchReadyEggs(tick_,config_);
+    for(const auto& r:population_.lineageRecords())metrics_.recordBirth(r);
+    for(const auto& worm:population_.worms())if(!worm.isAlive())metrics_.recordDeath(worm.getReadOnlyDebugState(),tick_,config_.fixedDt);
     population_.removeDeadWorms(tick_);
+    metrics_.sample(*this);
 }
 void Simulation::runTicks(std::uint64_t count) { for(std::uint64_t i=0;i<count;++i)tick(); }
 std::uint64_t Simulation::stateDigest() const {

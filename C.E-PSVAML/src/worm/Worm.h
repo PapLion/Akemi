@@ -12,7 +12,7 @@ public:
     void tick(World&,double dt,Random&);
     bool isAlive() const { return !physiology_.isDead(); }
     DeathCause deathCause() const { return physiology_.deathCause(); }
-    std::vector<EggBlueprint> takePendingEggs() { return reproduction_.takeLaidEggs(); }
+    std::vector<EggBlueprint> takePendingEggs() { auto eggs=reproduction_.takeLaidEggs();eggsLaid_+=eggs.size();return eggs; }
     WormDebugState getReadOnlyDebugState() const;
     EntityId id() const { return id_; }
     EntityId parentId() const { return parentId_; }
@@ -25,5 +25,6 @@ private:
     LearningSystem learning_;DevelopmentSystem development_;ReproductiveSystem reproduction_;
     SensoryState lastSensory_;MotorCommand lastMotor_;ActionConsequences lastConsequences_;
     float bodyScale_=0.4f;
+    std::uint64_t eggsLaid_=0;
 };
 }

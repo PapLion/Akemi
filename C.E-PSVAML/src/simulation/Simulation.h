@@ -1,6 +1,7 @@
 #pragma once
 #include "simulation/Population.h"
 #include "world/World.h"
+#include "simulation/MetricsRecorder.h"
 #include <string>
 namespace ce {
 class Simulation {
@@ -16,10 +17,12 @@ public:
     const SimulationConfig& config() const { return config_; }
     const std::string& scenarioName() const { return scenario_; }
     std::uint64_t seed() const { return rng_.seed(); }
+    const MetricsRecorder& metrics() const { return metrics_; }
     World& worldForScenarioSetup();
     Population& populationForScenarioSetup();
 private:
     SimulationConfig config_;Random rng_;World world_;Population population_;
     std::string scenario_;std::uint64_t tick_=0;
+    MetricsRecorder metrics_;
 };
 }

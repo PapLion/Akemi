@@ -63,7 +63,7 @@ WormDebugState Worm::getReadOnlyDebugState() const {
     s.stage=development_.stage();s.phase=development_.phase();s.stageProgress=development_.stageProgress();s.molts=development_.completedLethargusCount();s.bodyScale=bodyScale_;
     s.energy=physiology_.availableEnergy();s.reserve=physiology_.lipidReserve();s.gutLoad=physiology_.gutLoad();s.waste=physiology_.wasteLoad();
     s.starvationStress=physiology_.starvationStress();s.thermalStress=physiology_.thermalStress();s.mechanicalDamage=physiology_.mechanicalDamage();s.toxicDamage=physiology_.toxicDamage();s.biologicalAge=physiology_.biologicalAge();s.dmpPhase=physiology_.dmpPhase();
-    s.sperm=reproduction_.spermRemaining();s.uterineEggs=reproduction_.uterineEggCount();s.preferredTemperature=learning_.preferredTemperature();s.habituation=learning_.habituationLevel();s.foodMemory=learning_.recentFoodMemory();s.lastLearningValence=learning_.lastInternalValence();
+    s.sperm=reproduction_.spermRemaining();s.uterineEggs=reproduction_.uterineEggCount();s.eggsLaid=eggsLaid_;s.preferredTemperature=learning_.preferredTemperature();s.habituation=learning_.habituationLevel();s.foodMemory=learning_.recentFoodMemory();s.lastLearningValence=learning_.lastInternalValence();
     s.neuralNorm=brain_.stateNorm();s.neuralStates=brain_.states();s.effectiveInputWeights=brain_.effectiveInputWeights();s.segments=body_.bodySegments();s.speed=body_.forwardSpeed();
     s.deathCause=deathCause();s.lastConsequences=lastConsequences_;s.sensory=lastSensory_;s.motor=lastMotor_;return s;
 }

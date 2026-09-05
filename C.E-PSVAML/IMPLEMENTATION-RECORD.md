@@ -77,3 +77,8 @@ Ruling: initial-stage scenario blueprints replay DevelopmentSystem transitions d
 ## Task 15 - VALIDATED
 RED: missing Simulation.h. GREEN: Simulation 2/2; full CTest 48/48 (39.48 seconds).
 Review: single persistent RNG, stable entity order, frozen global tick, constant dt with physicsHz validation, no visual dependency. 10,000 direct ticks match 100x100 grouped ticks with read-only digest calls; seed 778 diverges from 777. Digest includes world grid samples, food, body/physiology/neural states, eggs and lineage. Mutable setup access is rejected after tick zero. No frozen deviation. Digest is a debugging fingerprint, not serialization or a cross-platform floating-point guarantee.
+
+## Task 16 - VALIDATED
+RED: missing MetricsRecorder.h. GREEN: Metrics 1/1; full CTest 49/49 (27.57 seconds).
+Review: frozen CSV columns, per-tick individual accumulation, 100-tick population windows, final death observation before removal, retained lineage/descendant counts, text birth/death events. Behavior classification uses speed, rolling reversal/turn estimates, pumping and food memory only in telemetry. File flush leaves core digest unchanged. Fixed Windows fixture cleanup by closing read streams first.
+Ruling: traitMeans/traitVariance order is body stiffness, structural mass, basal metabolism, development rate, plasticity rate, reproductive allocation; stageDistribution follows DevelopmentStage enum order. No database/event bus and no frozen deviation.
