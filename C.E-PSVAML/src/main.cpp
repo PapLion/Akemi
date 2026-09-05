@@ -7,7 +7,13 @@ int main(int argc,char** argv) {
     try {
         const auto options=ce::parseCommandLine(argc,argv);ce::SimulationConfig cfg;
         ce::Simulation simulation(cfg,options.seed,options.scenario);
-        if(options.headless)simulation.runTicks(options.ticks?options.ticks:250000);
+        if(options.headless) {
+            const auto limit=options.ticks?options.ticks:250000;
+            while(simulation.currentTick()<limit) {
+                simulation.runTicks(std::min<std::uint64_t>(10000,limit-simulation.currentTick()));
+                std::cerr<<"progress tick="<<simulation.currentTick()<<" worms="<<simulation.population().worms().size()<<" eggs="<<simulation.population().eggs().size()<<'\n';
+            }
+        }
         else {
             InitWindow(1200,900,"C.E-PSVAML V1");window=true;
             if(!IsWindowReady())throw std::runtime_error("raylib window initialization failed");

@@ -20,7 +20,8 @@ Worm::Worm(EntityId id,EntityId parent,std::uint32_t generation,std::uint64_t ti
         reproduction_.update(in,0);
     }
     if(development_.stage()!=initialStage)throw std::invalid_argument("unreachable initial development stage");
-    bodyScale_=development_.targetBodyScale();auto bp=g.bodyParameters();bp.segmentLength*=bodyScale_;bp.radius*=bodyScale_;bp.structuralMassScale*=bodyScale_;
+    bodyScale_=development_.targetBodyScale();auto bp=g.bodyParameters();bp.segmentLength*=bodyScale_;bp.radius*=bodyScale_;
+    bp.structuralMassScale=(bp.structuralMassScale*bodyScale_+physiology_.lipidReserve()*0.1f)/c.bodySegments;
     body_=Body(pos,c.bodySegments,bp,c.physicsConstraintIterations);
     physiology_.setDevelopmentEffects(development_.metabolismMultiplier(),development_.agingMultiplier(),development_.stressResistanceMultiplier());
 }

@@ -5,7 +5,10 @@
 #include <set>
 #include <iostream>
 TEST_CASE("FullLife body mass includes structural reserves and actual gut content") {
-    ce::SimulationConfig cfg;ce::Simulation sim(cfg,1,"reproduction_assay");sim.runTicks(50);
+    ce::SimulationConfig cfg;ce::Simulation sim(cfg,1,"reproduction_assay");
+    const auto initial=sim.population().worms().front().getReadOnlyDebugState();
+    REQUIRE(initial.bodyMass==Catch::Approx(initial.bodyScale+initial.reserve*0.1f));
+    sim.runTicks(50);
     const auto s=sim.population().worms().front().getReadOnlyDebugState();REQUIRE(s.gutLoad>0);
     REQUIRE(s.bodyMass>s.bodyScale*sim.population().worms().front().genome().structuralMassScale+s.reserve*0.1f);
     REQUIRE(s.bodyMass==Catch::Approx(s.bodyScale*sim.population().worms().front().genome().structuralMassScale+s.reserve*0.1f+s.gutLoad));
