@@ -1,0 +1,4 @@
+[submodule "research/MaleCNS/upstream-2025malecns"]
+	path = research/MaleCNS/upstream-2025malecns
+	url = https://github.com/flyconnectome/2025malecns.git
+	branch = main
