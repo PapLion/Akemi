@@ -1,0 +1,262 @@
+{
+  "train": {
+    "n": 640,
+    "outside_window": 320,
+    "heuristics": {
+      "first": 0.134375,
+      "last": 0.5609375,
+      "entity_last_any": 0.7578125,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.1875,
+        "last": 0.525,
+        "entity_last_any": 0.725
+      },
+      "replace": {
+        "first": 0.15,
+        "last": 0.575,
+        "entity_last_any": 0.7875
+      },
+      "multiple": {
+        "first": 0.1,
+        "last": 0.6125,
+        "entity_last_any": 0.775
+      },
+      "other": {
+        "first": 0.2,
+        "last": 0.4875,
+        "entity_last_any": 0.8125
+      },
+      "similar": {
+        "first": 0.125,
+        "last": 0.575,
+        "entity_last_any": 0.75
+      },
+      "irrelevant": {
+        "first": 0.0875,
+        "last": 0.5875,
+        "entity_last_any": 0.7
+      },
+      "discard": {
+        "first": 0.1375,
+        "last": 0.6125,
+        "entity_last_any": 0.7625
+      },
+      "goal": {
+        "first": 0.0875,
+        "last": 0.5125,
+        "entity_last_any": 0.75
+      }
+    }
+  },
+  "iid": {
+    "n": 320,
+    "outside_window": 160,
+    "heuristics": {
+      "first": 0.1875,
+      "last": 0.565625,
+      "entity_last_any": 0.740625,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.15,
+        "last": 0.575,
+        "entity_last_any": 0.775
+      },
+      "replace": {
+        "first": 0.25,
+        "last": 0.6,
+        "entity_last_any": 0.725
+      },
+      "multiple": {
+        "first": 0.225,
+        "last": 0.6,
+        "entity_last_any": 0.7
+      },
+      "other": {
+        "first": 0.175,
+        "last": 0.525,
+        "entity_last_any": 0.625
+      },
+      "similar": {
+        "first": 0.225,
+        "last": 0.55,
+        "entity_last_any": 0.85
+      },
+      "irrelevant": {
+        "first": 0.05,
+        "last": 0.6,
+        "entity_last_any": 0.675
+      },
+      "discard": {
+        "first": 0.225,
+        "last": 0.575,
+        "entity_last_any": 0.8
+      },
+      "goal": {
+        "first": 0.2,
+        "last": 0.5,
+        "entity_last_any": 0.775
+      }
+    }
+  },
+  "compositional": {
+    "n": 80,
+    "outside_window": 40,
+    "heuristics": {
+      "first": 0.1375,
+      "last": 0.525,
+      "entity_last_any": 0.775,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.2,
+        "last": 0.4,
+        "entity_last_any": 0.8
+      },
+      "replace": {
+        "first": 0.1,
+        "last": 0.6,
+        "entity_last_any": 0.8
+      },
+      "multiple": {
+        "first": 0.3,
+        "last": 0.6,
+        "entity_last_any": 1.0
+      },
+      "other": {
+        "first": 0.1,
+        "last": 0.5,
+        "entity_last_any": 0.9
+      },
+      "similar": {
+        "first": 0.1,
+        "last": 0.4,
+        "entity_last_any": 0.6
+      },
+      "irrelevant": {
+        "first": 0.0,
+        "last": 0.4,
+        "entity_last_any": 0.7
+      },
+      "discard": {
+        "first": 0.2,
+        "last": 0.7,
+        "entity_last_any": 0.7
+      },
+      "goal": {
+        "first": 0.1,
+        "last": 0.6,
+        "entity_last_any": 0.7
+      }
+    }
+  },
+  "structural": {
+    "n": 320,
+    "outside_window": 160,
+    "heuristics": {
+      "first": 0.146875,
+      "last": 0.575,
+      "entity_last_any": 0.76875,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.175,
+        "last": 0.55,
+        "entity_last_any": 0.8
+      },
+      "replace": {
+        "first": 0.075,
+        "last": 0.6,
+        "entity_last_any": 0.7
+      },
+      "multiple": {
+        "first": 0.125,
+        "last": 0.6,
+        "entity_last_any": 0.75
+      },
+      "other": {
+        "first": 0.15,
+        "last": 0.55,
+        "entity_last_any": 0.75
+      },
+      "similar": {
+        "first": 0.175,
+        "last": 0.525,
+        "entity_last_any": 0.8
+      },
+      "irrelevant": {
+        "first": 0.2,
+        "last": 0.65,
+        "entity_last_any": 0.75
+      },
+      "discard": {
+        "first": 0.15,
+        "last": 0.575,
+        "entity_last_any": 0.9
+      },
+      "goal": {
+        "first": 0.125,
+        "last": 0.55,
+        "entity_last_any": 0.7
+      }
+    }
+  },
+  "both": {
+    "n": 80,
+    "outside_window": 40,
+    "heuristics": {
+      "first": 0.1875,
+      "last": 0.5875,
+      "entity_last_any": 0.7875,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.2,
+        "last": 0.4,
+        "entity_last_any": 0.7
+      },
+      "replace": {
+        "first": 0.2,
+        "last": 0.8,
+        "entity_last_any": 0.8
+      },
+      "multiple": {
+        "first": 0.3,
+        "last": 0.5,
+        "entity_last_any": 0.7
+      },
+      "other": {
+        "first": 0.1,
+        "last": 0.6,
+        "entity_last_any": 0.7
+      },
+      "similar": {
+        "first": 0.1,
+        "last": 0.6,
+        "entity_last_any": 0.8
+      },
+      "irrelevant": {
+        "first": 0.3,
+        "last": 0.5,
+        "entity_last_any": 0.9
+      },
+      "discard": {
+        "first": 0.2,
+        "last": 0.6,
+        "entity_last_any": 0.9
+      },
+      "goal": {
+        "first": 0.1,
+        "last": 0.7,
+        "entity_last_any": 0.8
+      }
+    }
+  }
+}

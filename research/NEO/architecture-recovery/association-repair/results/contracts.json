@@ -1,0 +1,1 @@
+{"resume_three_updates_exact": true, "batch_independence": true, "document_reset": true, "optimizer_unique_coverage": true, "scope": "CPU FP32, dropout0, deterministic fixed batches; no AMP/CUDA"}

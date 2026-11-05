@@ -1,0 +1,11 @@
+# Datos, balance y separación
+
+Control160programas. Tratamiento1920slots de mezcla, 1120programas únicos: duplicaciones deliberadas ponderan el50% sin corrección. Cinco entidades con pares cíclicos,cuatro valores,16combinaciones×dos órdenes×12variantes. Cada entidad aparece con los cuatro valores y las12transiciones viejo→nuevo diferentes,con frecuencias idénticas por entidad. Tablas exhaustivas desde los targets iniciales y acontecimientos reales en data-frequencies.json. El muestreo finito no garantiza igualdad exacta de frecuencias consumidas; actual-exposure.json registra lo observado.
+
+Oráculo independiente por diccionario y oráculo histórico por prefijo coinciden; etiquetas después de escritura nunca contienen valores futuros. `test_data_contracts.py` verifica todos los prefijos,conservación,contrafactuales y presupuestos. No hay entidades del oráculo dentro del forward: solo etiquetas de pérdida/evaluación.
+
+Dev:formation con inicial6/7;novel_pairs combina entidades no emparejadas en train;correction_fixed usa pares nuevos en mismas posiciones2/3y8;correction_layout mueve inicial6/7ycorrección10;alternate inicial4/5ycorrección10;distractor añade tercera entidad aceptada. Cero programas exactos de entrenamiento en esas familias, comprobado. `correction_fit` coincide intencionalmente con los casos de ajuste y no es un holdout. Las familias dev pueden compartir programas entre sí: no agregarlas como observaciones independientes. Todos los valores individuales son conocidos; la novedad es combinacional/estructural, no vocabulario.
+
+Heurísticas en tratamiento completo: primer valor de entidad consultada 75.00%,última escritura global 62.50%,presencia sin valores/constante0 25.00%,última escritura por entidad100%. Esta última resuelve exactamente el DSL por diseño y constituye el oráculo práctico; no demuestra razonamiento general. Las heurísticas globales no resuelven el panel.
+
+Posiciones,distancias y distractores varían en evaluación. No se mezclan con la intervención primaria de correcciones. P varía posiciones como contraste separado. Nueva confirmatoria:960casos de una estructura separada,initial1/4,corrección9,tercera entidad en6 y pares no cíclicos; solo generación,verificación de oráculo e integridad SHA,ninguna predicción o ajuste. No se declara revisión humana independiente ni se abren sellados anteriores.

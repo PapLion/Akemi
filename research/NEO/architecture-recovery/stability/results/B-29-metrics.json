@@ -1,0 +1,155 @@
+{
+  "alternate": {
+    "cf": {
+      "current": {
+        "joint_correct": 0.95,
+        "prediction_invariance": 0.025
+      },
+      "obsolete": {
+        "joint_correct": 0.975,
+        "prediction_invariance": 1.0
+      }
+    },
+    "corrected": 1.0,
+    "joint": 0.95,
+    "n": 960,
+    "normal": 0.975,
+    "pair_accuracy": {
+      "('A', 'B')": 1.0,
+      "('A', 'E')": 0.9375,
+      "('B', 'C')": 1.0,
+      "('C', 'D')": 1.0,
+      "('D', 'E')": 0.9375
+    },
+    "preserved": 0.95
+  },
+  "held_distractor": {
+    "cf": {
+      "current": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 0.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 1.0
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 384,
+    "normal": 1.0,
+    "pair_accuracy": {
+      "('A', 'C')": 1.0
+    },
+    "preserved": 1.0
+  },
+  "held_formation": {
+    "cf": {
+      "swap": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 0.25
+      }
+    },
+    "joint": 1.0,
+    "n": 64,
+    "normal": 1.0,
+    "pair_accuracy": {
+      "('A', 'C')": 1.0
+    }
+  },
+  "held_pair": {
+    "cf": {
+      "current": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 0.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 1.0
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 384,
+    "normal": 1.0,
+    "pair_accuracy": {
+      "('A', 'C')": 1.0
+    },
+    "preserved": 1.0
+  },
+  "interventions": {
+    "normal": {
+      "accuracy": 1.0,
+      "follows_partner": 0.0
+    },
+    "reset": {
+      "accuracy": 0.25,
+      "follows_partner": 0.25
+    },
+    "swap": {
+      "accuracy": 0.0,
+      "follows_partner": 1.0
+    }
+  },
+  "key_gram": [
+    [
+      1.0,
+      0.0063109016045928,
+      0.19949871301651,
+      -0.680559515953064,
+      0.010466966778039932
+    ],
+    [
+      0.0063109016045928,
+      0.9999998807907104,
+      -0.0013099759817123413,
+      0.3329679071903229,
+      0.3540935516357422
+    ],
+    [
+      0.19949871301651,
+      -0.0013099759817123413,
+      1.0,
+      0.0012716054916381836,
+      -0.892166256904602
+    ],
+    [
+      -0.680559515953064,
+      0.3329679071903229,
+      0.0012716054916381836,
+      0.9999998807907104,
+      -0.0002998262643814087
+    ],
+    [
+      0.010466966778039932,
+      0.3540935516357422,
+      -0.892166256904602,
+      -0.0002998262643814087,
+      1.0
+    ]
+  ],
+  "new_layout": {
+    "cf": {
+      "current": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 0.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 1.0
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 960,
+    "normal": 1.0,
+    "pair_accuracy": {
+      "('A', 'B')": 1.0,
+      "('A', 'E')": 1.0,
+      "('B', 'C')": 1.0,
+      "('C', 'D')": 1.0,
+      "('D', 'E')": 1.0
+    },
+    "preserved": 1.0
+  }
+}

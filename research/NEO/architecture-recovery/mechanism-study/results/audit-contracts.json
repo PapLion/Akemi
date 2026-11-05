@@ -1,0 +1,18 @@
+{
+  "panel_sha256": "9c7726fc1e9c25553a55bea765cd153889507aac96b953e70c68d05ff83446be",
+  "oracle_all_correct": true,
+  "hash_family_disjoint": true,
+  "same_target_indices": 63,
+  "target_visible_as_teacher_forced_answer": false,
+  "objective": "single next-token answer, full8192vocab, not dense LM or free generation",
+  "known_confounders": [
+    "foreground attention local/full",
+    "RoPE vs sinusoidal",
+    "FFN4d vs2d",
+    "projection initialization std.02 vs.05",
+    "additional fast depth and output normalization",
+    "same targets but different FLOPs",
+    "held-out queried entity/value support",
+    "hypothesis deletion not identifiable"
+  ]
+}

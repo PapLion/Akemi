@@ -1,0 +1,19 @@
+{
+ "base":"17111e7", "seed":17, "device":"CPU FP32", "threads":1,
+ "model":"unchanged foreground B, two original blocks width32, no Hielo/Trapos",
+ "arms":{"A":{"values":"historical level3 values","orders":[0]},"B":{"values":[0,1,2,3],"orders":[0]},"C":{"values":"historical level3 values","orders":[0,1]},"D":{"values":[0,1,2,3],"orders":[0,1]}},
+ "generator":"filter unchanged original h.data() rows by values and orders; do not alter or create templates",
+ "updates":400,"batch":8,"lr":0.003,"betas":[0.9,0.95],"weight_decay":0.01,"clip":1,
+ "sampler":"original seed17 fixed permutation cycled modulo dataset length; every complete cycle balanced, residual exposures recorded; preserving D exact historical protocol takes precedence over inventing a new exactly-balanced schedule",
+ "initialization":"fresh identical h.model(B,17) all arms; no warm start",
+ "loss":"original next-answer full8192 vocabulary mean CE; no auxiliary",
+ "checkpoints":"fixed final400 for all conclusions; preserve300 solely to verify old A300/D400 trajectories, never select best checkpoint",
+ "curve_evaluation":"initial, every50updates and final; complete answer logits and train metrics, no checkpoint selection",
+ "primary":"train fixture metrics; exact, joint, strict swaps, CE/ln(number_of_possible_answers), accuracy above marginal chance, perentity/value/order",
+ "diagnostic_dev":"existing dev layouts and new entity pair filtered to training support; withheld opposite order for A/B; no training examples held out because exact factorial fixtures are exhaustive",
+ "microfit_success":"final train accuracy=1, joint=1, strict swaps=1, CE<=0.1, minimum correct probability>=0.9",
+ "effect_analysis":"B-A,C-A,D-B,D-C,interaction D-B-C+A for accuracy and entropy-normalized CE; one seed only, descriptive not significance",
+ "stopping":"exactly four400-update arms; no extra seeds, losses, optimizer changes, layers, memories or extension",
+ "historical_reproduction":"A data equals level3, D data equals level4; D initialization/order/update recipe unchanged",
+ "restrictions":"no GPU,Vast,Chinchilla,A4,tokenizer changes,sealed sets or pretraining"
+}

@@ -1,0 +1,9 @@
+# Contratos ejecutados
+
+`certification.json`: causalidad train/eval por perturbación futura en cortes4,8,12,16,24,32,48; máscaras de padding; permutación de batch; dos documentos concatenados frente a independientes; memoria de prefijo equivalente; gradientes auxiliares finitos no nulos hacia address y event_value; AdamW sin omisiones/duplicados; reanudación exacta3+3 frente a6updates, modelo, decoder, AdamW, sampler, torch/Python RNG, cursor, losses y orden de muestras. FP32 CPU un hilo, dropout0.
+
+`additional-tests.log`: ocho tests PASS, incluyendo pesos iniciales del foreground intactos; máscara del último token sin acceso al prefijo escrito; decoder auxiliar ajeno al forward; exactamente dos eventos escritos por fixture; realizabilidad Delta; todos los parámetros entrenables con gradientes finitos y cambio tras update; ausencia de dependencia de corrección futura en el estado inicial. No se certifica CUDA, AMP o multiproceso.
+
+Los primeros checkpoints conservaron el campo heredado config.updates=150, aunque step=300 y curvas completas registran300. Se preservaron. `checkpoint_metadata.py` genera copias `.certified.pt` con receta real y hash del original, sin modificar pesos, AdamW ni RNG. Es una corrección de metadatos, no otro entrenamiento. El reanudador original verifica identidad del dataset y cursor; sus configuraciones base son fijas en código. No se certifica migración automática de configuraciones arbitrarias.
+
+Verificación final adicional ejecutada sobre checkpoint aprendido: todos los cortes de futuro1..63 en train y eval (126comparaciones) exactamente invariantes; gradiente de la pérdida de respuesta normal hacia Hielo escrito=3,9437e-6. Copias con metadatos certificados: pesos,decoder,AdamW,RNG,cursor y pasos idénticos a los originales. `final-verification.json` y log disponibles.

@@ -1,0 +1,274 @@
+{
+  "clean": {
+    "by_type": {
+      "clean_repeat": {
+        "tp": 960
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 960
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.468114376068115,
+        "mean": 3.4876651155684764,
+        "n": 960
+      }
+    }
+  },
+  "compatible_swap": {
+    "follows_partner": 1.0,
+    "n": 48,
+    "original_accuracy": 0.0
+  },
+  "contaminated_pair": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "tn": 96
+      },
+      "out_of_goal": {
+        "tn": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 1.0,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 0.6,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tn": 384,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.039618492126465,
+        "mean": 5.384521612690555,
+        "n": 576
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 384
+      }
+    }
+  },
+  "layout": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "tn": 96
+      },
+      "out_of_goal": {
+        "tn": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 1.0,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 0.6,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tn": 384,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.037422180175781,
+        "mean": 5.383979856967926,
+        "n": 576
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 384
+      }
+    }
+  },
+  "reset": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "tn": 96
+      },
+      "out_of_goal": {
+        "tn": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "n": 192,
+    "normal": 0.25,
+    "selection": {
+      "accepted_rate": 0.6,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tn": 384,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.039618492126465,
+        "mean": 5.384521612690555,
+        "n": 576
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 384
+      }
+    }
+  },
+  "surface": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "tn": 96
+      },
+      "out_of_goal": {
+        "tn": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 1.0,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 0.6,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tn": 384,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.0430908203125,
+        "mean": 5.3870767868227425,
+        "n": 576
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 384
+      }
+    }
+  }
+}

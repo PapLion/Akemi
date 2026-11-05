@@ -1,0 +1,1 @@
+Primer preflight sin entrenamiento principal: contratos mecánicos pasaron, pero revisión previa al freeze de producción encontró query/identidad correlacionadas en dev. Se corrigió el generador y añadió una aserción de balance de consultas; se conserva esta evidencia no certificada para el contraste final. No se miraron resultados entrenados V2.

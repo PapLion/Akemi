@@ -1,0 +1,296 @@
+{
+  "F2": {
+    "parameters": 2082176,
+    "embedding_tied_parameters": 1048576,
+    "contracts": {
+      "causal": true,
+      "row_isolation": true,
+      "document_reset": true,
+      "shift": true,
+      "padding_mask": true,
+      "finite_all_gradients": true,
+      "parameters_updated": true,
+      "adamw_coverage": true,
+      "resume_6_vs_2_plus_4_exact_model_optimizer_rng_cursor": true,
+      "generation_ids": [
+        [
+          257,
+          48,
+          49,
+          225,
+          225,
+          225,
+          225
+        ]
+      ]
+    },
+    "benchmark": [
+      {
+        "context": 128,
+        "batch": 2,
+        "updates": [
+          {
+            "forward_ms": 51.79343899999367,
+            "backward_ms": 79.4531100000313,
+            "adamw_and_clip_ms": 22.215211000002455,
+            "update_ms": 153.46176000002743,
+            "targets": 254,
+            "loss": 8.57027816772461,
+            "gradient_norm": 9.40640926361084
+          },
+          {
+            "forward_ms": 57.62513400077296,
+            "backward_ms": 82.82011999926908,
+            "adamw_and_clip_ms": 23.81175400023494,
+            "update_ms": 164.25700800027698,
+            "targets": 254,
+            "loss": 8.099870681762695,
+            "gradient_norm": 1.1222563982009888
+          },
+          {
+            "forward_ms": 57.03485300000466,
+            "backward_ms": 82.79724499971053,
+            "adamw_and_clip_ms": 22.21031499993842,
+            "update_ms": 162.0424129996536,
+            "targets": 254,
+            "loss": 7.707906723022461,
+            "gradient_norm": 1.0324623584747314
+          },
+          {
+            "forward_ms": 57.55723499987653,
+            "backward_ms": 83.67986600023869,
+            "adamw_and_clip_ms": 21.720239000387664,
+            "update_ms": 162.95734000050288,
+            "targets": 254,
+            "loss": 7.356112480163574,
+            "gradient_norm": 0.9858156442642212
+          },
+          {
+            "forward_ms": 51.48220799947012,
+            "backward_ms": 93.34873100033292,
+            "adamw_and_clip_ms": 22.162805999869306,
+            "update_ms": 166.99374499967234,
+            "targets": 254,
+            "loss": 7.0102458000183105,
+            "gradient_norm": 0.9631126523017883
+          }
+        ],
+        "targets_per_second": 1568.4583935891505,
+        "mean_update_ms": 161.94245320002665,
+        "stdev_update_ms": 5.094969506787188,
+        "checkpoint_seconds": 0.02445934000024863,
+        "restore_seconds": 0.04850086500027828,
+        "five_million_compute_hours": 0.8855121019249051,
+        "rough_dense_train_flops_per_target": 12493056,
+        "attention_extra_flops_note": "6P heuristic excludes attention quadratic term, activation/RoPE/normalization overhead and tied embedding lookup savings"
+      },
+      {
+        "context": 256,
+        "batch": 2,
+        "updates": [
+          {
+            "forward_ms": 115.51865799992811,
+            "backward_ms": 173.7119219997112,
+            "adamw_and_clip_ms": 21.779111000796547,
+            "update_ms": 311.00969100043585,
+            "targets": 510,
+            "loss": 8.296783447265625,
+            "gradient_norm": 1.1214911937713623
+          },
+          {
+            "forward_ms": 105.71117300059996,
+            "backward_ms": 173.9681600001859,
+            "adamw_and_clip_ms": 22.550602999217517,
+            "update_ms": 302.22993600000336,
+            "targets": 510,
+            "loss": 7.851223468780518,
+            "gradient_norm": 0.9768289923667908
+          },
+          {
+            "forward_ms": 104.33241600003385,
+            "backward_ms": 164.15642100037076,
+            "adamw_and_clip_ms": 22.11155900022277,
+            "update_ms": 290.60039600062737,
+            "targets": 510,
+            "loss": 7.379650115966797,
+            "gradient_norm": 0.8423701524734497
+          },
+          {
+            "forward_ms": 115.91445999965799,
+            "backward_ms": 169.40622299989627,
+            "adamw_and_clip_ms": 22.168503000102646,
+            "update_ms": 307.4891859996569,
+            "targets": 510,
+            "loss": 6.946313858032227,
+            "gradient_norm": 0.7917112708091736
+          },
+          {
+            "forward_ms": 103.35732299972733,
+            "backward_ms": 168.16246200050955,
+            "adamw_and_clip_ms": 22.02805900014937,
+            "update_ms": 293.54784400038625,
+            "targets": 510,
+            "loss": 6.570616245269775,
+            "gradient_norm": 0.7237207889556885
+          }
+        ],
+        "targets_per_second": 1694.4905864001632,
+        "mean_update_ms": 300.97541060022195,
+        "stdev_update_ms": 8.767832694285019,
+        "checkpoint_seconds": 0.025793881000026886,
+        "restore_seconds": 0.05074551200050337,
+        "five_million_compute_hours": 0.8196498110027831,
+        "rough_dense_train_flops_per_target": 12493056,
+        "attention_extra_flops_note": "6P heuristic excludes attention quadratic term, activation/RoPE/normalization overhead and tied embedding lookup savings"
+      }
+    ],
+    "process_peak_rss_MiB": 844.18359375
+  },
+  "Transformer": {
+    "parameters": 2032768,
+    "embedding_tied_parameters": 1048576,
+    "contracts": {
+      "causal": true,
+      "row_isolation": true,
+      "document_reset": true,
+      "shift": true,
+      "padding_mask": true,
+      "finite_all_gradients": true,
+      "parameters_updated": true,
+      "adamw_coverage": true,
+      "resume_6_vs_2_plus_4_exact_model_optimizer_rng_cursor": true,
+      "generation_ids": [
+        [
+          257,
+          48,
+          49,
+          69,
+          69,
+          69,
+          69
+        ]
+      ]
+    },
+    "benchmark": [
+      {
+        "context": 128,
+        "batch": 2,
+        "updates": [
+          {
+            "forward_ms": 47.750656999596686,
+            "backward_ms": 75.77868200041848,
+            "adamw_and_clip_ms": 21.110767999743985,
+            "update_ms": 144.64010699975915,
+            "targets": 254,
+            "loss": 8.508684158325195,
+            "gradient_norm": 1.3694696426391602
+          },
+          {
+            "forward_ms": 48.59386899988749,
+            "backward_ms": 76.17275299980975,
+            "adamw_and_clip_ms": 21.96258999993006,
+            "update_ms": 146.7292119996273,
+            "targets": 254,
+            "loss": 8.097497940063477,
+            "gradient_norm": 1.1438941955566406
+          },
+          {
+            "forward_ms": 48.13235900019208,
+            "backward_ms": 74.80562000000646,
+            "adamw_and_clip_ms": 21.59370699973806,
+            "update_ms": 144.5316859999366,
+            "targets": 254,
+            "loss": 7.650976181030273,
+            "gradient_norm": 1.0183823108673096
+          },
+          {
+            "forward_ms": 48.472821000359545,
+            "backward_ms": 74.50842500020372,
+            "adamw_and_clip_ms": 21.19053000023996,
+            "update_ms": 144.17177600080322,
+            "targets": 254,
+            "loss": 7.228621959686279,
+            "gradient_norm": 0.9641070365905762
+          },
+          {
+            "forward_ms": 47.803464000026,
+            "backward_ms": 76.27467899965268,
+            "adamw_and_clip_ms": 21.609547000480234,
+            "update_ms": 145.6876900001589,
+            "targets": 254,
+            "loss": 6.875475883483887,
+            "gradient_norm": 0.9189525842666626
+          }
+        ],
+        "targets_per_second": 1749.888635088671,
+        "mean_update_ms": 145.15209420005704,
+        "stdev_update_ms": 1.046688159702054,
+        "checkpoint_seconds": 0.02421390200015594,
+        "restore_seconds": 0.04746076700030244,
+        "five_million_compute_hours": 0.7937013024937501,
+        "rough_dense_train_flops_per_target": 12196608,
+        "attention_extra_flops_note": "6P heuristic excludes attention quadratic term, activation/RoPE/normalization overhead and tied embedding lookup savings"
+      },
+      {
+        "context": 256,
+        "batch": 2,
+        "updates": [
+          {
+            "forward_ms": 97.90141999928892,
+            "backward_ms": 190.63940700016246,
+            "adamw_and_clip_ms": 26.816006999979436,
+            "update_ms": 315.3568339994308,
+            "targets": 510,
+            "loss": 8.279589653015137,
+            "gradient_norm": 1.113425374031067
+          },
+          {
+            "forward_ms": 121.25691799974447,
+            "backward_ms": 258.2567680001375,
+            "adamw_and_clip_ms": 28.86131600007502,
+            "update_ms": 408.375001999957,
+            "targets": 510,
+            "loss": 7.844348907470703,
+            "gradient_norm": 0.9872384667396545
+          },
+          {
+            "forward_ms": 147.3011010002665,
+            "backward_ms": 187.75683700005175,
+            "adamw_and_clip_ms": 28.023270999256056,
+            "update_ms": 363.0812089995743,
+            "targets": 510,
+            "loss": 7.3693695068359375,
+            "gradient_norm": 0.8232512474060059
+          },
+          {
+            "forward_ms": 116.37790399981895,
+            "backward_ms": 186.41829300031532,
+            "adamw_and_clip_ms": 24.99640099995304,
+            "update_ms": 327.7925980000873,
+            "targets": 510,
+            "loss": 6.923332691192627,
+            "gradient_norm": 0.7841929793357849
+          },
+          {
+            "forward_ms": 109.7183080000832,
+            "backward_ms": 165.07155199997214,
+            "adamw_and_clip_ms": 28.651005000028817,
+            "update_ms": 303.44086500008416,
+            "targets": 510,
+            "loss": 6.550576210021973,
+            "gradient_norm": 0.6992887854576111
+          }
+        ],
+        "targets_per_second": 1484.2438712382552,
+        "mean_update_ms": 343.6093015998267,
+        "stdev_update_ms": 42.53123694193701,
+        "checkpoint_seconds": 0.023310520999984874,
+        "restore_seconds": 0.059777483999823744,
+        "five_million_compute_hours": 0.9357551786487655,
+        "rough_dense_train_flops_per_target": 12196608,
+        "attention_extra_flops_note": "6P heuristic excludes attention quadratic term, activation/RoPE/normalization overhead and tied embedding lookup savings"
+      }
+    ],
+    "process_peak_rss_MiB": 848.30859375
+  }
+}

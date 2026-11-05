@@ -1,0 +1,13 @@
+{
+  "unique_sample_documents": 120,
+  "exact_sample_text_ids": 287911,
+  "exact_sample_text_bytes": 893559,
+  "exact_sample_characters": 884030,
+  "curated1b_non_code_estimate_ids": 705693850.75,
+  "normal_95_halfwidth": 160750852.3268944,
+  "certified_total": false,
+  "excluded_estimation_stratum": "7 CPython reserved test-family documents; no V3 total for them",
+  "warning": "Small fixed uniform-within-source/language/domain samples, heavy tails; exploratory uncertainty, not legal approval nor exact1B/500M count",
+  "train_targets": 25355,
+  "dev_targets": 8637
+}

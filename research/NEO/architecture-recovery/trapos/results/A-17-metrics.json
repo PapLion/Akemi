@@ -1,0 +1,254 @@
+{
+  "clean": {
+    "by_type": {
+      "clean_repeat": {
+        "tp": 960
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 960
+    },
+    "state_change": {
+      "accepted": {
+        "max": 9.475740432739258,
+        "mean": 3.641529968113173,
+        "n": 960
+      }
+    }
+  },
+  "compatible_swap": {
+    "follows_partner": 1.0,
+    "n": 48,
+    "original_accuracy": 0.0
+  },
+  "contaminated_pair": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "fp": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 0.796875,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 9.424214363098145,
+        "mean": 4.879908623049657,
+        "n": 960
+      }
+    }
+  },
+  "layout": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "fp": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 0.9947916666666666,
+        "n": 192,
+        "prediction_invariance": 0.9947916666666666
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 0.8177083333333334,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 9.492094993591309,
+        "mean": 4.873703754444917,
+        "n": 960
+      }
+    }
+  },
+  "reset": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "fp": 96
+      }
+    },
+    "n": 192,
+    "normal": 0.25,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 9.424214363098145,
+        "mean": 4.879908623049657,
+        "n": 960
+      }
+    }
+  },
+  "surface": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "fp": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 0.796875,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 9.425816535949707,
+        "mean": 4.886906241501371,
+        "n": 960
+      }
+    }
+  }
+}

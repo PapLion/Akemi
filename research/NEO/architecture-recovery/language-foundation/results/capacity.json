@@ -1,0 +1,248 @@
+{
+  "foreground": {
+    "total": 299520,
+    "trainable": 296160,
+    "categories": {
+      "embedding_tied_output": 262144,
+      "norms": 192,
+      "attention": 6144,
+      "mlp": 24576,
+      "inactive_memory": 3360,
+      "fast_refinement": 3104
+    },
+    "parameters": [
+      {
+        "name": "emb.weight",
+        "n": 262144,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.n1.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.n2.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.q.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.k.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.v.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.o.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.up.weight",
+        "n": 8192,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.down.weight",
+        "n": 4096,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.n1.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.n2.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.q.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.k.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.v.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.o.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.up.weight",
+        "n": 8192,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.down.weight",
+        "n": 4096,
+        "trainable": true
+      },
+      {
+        "name": "address.weight",
+        "n": 256,
+        "trainable": false
+      },
+      {
+        "name": "event_value.weight",
+        "n": 1024,
+        "trainable": false
+      },
+      {
+        "name": "event_value.bias",
+        "n": 32,
+        "trainable": false
+      },
+      {
+        "name": "address_out.weight",
+        "n": 1024,
+        "trainable": false
+      },
+      {
+        "name": "read.weight",
+        "n": 1024,
+        "trainable": false
+      },
+      {
+        "name": "fast.weight",
+        "n": 3072,
+        "trainable": true
+      },
+      {
+        "name": "fast.bias",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "fast_norm.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "slow_norm.weight",
+        "n": 32,
+        "trainable": true
+      }
+    ]
+  },
+  "baseline": {
+    "total": 293024,
+    "trainable": 293024,
+    "categories": {
+      "embedding_tied_output": 262144,
+      "norms": 160,
+      "attention": 6144,
+      "mlp": 24576
+    },
+    "parameters": [
+      {
+        "name": "emb.weight",
+        "n": 262144,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.n1.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.n2.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.q.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.k.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.v.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.o.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.up.weight",
+        "n": 8192,
+        "trainable": true
+      },
+      {
+        "name": "blocks.0.down.weight",
+        "n": 4096,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.n1.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.n2.weight",
+        "n": 32,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.q.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.k.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.v.weight",
+        "n": 512,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.o.weight",
+        "n": 1024,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.up.weight",
+        "n": 8192,
+        "trainable": true
+      },
+      {
+        "name": "blocks.1.down.weight",
+        "n": 4096,
+        "trainable": true
+      },
+      {
+        "name": "norm.weight",
+        "n": 32,
+        "trainable": true
+      }
+    ]
+  }
+}

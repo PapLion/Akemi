@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "historical": {
+    "A": {
+      "dataset_exact": true,
+      "model_exact": true,
+      "optimizer_exact": true,
+      "torch_rng_exact": true,
+      "python_rng_exact": false,
+      "new_checkpoint_sha": "d74cb0368de849ac9d0a3a40e0b578a68e3d20df0cc5987f025c42dd4074536a",
+      "historical_checkpoint_sha": "77a6cb3f488b42b9e2bc3a7fabc8d85c6f7e72dc302a23315012d9f64743c4e9",
+      "python_rng_note": "Global Python RNG differs across historical invocations; unused by model/update. Sampling uses local random.Random(17). No numerical tolerance changed."
+    },
+    "D": {
+      "dataset_exact": true,
+      "model_exact": true,
+      "optimizer_exact": true,
+      "torch_rng_exact": true,
+      "python_rng_exact": false,
+      "new_checkpoint_sha": "849b1d07f0a5f697cd50ef494db6a1a92060da7b084b802c843224307a2ca114",
+      "historical_checkpoint_sha": "cbeebac5991f8220bb4a174439087a23530ef38888a94887164019138af8f0c1",
+      "python_rng_note": "Global Python RNG differs across historical invocations; unused by model/update. Sampling uses local random.Random(17). No numerical tolerance changed."
+    }
+  },
+  "final_checkpoints": {
+    "A": {
+      "restore_metrics_exact": true,
+      "optimizer_exact_coverage": true,
+      "all_optimizer_steps": 400,
+      "cursor": 400,
+      "samples": 3200
+    },
+    "B": {
+      "restore_metrics_exact": true,
+      "optimizer_exact_coverage": true,
+      "all_optimizer_steps": 400,
+      "cursor": 400,
+      "samples": 3200
+    },
+    "C": {
+      "restore_metrics_exact": true,
+      "optimizer_exact_coverage": true,
+      "all_optimizer_steps": 400,
+      "cursor": 400,
+      "samples": 3200
+    },
+    "D": {
+      "restore_metrics_exact": true,
+      "optimizer_exact_coverage": true,
+      "all_optimizer_steps": 400,
+      "cursor": 400,
+      "samples": 3200
+    }
+  },
+  "sources": {
+    "foreground-binding/harness.py": "4d96813aa714785105173d489127e536c900ef916a6fcaddc0f31ffe989cae19",
+    "foreground-binding/PROTOCOL.json": "5b2f2031eb9c80bc7f23a4f34fbeee3805dcd41109c49dfba9d92808300702ca",
+    "language-bridge/model.py": "5b15b2168731db020e75df6a020768cf6a6fe2e76a37736eb678023cb1015519",
+    "vendor/cryo_historical.py": "db8d573fdc5270bab22fdef97af3322006f68431339a7d7065b3e2ca2c8fa279",
+    "memory-bridge/runner.py": "228e98dc283850c8aac9a91838dd240d2b9e0535dc5ce672d2e8ba86d27f8323",
+    "query-conditioning/run.py": "efd08dbeca6c6ec4fcff8d9a8d5dfc1c1338a4f707228979f0ecf4b7be644512",
+    "binding-diagnostic/experiment.py": "6d488b533cbf245e07fb4320c04d685e613692a2c73ee7116a324cb9f4dbef88",
+    "distribution-scaling/factorial.py": "df9168a7d266fffa37c025dd9a28fae74f8790eabb8f6dcf3dd8d852c189d32c",
+    "distribution-scaling/PROTOCOL.json": "634f5787f590411f3d43340f1426c6bd86a3508b38da395195e5ae495aeb0cf7"
+  }
+}

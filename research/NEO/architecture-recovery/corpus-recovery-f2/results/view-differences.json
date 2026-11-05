@@ -1,0 +1,18 @@
+{
+  "curated500_absent_from_curated1b_decisions": [
+    [
+      "exclude_eval_overlap",
+      411
+    ]
+  ],
+  "repaired_1b": [
+    [
+      "[{\"rule\": \"standalone_widget\", \"line\": 11, \"removed_sha256\": \"a916ced32f3ecb842b35dcca7dda1a3598fb56b5ebb9956622cc353dfa993adb\"}]",
+      1
+    ],
+    [
+      "[{\"rule\": \"standalone_widget\", \"line\": 12, \"removed_sha256\": \"a916ced32f3ecb842b35dcca7dda1a3598fb56b5ebb9956622cc353dfa993adb\"}]",
+      2
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "licenses": {
+    "click-LICENSE.rst": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+    "requests-LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+  },
+  "inventory": {
+    "('train', 'en', 'narrative', 'Public domain USA; local research only; verify other jurisdictions')": 12,
+    "('train', 'es', 'narrative', 'Public domain USA; local research only; verify other jurisdictions')": 30,
+    "('dev', 'en', 'narrative', 'Public domain USA per catalog; PG terms in raw; local only, other jurisdictions unresolved')": 3,
+    "('dev', 'es', 'narrative', 'Public domain USA per catalog; PG terms in raw; local only, other jurisdictions unresolved')": 3,
+    "('dev', 'es', 'exposition', 'Public domain USA per catalog; PG terms in raw; local only, other jurisdictions unresolved')": 3,
+    "('dev', 'en', 'exposition', 'Public domain USA per catalog; PG terms in raw; local only, other jurisdictions unresolved')": 3,
+    "('train', 'en', 'code', 'BSD-3-Clause')": 2,
+    "('train', 'en', 'exposition', 'BSD-3-Clause')": 1,
+    "('dev', 'en', 'code', 'Apache-2.0')": 2,
+    "('train', 'es', 'conversation', 'Apache-2.0')": 2,
+    "('train', 'en', 'conversation', 'Apache-2.0')": 2,
+    "('dev', 'es', 'conversation', 'Apache-2.0')": 1,
+    "('dev', 'en', 'conversation', 'Apache-2.0')": 1
+  },
+  "source_manifest_sha": "2078cbb3305b1aa0d58003e39ed4111f27d735c3504a3bd71cb2eea6f29e4b26",
+  "normalized_word_shared_shingles": {
+    "12": 0,
+    "64": 0
+  },
+  "train_dev_groups_disjoint": true,
+  "code_ast_parse": true,
+  "roundtrip_all_selected": true,
+  "tokenizer_sha": "8489cd9a98fb4a7339fe802be74621774f2ee68b465cfb0b16846a07fe99a156",
+  "tokenizer_fingerprint": "813e5d1b255d832728941a570052afb59b1ad1be13100ae6d6698cd1d95f127b",
+  "excluded": "OASST unverified individual provenance/PII; PG jurisdiction; all synthetic and sealed evaluations"
+}

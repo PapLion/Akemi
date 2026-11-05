@@ -1,0 +1,262 @@
+{
+  "train": {
+    "n": 640,
+    "outside_window": 320,
+    "heuristics": {
+      "first": 0.18125,
+      "last": 0.190625,
+      "entity_last_any": 0.2140625,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.2375,
+        "last": 0.125,
+        "entity_last_any": 0.15
+      },
+      "replace": {
+        "first": 0.1,
+        "last": 0.1375,
+        "entity_last_any": 0.1875
+      },
+      "multiple": {
+        "first": 0.075,
+        "last": 0.2125,
+        "entity_last_any": 0.1625
+      },
+      "other": {
+        "first": 0.275,
+        "last": 0.25,
+        "entity_last_any": 0.325
+      },
+      "similar": {
+        "first": 0.2125,
+        "last": 0.25,
+        "entity_last_any": 0.25
+      },
+      "irrelevant": {
+        "first": 0.25,
+        "last": 0.2125,
+        "entity_last_any": 0.2125
+      },
+      "discard": {
+        "first": 0.1,
+        "last": 0.1625,
+        "entity_last_any": 0.1875
+      },
+      "goal": {
+        "first": 0.2,
+        "last": 0.175,
+        "entity_last_any": 0.2375
+      }
+    }
+  },
+  "iid": {
+    "n": 320,
+    "outside_window": 160,
+    "heuristics": {
+      "first": 0.253125,
+      "last": 0.203125,
+      "entity_last_any": 0.21875,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.275,
+        "last": 0.225,
+        "entity_last_any": 0.25
+      },
+      "replace": {
+        "first": 0.1,
+        "last": 0.15,
+        "entity_last_any": 0.2
+      },
+      "multiple": {
+        "first": 0.325,
+        "last": 0.275,
+        "entity_last_any": 0.15
+      },
+      "other": {
+        "first": 0.25,
+        "last": 0.15,
+        "entity_last_any": 0.125
+      },
+      "similar": {
+        "first": 0.3,
+        "last": 0.2,
+        "entity_last_any": 0.275
+      },
+      "irrelevant": {
+        "first": 0.375,
+        "last": 0.2,
+        "entity_last_any": 0.225
+      },
+      "discard": {
+        "first": 0.175,
+        "last": 0.175,
+        "entity_last_any": 0.3
+      },
+      "goal": {
+        "first": 0.225,
+        "last": 0.25,
+        "entity_last_any": 0.225
+      }
+    }
+  },
+  "compositional": {
+    "n": 80,
+    "outside_window": 40,
+    "heuristics": {
+      "first": 0.2625,
+      "last": 0.2625,
+      "entity_last_any": 0.2,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.4,
+        "last": 0.3,
+        "entity_last_any": 0.1
+      },
+      "replace": {
+        "first": 0.3,
+        "last": 0.2,
+        "entity_last_any": 0.1
+      },
+      "multiple": {
+        "first": 0.1,
+        "last": 0.3,
+        "entity_last_any": 0.0
+      },
+      "other": {
+        "first": 0.3,
+        "last": 0.5,
+        "entity_last_any": 0.4
+      },
+      "similar": {
+        "first": 0.1,
+        "last": 0.0,
+        "entity_last_any": 0.3
+      },
+      "irrelevant": {
+        "first": 0.5,
+        "last": 0.2,
+        "entity_last_any": 0.3
+      },
+      "discard": {
+        "first": 0.3,
+        "last": 0.4,
+        "entity_last_any": 0.1
+      },
+      "goal": {
+        "first": 0.1,
+        "last": 0.2,
+        "entity_last_any": 0.3
+      }
+    }
+  },
+  "structural": {
+    "n": 320,
+    "outside_window": 160,
+    "heuristics": {
+      "first": 0.171875,
+      "last": 0.2125,
+      "entity_last_any": 0.18125,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.15,
+        "last": 0.125,
+        "entity_last_any": 0.2
+      },
+      "replace": {
+        "first": 0.075,
+        "last": 0.2,
+        "entity_last_any": 0.225
+      },
+      "multiple": {
+        "first": 0.1,
+        "last": 0.15,
+        "entity_last_any": 0.15
+      },
+      "other": {
+        "first": 0.3,
+        "last": 0.25,
+        "entity_last_any": 0.225
+      },
+      "similar": {
+        "first": 0.175,
+        "last": 0.2,
+        "entity_last_any": 0.175
+      },
+      "irrelevant": {
+        "first": 0.225,
+        "last": 0.325,
+        "entity_last_any": 0.2
+      },
+      "discard": {
+        "first": 0.15,
+        "last": 0.2,
+        "entity_last_any": 0.125
+      },
+      "goal": {
+        "first": 0.2,
+        "last": 0.25,
+        "entity_last_any": 0.15
+      }
+    }
+  },
+  "both": {
+    "n": 80,
+    "outside_window": 40,
+    "heuristics": {
+      "first": 0.225,
+      "last": 0.2,
+      "entity_last_any": 0.15,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.3,
+        "last": 0.4,
+        "entity_last_any": 0.1
+      },
+      "replace": {
+        "first": 0.2,
+        "last": 0.1,
+        "entity_last_any": 0.1
+      },
+      "multiple": {
+        "first": 0.0,
+        "last": 0.1,
+        "entity_last_any": 0.2
+      },
+      "other": {
+        "first": 0.4,
+        "last": 0.1,
+        "entity_last_any": 0.2
+      },
+      "similar": {
+        "first": 0.4,
+        "last": 0.0,
+        "entity_last_any": 0.2
+      },
+      "irrelevant": {
+        "first": 0.3,
+        "last": 0.4,
+        "entity_last_any": 0.0
+      },
+      "discard": {
+        "first": 0.1,
+        "last": 0.3,
+        "entity_last_any": 0.2
+      },
+      "goal": {
+        "first": 0.1,
+        "last": 0.2,
+        "entity_last_any": 0.2
+      }
+    }
+  }
+}

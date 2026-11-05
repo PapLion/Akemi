@@ -1,0 +1,4706 @@
+{
+  "train": {
+    "query_entity_slot_value": [
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 0,
+        "n": 80
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 2,
+        "n": 80
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 3,
+        "n": 80
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 0,
+        "n": 49
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 1,
+        "n": 38
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 2,
+        "n": 48
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 3,
+        "n": 43
+      },
+      {
+        "entity": "B",
+        "slot": 0,
+        "value": 1,
+        "n": 80
+      },
+      {
+        "entity": "B",
+        "slot": 0,
+        "value": 2,
+        "n": 80
+      },
+      {
+        "entity": "B",
+        "slot": 0,
+        "value": 3,
+        "n": 80
+      },
+      {
+        "entity": "B",
+        "slot": 1,
+        "value": 0,
+        "n": 82
+      },
+      {
+        "entity": "B",
+        "slot": 1,
+        "value": 1,
+        "n": 76
+      },
+      {
+        "entity": "B",
+        "slot": 1,
+        "value": 2,
+        "n": 76
+      },
+      {
+        "entity": "B",
+        "slot": 1,
+        "value": 3,
+        "n": 64
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 0,
+        "n": 80
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 1,
+        "n": 80
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 2,
+        "n": 80
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 0,
+        "n": 44
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 1,
+        "n": 48
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 2,
+        "n": 39
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 3,
+        "n": 48
+      },
+      {
+        "entity": "D",
+        "slot": 0,
+        "value": 0,
+        "n": 80
+      },
+      {
+        "entity": "D",
+        "slot": 0,
+        "value": 1,
+        "n": 80
+      },
+      {
+        "entity": "D",
+        "slot": 0,
+        "value": 3,
+        "n": 80
+      },
+      {
+        "entity": "D",
+        "slot": 1,
+        "value": 0,
+        "n": 64
+      },
+      {
+        "entity": "D",
+        "slot": 1,
+        "value": 1,
+        "n": 71
+      },
+      {
+        "entity": "D",
+        "slot": 1,
+        "value": 2,
+        "n": 72
+      },
+      {
+        "entity": "D",
+        "slot": 1,
+        "value": 3,
+        "n": 69
+      },
+      {
+        "entity": "E",
+        "slot": 0,
+        "value": 0,
+        "n": 80
+      },
+      {
+        "entity": "E",
+        "slot": 0,
+        "value": 2,
+        "n": 80
+      },
+      {
+        "entity": "E",
+        "slot": 0,
+        "value": 3,
+        "n": 80
+      },
+      {
+        "entity": "E",
+        "slot": 1,
+        "value": 0,
+        "n": 61
+      },
+      {
+        "entity": "E",
+        "slot": 1,
+        "value": 1,
+        "n": 67
+      },
+      {
+        "entity": "E",
+        "slot": 1,
+        "value": 2,
+        "n": 65
+      },
+      {
+        "entity": "E",
+        "slot": 1,
+        "value": 3,
+        "n": 76
+      }
+    ],
+    "event_type_acceptance": [
+      {
+        "type": "correction",
+        "accept": true,
+        "n": 1200
+      },
+      {
+        "type": "hypothesis",
+        "accept": false,
+        "n": 686
+      },
+      {
+        "type": "initial",
+        "accept": true,
+        "n": 4800
+      },
+      {
+        "type": "negated",
+        "accept": false,
+        "n": 684
+      },
+      {
+        "type": "out_of_goal",
+        "accept": false,
+        "n": 2744
+      },
+      {
+        "type": "quoted",
+        "accept": false,
+        "n": 686
+      },
+      {
+        "type": "repeat",
+        "accept": true,
+        "n": 1200
+      }
+    ],
+    "entity_value_position_acceptance": [
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 128
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 56
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 114
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 120
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 54
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 144
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 120
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 132
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 86
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 114
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 42
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 112
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 136
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 132
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 128
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 20
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 116
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 42
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 98
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 138
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 70
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 142
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 38
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 124
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 50
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 146
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 58
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 106
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 108
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 48
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 108
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 38
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 158
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 46
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 72
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 74
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 122
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 88
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 56
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 74
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 52
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 70
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 50
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 78
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 88
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 120
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 54
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 70
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 84
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 64
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 40
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 58
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 60
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 78
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 144
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 78
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 70
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 64
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 48
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 68
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 60
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 64
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 60
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 122
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 72
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 72
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 50
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 104
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 64
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 104
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 42
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 58
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 108
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 46
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 48
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 50
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 38
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 40
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 44
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 130
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 42
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 40
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 48
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 46
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 46
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 46
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 52
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 112
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 62
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 38
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 50
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 92
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 38
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 108
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 52
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 54
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 104
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 44
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 58
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 46
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 30
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 60
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 16
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 36
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 62
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 132
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 18
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 68
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 28
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 50
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 24
+      },
+      {
+        "entity": "D",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 48
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 44
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 66
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 130
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 20
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 70
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 20
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 100
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 40
+      },
+      {
+        "entity": "D",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 120
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 34
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 64
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 118
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 64
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 30
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 30
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 18
+      },
+      {
+        "entity": "D",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 42
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 30
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 54
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 132
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 72
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 36
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 68
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "D",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 50
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 60
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 112
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 76
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 22
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 110
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 28
+      },
+      {
+        "entity": "E",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 106
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 32
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 64
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 128
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 28
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 68
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 20
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 32
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 44
+      },
+      {
+        "entity": "E",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 32
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 36
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 50
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 136
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 22
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 64
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 54
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 32
+      },
+      {
+        "entity": "E",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 58
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 26
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 76
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 120
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 40
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 64
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 32
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 58
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 18
+      },
+      {
+        "entity": "E",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 66
+      }
+    ],
+    "response_heuristics": {
+      "first": 0.6925,
+      "last_global": 0.43916666666666665,
+      "last_entity": 0.8391666666666666,
+      "presence": 0.25833333333333336
+    }
+  },
+  "contaminated_pair": {
+    "query_entity_slot_value": [
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      }
+    ],
+    "event_type_acceptance": [
+      {
+        "type": "correction",
+        "accept": true,
+        "n": 192
+      },
+      {
+        "type": "hypothesis",
+        "accept": false,
+        "n": 55
+      },
+      {
+        "type": "initial",
+        "accept": true,
+        "n": 384
+      },
+      {
+        "type": "negated",
+        "accept": false,
+        "n": 54
+      },
+      {
+        "type": "out_of_goal",
+        "accept": false,
+        "n": 220
+      },
+      {
+        "type": "quoted",
+        "accept": false,
+        "n": 55
+      }
+    ],
+    "entity_value_position_acceptance": [
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      }
+    ],
+    "response_heuristics": {
+      "first": 0.4739583333333333,
+      "last_global": 0.4322916666666667,
+      "last_entity": 0.8697916666666666,
+      "presence": 0.2916666666666667
+    }
+  },
+  "layout": {
+    "query_entity_slot_value": [
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      }
+    ],
+    "event_type_acceptance": [
+      {
+        "type": "correction",
+        "accept": true,
+        "n": 192
+      },
+      {
+        "type": "hypothesis",
+        "accept": false,
+        "n": 55
+      },
+      {
+        "type": "initial",
+        "accept": true,
+        "n": 384
+      },
+      {
+        "type": "negated",
+        "accept": false,
+        "n": 54
+      },
+      {
+        "type": "out_of_goal",
+        "accept": false,
+        "n": 220
+      },
+      {
+        "type": "quoted",
+        "accept": false,
+        "n": 55
+      }
+    ],
+    "entity_value_position_acceptance": [
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 1,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 7
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 1,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 7
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 1,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 7
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 1,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 7
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 1,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 11
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 1,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 1,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 11
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 15
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 1,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 15
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 15
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 7
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 1,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 2
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 1,
+        "accept": false,
+        "n": 7
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 1,
+        "accept": false,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 1,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 12
+      }
+    ],
+    "response_heuristics": {
+      "first": 0.4739583333333333,
+      "last_global": 0.4427083333333333,
+      "last_entity": 0.875,
+      "presence": 0.2916666666666667
+    }
+  },
+  "surface": {
+    "query_entity_slot_value": [
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      }
+    ],
+    "event_type_acceptance": [
+      {
+        "type": "correction",
+        "accept": true,
+        "n": 192
+      },
+      {
+        "type": "hypothesis",
+        "accept": false,
+        "n": 55
+      },
+      {
+        "type": "initial",
+        "accept": true,
+        "n": 384
+      },
+      {
+        "type": "negated",
+        "accept": false,
+        "n": 54
+      },
+      {
+        "type": "out_of_goal",
+        "accept": false,
+        "n": 220
+      },
+      {
+        "type": "quoted",
+        "accept": false,
+        "n": 55
+      }
+    ],
+    "entity_value_position_acceptance": [
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      }
+    ],
+    "response_heuristics": {
+      "first": 0.4739583333333333,
+      "last_global": 0.4322916666666667,
+      "last_entity": 0.8697916666666666,
+      "presence": 0.2916666666666667
+    }
+  },
+  "clean": {
+    "query_entity_slot_value": [
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "A",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 0,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 1,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 2,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "slot": 0,
+        "value": 3,
+        "n": 8
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 0,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 1,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 2,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 3,
+        "n": 12
+      }
+    ],
+    "event_type_acceptance": [
+      {
+        "type": "clean_repeat",
+        "accept": true,
+        "n": 384
+      },
+      {
+        "type": "correction",
+        "accept": true,
+        "n": 192
+      },
+      {
+        "type": "initial",
+        "accept": true,
+        "n": 384
+      }
+    ],
+    "entity_value_position_acceptance": [
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 2,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 22
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": true,
+        "n": 12
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 36
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 26
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 22
+      }
+    ],
+    "response_heuristics": {
+      "first": 0.5,
+      "last_global": 0.625,
+      "last_entity": 1.0,
+      "presence": 0.2916666666666667
+    }
+  },
+  "focus_change": {
+    "query_entity_slot_value": [
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 0,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 1,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 2,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "slot": 1,
+        "value": 3,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 0,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 1,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 2,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "slot": 1,
+        "value": 3,
+        "n": 24
+      }
+    ],
+    "event_type_acceptance": [
+      {
+        "type": "correction",
+        "accept": true,
+        "n": 192
+      },
+      {
+        "type": "hypothesis",
+        "accept": false,
+        "n": 55
+      },
+      {
+        "type": "initial",
+        "accept": true,
+        "n": 384
+      },
+      {
+        "type": "negated",
+        "accept": false,
+        "n": 54
+      },
+      {
+        "type": "out_of_goal",
+        "accept": false,
+        "n": 220
+      },
+      {
+        "type": "quoted",
+        "accept": false,
+        "n": 55
+      }
+    ],
+    "entity_value_position_acceptance": [
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "A",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 13
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 12
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 14
+      },
+      {
+        "entity": "B",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 16
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 2,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": false,
+        "n": 4
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 0,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 0,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 3,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 1,
+        "position": 4,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 2,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 0,
+        "accept": false,
+        "n": 6
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 1,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 2,
+        "accept": true,
+        "n": 24
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": false,
+        "n": 5
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 3,
+        "accept": true,
+        "n": 14
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": false,
+        "n": 3
+      },
+      {
+        "entity": "C",
+        "value": 3,
+        "position": 4,
+        "accept": true,
+        "n": 10
+      }
+    ],
+    "response_heuristics": {
+      "first": 0.4635416666666667,
+      "last_global": 0.4322916666666667,
+      "last_entity": 0.875,
+      "presence": 0.25
+    }
+  }
+}

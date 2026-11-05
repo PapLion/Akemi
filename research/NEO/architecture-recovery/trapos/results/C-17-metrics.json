@@ -1,0 +1,318 @@
+{
+  "clean": {
+    "by_type": {
+      "clean_repeat": {
+        "tp": 960
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 960
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.693793773651123,
+        "mean": 3.108353106956929,
+        "n": 960
+      }
+    }
+  },
+  "compatible_swap": {
+    "follows_partner": 1.0,
+    "n": 48,
+    "original_accuracy": 0.0
+  },
+  "contaminated_pair": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 0.765625,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 0.8,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.5,
+      "fp": 192,
+      "precision": 0.75,
+      "recall": 1.0,
+      "tn": 192,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.705127716064453,
+        "mean": 5.1283408855088055,
+        "n": 768
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 192
+      }
+    }
+  },
+  "layout": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 0.75,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 0.8,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.5,
+      "fp": 192,
+      "precision": 0.75,
+      "recall": 1.0,
+      "tn": 192,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.70349645614624,
+        "mean": 5.1151722127494095,
+        "n": 768
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 192
+      }
+    }
+  },
+  "override_all": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "fp": 96
+      }
+    },
+    "n": 192,
+    "normal": 0.6197916666666666,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.705817699432373,
+        "mean": 5.186325884222364,
+        "n": 960
+      }
+    }
+  },
+  "reset": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "n": 192,
+    "normal": 0.25,
+    "selection": {
+      "accepted_rate": 0.8,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.5,
+      "fp": 192,
+      "precision": 0.75,
+      "recall": 1.0,
+      "tn": 192,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.705127716064453,
+        "mean": 5.1283408855088055,
+        "n": 768
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 192
+      }
+    }
+  },
+  "surface": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "tn": 96
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 96
+      },
+      "out_of_goal": {
+        "fp": 96
+      },
+      "quoted": {
+        "tn": 96
+      }
+    },
+    "corrected": 1.0,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 0.0
+      },
+      "invalid": {
+        "joint_correct": 1.0,
+        "n": 192,
+        "prediction_invariance": 1.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "n": 96,
+        "prediction_invariance": 1.0
+      }
+    },
+    "joint": 0.765625,
+    "n": 192,
+    "normal": 1.0,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 0.8,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.5,
+      "fp": 192,
+      "precision": 0.75,
+      "recall": 1.0,
+      "tn": 192,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.705924034118652,
+        "mean": 5.126225231254163,
+        "n": 768
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 192
+      }
+    }
+  }
+}

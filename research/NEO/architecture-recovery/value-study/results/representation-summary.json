@@ -1,0 +1,236 @@
+[
+  {
+    "arm": "intact",
+    "state": "trained",
+    "seeds": [
+      {
+        "seed": 17,
+        "presence_dev": 1.0,
+        "value_dev": 0.32499998807907104,
+        "value_structural": 0.3062500059604645,
+        "value_compositional": 0.3125
+      },
+      {
+        "seed": 29,
+        "presence_dev": 1.0,
+        "value_dev": 0.3062500059604645,
+        "value_structural": 0.25,
+        "value_compositional": 0.3187499940395355
+      },
+      {
+        "seed": 43,
+        "presence_dev": 1.0,
+        "value_dev": 0.2593750059604645,
+        "value_structural": 0.2874999940395355,
+        "value_compositional": 0.28125
+      }
+    ],
+    "mean": {
+      "presence_dev": 1.0,
+      "value_dev": 0.296875,
+      "value_structural": 0.28125,
+      "value_compositional": 0.30416666467984516
+    },
+    "sd": {
+      "presence_dev": 0.0,
+      "value_dev": 0.03380203576836632,
+      "value_structural": 0.02864110004449453,
+      "value_compositional": 0.020090936922152358
+    }
+  },
+  {
+    "arm": "intact",
+    "state": "initial",
+    "seeds": [
+      {
+        "seed": 17,
+        "presence_dev": 1.0,
+        "value_dev": 0.2750000059604645,
+        "value_structural": 0.25,
+        "value_compositional": 0.25
+      },
+      {
+        "seed": 29,
+        "presence_dev": 1.0,
+        "value_dev": 0.22499999403953552,
+        "value_structural": 0.22499999403953552,
+        "value_compositional": 0.25
+      },
+      {
+        "seed": 43,
+        "presence_dev": 1.0,
+        "value_dev": 0.375,
+        "value_structural": 0.22499999403953552,
+        "value_compositional": 0.25
+      }
+    ],
+    "mean": {
+      "presence_dev": 1.0,
+      "value_dev": 0.2916666666666667,
+      "value_structural": 0.23333332935969034,
+      "value_compositional": 0.25
+    },
+    "sd": {
+      "presence_dev": 0.0,
+      "value_dev": 0.07637626353361751,
+      "value_structural": 0.014433760171016415,
+      "value_compositional": 0.0
+    }
+  },
+  {
+    "arm": "event_fast",
+    "state": "trained",
+    "seeds": [
+      {
+        "seed": 17,
+        "presence_dev": 1.0,
+        "value_dev": 0.3343749940395355,
+        "value_structural": 0.265625,
+        "value_compositional": 0.33906251192092896
+      },
+      {
+        "seed": 29,
+        "presence_dev": 1.0,
+        "value_dev": 0.34062498807907104,
+        "value_structural": 0.26875001192092896,
+        "value_compositional": 0.29374998807907104
+      },
+      {
+        "seed": 43,
+        "presence_dev": 1.0,
+        "value_dev": 0.3031249940395355,
+        "value_structural": 0.29374998807907104,
+        "value_compositional": 0.28593748807907104
+      }
+    ],
+    "mean": {
+      "presence_dev": 1.0,
+      "value_dev": 0.3260416587193807,
+      "value_structural": 0.2760416666666667,
+      "value_compositional": 0.306249996026357
+    },
+    "sd": {
+      "presence_dev": 0.0,
+      "value_dev": 0.020090936922152358,
+      "value_structural": 0.015415249278239115,
+      "value_compositional": 0.028683700747308603
+    }
+  },
+  {
+    "arm": "event_fast",
+    "state": "initial",
+    "seeds": [
+      {
+        "seed": 17,
+        "presence_dev": 1.0,
+        "value_dev": 0.543749988079071,
+        "value_structural": 0.5,
+        "value_compositional": 0.2750000059604645
+      },
+      {
+        "seed": 29,
+        "presence_dev": 1.0,
+        "value_dev": 0.574999988079071,
+        "value_structural": 0.37812501192092896,
+        "value_compositional": 0.2750000059604645
+      },
+      {
+        "seed": 43,
+        "presence_dev": 1.0,
+        "value_dev": 0.4312500059604645,
+        "value_structural": 0.42500001192092896,
+        "value_compositional": 0.25
+      }
+    ],
+    "mean": {
+      "presence_dev": 1.0,
+      "value_dev": 0.5166666607062022,
+      "value_structural": 0.43437500794728595,
+      "value_compositional": 0.26666667064030963
+    },
+    "sd": {
+      "presence_dev": 0.0,
+      "value_dev": 0.07560518703081434,
+      "value_structural": 0.06147597980259513,
+      "value_compositional": 0.014433760171016415
+    }
+  },
+  {
+    "arm": "delta_fast",
+    "state": "trained",
+    "seeds": [
+      {
+        "seed": 17,
+        "presence_dev": 1.0,
+        "value_dev": 0.3062500059604645,
+        "value_structural": 0.2562499940395355,
+        "value_compositional": 0.3656249940395355
+      },
+      {
+        "seed": 29,
+        "presence_dev": 0.953125,
+        "value_dev": 0.31562501192092896,
+        "value_structural": 0.25312501192092896,
+        "value_compositional": 0.3343749940395355
+      },
+      {
+        "seed": 43,
+        "presence_dev": 1.0,
+        "value_dev": 0.2593750059604645,
+        "value_structural": 0.234375,
+        "value_compositional": 0.3265624940395355
+      }
+    ],
+    "mean": {
+      "presence_dev": 0.984375,
+      "value_dev": 0.29375000794728595,
+      "value_structural": 0.24791666865348816,
+      "value_compositional": 0.3421874940395355
+    },
+    "sd": {
+      "presence_dev": 0.027063293868263706,
+      "value_dev": 0.030136410791352913,
+      "value_structural": 0.011831059578543697,
+      "value_compositional": 0.020669932117692115
+    }
+  },
+  {
+    "arm": "delta_fast",
+    "state": "initial",
+    "seeds": [
+      {
+        "seed": 17,
+        "presence_dev": 1.0,
+        "value_dev": 0.34062498807907104,
+        "value_structural": 0.40625,
+        "value_compositional": 0.3062500059604645
+      },
+      {
+        "seed": 29,
+        "presence_dev": 1.0,
+        "value_dev": 0.41874998807907104,
+        "value_structural": 0.550000011920929,
+        "value_compositional": 0.3296875059604645
+      },
+      {
+        "seed": 43,
+        "presence_dev": 1.0,
+        "value_dev": 0.37812501192092896,
+        "value_structural": 0.30000001192092896,
+        "value_compositional": 0.40937501192092896
+      }
+    ],
+    "mean": {
+      "presence_dev": 1.0,
+      "value_dev": 0.3791666626930237,
+      "value_structural": 0.41875000794728595,
+      "value_compositional": 0.34843750794728595
+    },
+    "sd": {
+      "presence_dev": 0.0,
+      "value_dev": 0.03907291496034375,
+      "value_structural": 0.12546787496810352,
+      "value_compositional": 0.05405889052196517
+    }
+  }
+]

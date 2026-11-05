@@ -1,0 +1,9 @@
+{
+  "architecture_matches_original": true,
+  "diagnostic_updates": 0,
+  "freeze_files_unchanged": true,
+  "gpu_used": false,
+  "safe_load_full_checkpoint": true,
+  "sealed_evaluations": 0,
+  "utc": "2026-10-31T21:03:46.987859+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "base": "1bf1245",
+  "seed": 17,
+  "primary_arms": ["A", "B", "C"],
+  "updates": 400,
+  "batch": 8,
+  "precision": "CPU FP32 single process",
+  "threads": 1,
+  "optimizer": {"name":"AdamW", "lr":0.003,"betas":[0.9,0.95],"weight_decay":0.01,"foreach":false},
+  "clip": 1.0,
+  "dataset": "Query Conditioning V1 format B short; unchanged train/dev-combinations/dev-layouts",
+  "architecture": {"A":"original width32 one Block", "B":"width32 two original Blocks", "C":"width32 one Block, only MLP inner width289 instead of128"},
+  "initialization":"seeded original A copied to all homologous weights; B extra block seed1017 std.02; C extra MLP weights seed2017 std.02, original columns/rows preserved",
+  "loss":"CE full8192-vocabulary next answer token only; no auxiliary",
+  "checkpoint_policy":"fixed final400; intermediate curves not selected by dev",
+  "gates": {"joint_min":0.9,"strict_swaps_min":0.9,"each_entity_min":0.95,"both_dev_sets_required":true,"each_fact_order_joint_min":0.9,"engineering":"all pass"},
+  "confirmation": {"if":"all B gates pass", "seed":29,"arms":["A","B","C"],"updates":400,"settings":"unchanged","extra_seeds":false},
+  "forbidden":["GPU","Vast.ai","Hielo training","Trapos changes","tokenizer changes","Chinchilla","sealed confirmatory data","further hyperparameter search"]
+}

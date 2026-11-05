@@ -1,0 +1,17 @@
+{
+ "base_commit":"e735a7b", "seed":17, "architecture":"B unchanged two blocks width32", "device":"CPU FP32", "threads":1,
+ "batch":8, "optimizer":"AdamW unchanged", "lr":0.003, "betas":[0.9,0.95],"weight_decay":0.01,"clip":1,
+ "updates":{"1":200,"2":200,"3":300,"4":400},
+ "level_initialization":"fresh identical B seed17 at every independent level; not warm-started",
+ "loss":"original full-vocabulary answer-token mean CE only",
+ "gate":"fixed final checkpoint: all train answers correct, mean CE<=0.1, every correct answer probability>=0.9",
+ "selection":"run sequentially; stop on first failed level, no extension or checkpoint selection",
+ "level_1":"one original training story and query",
+ "level_2":"same story both independent entity queries",
+ "level_3":"both queries of story plus exact reversed-values counterfactual at same fact order",
+ "level_4":"original balanced 48-response train, original two declared dev panels",
+ "generalization":"dev descriptive only; gates here certify microfit not linguistic generalization",
+ "extra_contrast":"only if level3 passes and level4 fails; justify/freeze separately before execution",
+ "corrective_optimization":"at most one, only with measured concrete cause; otherwise retain negative",
+ "restrictions":"no Hielo/Trapos/architecture/tokenizer/corpus changes, sealed data, GPU, paid services or pretraining"
+}

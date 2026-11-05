@@ -1,0 +1,215 @@
+{
+  "micro_full": {
+    "all": {
+      "n": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "nll_answer": 1.0455201333388686
+    },
+    "en": {
+      "n": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "nll_answer": 1.0455201333388686
+    },
+    "formation": {
+      "n": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "nll_answer": 1.0455201333388686
+    },
+    "en/formation": {
+      "n": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "nll_answer": 1.0455201333388686
+    },
+    "layout-0": {
+      "n": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "nll_answer": 1.0455201333388686
+    },
+    "distance-96": {
+      "n": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "nll_answer": 1.0455201333388686
+    },
+    "joint": {
+      "n": 16,
+      "accuracy": 0.1875
+    }
+  },
+  "micro_full_confusion_gold_rows_pred_columns_last_other": [
+    [
+      4,
+      2,
+      0,
+      2,
+      0
+    ],
+    [
+      4,
+      0,
+      2,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      4,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      8,
+      0
+    ]
+  ],
+  "counterfactual_pairs": [
+    {
+      "values": [
+        0,
+        1
+      ],
+      "swapped": [
+        1,
+        0
+      ],
+      "all_four_responses_correct": false,
+      "per_query_strict": [
+        false,
+        false
+      ],
+      "prediction_values": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "values": [
+        0,
+        2
+      ],
+      "swapped": [
+        2,
+        0
+      ],
+      "all_four_responses_correct": false,
+      "per_query_strict": [
+        false,
+        false
+      ],
+      "prediction_values": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "values": [
+        0,
+        3
+      ],
+      "swapped": [
+        3,
+        0
+      ],
+      "all_four_responses_correct": false,
+      "per_query_strict": [
+        false,
+        false
+      ],
+      "prediction_values": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "values": [
+        1,
+        2
+      ],
+      "swapped": [
+        2,
+        1
+      ],
+      "all_four_responses_correct": false,
+      "per_query_strict": [
+        false,
+        false
+      ],
+      "prediction_values": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "values": [
+        1,
+        3
+      ],
+      "swapped": [
+        3,
+        1
+      ],
+      "all_four_responses_correct": false,
+      "per_query_strict": [
+        false,
+        false
+      ],
+      "prediction_values": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "values": [
+        2,
+        3
+      ],
+      "swapped": [
+        3,
+        2
+      ],
+      "all_four_responses_correct": false,
+      "per_query_strict": [
+        false,
+        false
+      ],
+      "prediction_values": [
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "counterfactual_both_entities_and_swap_accuracy": 0.0,
+  "text_nll_micro": {
+    "nll": 10.295876580315667,
+    "ppl": 29610.271205747114,
+    "targets": 3552,
+    "scope": "observed controlled prefix+query+answer, training optimized only answers; not natural external dev"
+  },
+  "primary_status": {
+    "full": "NOT EXECUTED",
+    "no_ice": "NOT EXECUTED",
+    "ice": "NOT EXECUTED",
+    "reason": "full-context microfit gate FAIL; no400-update arms, no confirmation seeds"
+  }
+}

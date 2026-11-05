@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "A-17": {
+      "full_checkpoint_restore": true,
+      "initial_identity": true
+    },
+    "C-17": {
+      "full_checkpoint_restore": true,
+      "heuristic_agreement": {
+        "clean": {
+          "confirmed": 0.9791666666666666,
+          "confirmed_nonnegated": 0.9791666666666666,
+          "goal": 0.9791666666666666,
+          "oracle": 0.9791666666666666
+        },
+        "contaminated_pair": {
+          "confirmed": 0.7666666666666667,
+          "confirmed_nonnegated": 0.653125,
+          "goal": 0.74375,
+          "oracle": 0.5958333333333333
+        },
+        "focus_change": {
+          "confirmed": 0.7666666666666667,
+          "confirmed_nonnegated": 0.653125,
+          "goal": 0.74375,
+          "oracle": 0.5958333333333333
+        },
+        "layout": {
+          "confirmed": 0.7614583333333333,
+          "confirmed_nonnegated": 0.6479166666666667,
+          "goal": 0.7427083333333333,
+          "oracle": 0.590625
+        },
+        "surface": {
+          "confirmed": 0.765625,
+          "confirmed_nonnegated": 0.6520833333333333,
+          "goal": 0.7447916666666666,
+          "oracle": 0.5947916666666667
+        }
+      },
+      "initial_identity": true
+    }
+  },
+  "frozen_code_unchanged": true,
+  "gpu": false,
+  "model_byte_identical_V1": true,
+  "paired_query_causal_contract": true,
+  "passed": true,
+  "sealed_sets_opened": 0,
+  "source_checkpoints_original": true
+}

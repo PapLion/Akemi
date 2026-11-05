@@ -1,0 +1,10 @@
+{
+  "seconds": 23.017916012,
+  "updates": 300,
+  "answer_targets": 2400,
+  "aux_targets": 4800,
+  "parameters": 292067,
+  "trainable": 284096,
+  "aux_parameters": 5140,
+  "rss_kib": 858084
+}

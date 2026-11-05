@@ -1,0 +1,26 @@
+{
+  "config": {
+    "seed": 17,
+    "updates": 150,
+    "batch": 8,
+    "lr": 0.003,
+    "clip": 1,
+    "lambda_aux": 0.1,
+    "precision": "CPU FP32",
+    "threads": 1,
+    "positive_decoder_seed": 202,
+    "positive_decoder_updates": 100,
+    "positive_decoder_lr": 0.03,
+    "aux_pass_accuracy": 0.9,
+    "aux_pass_ce": 0.5
+  },
+  "objective": "CE_response + .1 CE_initial_only",
+  "supervised_chunk_train": 1,
+  "supervised_chunk_dev": 3,
+  "conditions": [
+    "same",
+    "separate"
+  ],
+  "source_commit": "1376df2",
+  "torch": "2.14.1+cu130"
+}

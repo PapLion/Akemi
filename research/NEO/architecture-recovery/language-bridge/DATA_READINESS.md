@@ -1,0 +1,11 @@
+# Datos del smoke test
+
+Se reutilizaron fuentes originales ya adquiridas D0.1; no nueva descarga ni Chinchilla. build_data.py verifica SHA de texto, licencia declarada, roundtrip, separación de grupos y splits.8 documentos naturales:4 conversaciones OASST train (2ES/2EN),2dev (1ES/1EN), documentación Click train EN y archivo Requests dev EN. Conversaciones completas con roles, párrafos/código originales; no SFT.32 relatos sintéticos train,16ES/16EN, autoría del script identificada, cada entidad con cuatro valores por idioma; no se presentan como literatura o lenguaje natural adquirido.
+
+Datos y licencias están referenciados por documento en results/data-manifest.json. Aviso OASST Apache2, Click BSD3 y Requests Apache2 contrastados con archivos locales de licencia hasheados. La licencia de colección no prueba todos los derechos individuales ni calidad factual; uso local de ingeniería, sin publicar textos. No revisión humana independiente. Revisión de agente y búsqueda de emails no equivalen a certificación exhaustiva PII; errores originales no se corrigen silenciosamente. Material Gutenberg se excluye por condicionamiento jurisdiccional.
+
+Sin hashes exactos ni familias compartidos train/dev; cero coincidencias normalizadas de12palabras. Esto no demuestra ausencia de toda paráfrasis/contaminación de fuentes. Se respetan splits previos y no se abre test sellado. Dev solo evalúa; no selecciona pasos, prompts o hiperparámetros.
+
+Inventario exacto por split/idioma/dominio/bytes/IDs/targets: results/summary.json. Train contiene37 documentos, dev3. El train natural tiene5866 targets de recorrido; el sintético1884. Dev natural1705. Targets expuestos realmente por brazo12537, con repeticiones; NO son12537 tokens únicos nuevos. No hay dev sintético usado para ajustar entrenamiento; diagnóstico nuevo de memoria se evalúa después, separado y sin cambios posteriores.
+
+Faltan narrativa natural independiente con derechos verificados, más código train, más familias y conversación/contexto con cobertura suficiente. Este panel habilita ingeniería, no una dieta de pretraining ni conclusiones poblacionales. Los originales completos permanecen en data.json local y fuentes D0.1; ventanas guardan IDs, documento y offset.

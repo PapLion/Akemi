@@ -1,0 +1,12 @@
+{
+  "direct": {
+    "historical_300_model_exact": true,
+    "historical_300_adamw_exact": true,
+    "historical_300_torch_rng_exact": true
+  },
+  "curriculum": {
+    "historical_300_model_exact": true,
+    "historical_300_adamw_exact": true,
+    "historical_300_torch_rng_exact": true
+  }
+}

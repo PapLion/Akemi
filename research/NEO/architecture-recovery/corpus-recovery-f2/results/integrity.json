@@ -1,0 +1,637 @@
+{
+  "views": {
+    "raw1b": {
+      "manifest": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/chinchilla-corpus/releases/growth-1b-v1-estimated-1000000000/manifest.json",
+      "manifest_sha256": "82d28461b713a289d5f5fe4553524c737910778d79b3ff124b7f153a8ab37d40",
+      "counts": {
+        "BASE_LM": 564789,
+        "BASE_LM_text_bytes": 2501209022,
+        "SFT_CANDIDATES": 765,
+        "SFT_CANDIDATES_text_bytes": 1144840
+      },
+      "stored_jsonl_bytes": 3378133963,
+      "issues": {
+        "empty": 0,
+        "text_sha_mismatch": 0,
+        "byte_mismatch": 0,
+        "missing_required": 0,
+        "email_pattern_documents": 0,
+        "private_key_or_token_pattern_documents": 0
+      },
+      "groups": [
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "dev",
+          "documents": 3209
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "test",
+          "documents": 3742
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "train",
+          "documents": 332009
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "dev",
+          "documents": 1450
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "test",
+          "documents": 1483
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "train",
+          "documents": 147543
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "dev",
+          "documents": 369
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "test",
+          "documents": 199
+        },
+        {
+          "track": "BASE_LM",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "train",
+          "documents": 41200
+        },
+        {
+          "track": "BASE_LM",
+          "source": "python/cpython",
+          "lang": "zxx",
+          "domain": "code",
+          "split": "train",
+          "documents": 9
+        },
+        {
+          "track": "BASE_LM",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "dev",
+          "documents": 159
+        },
+        {
+          "track": "BASE_LM",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "test",
+          "documents": 158
+        },
+        {
+          "track": "BASE_LM",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "train",
+          "documents": 16457
+        },
+        {
+          "track": "BASE_LM",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "dev",
+          "documents": 188
+        },
+        {
+          "track": "BASE_LM",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "test",
+          "documents": 180
+        },
+        {
+          "track": "BASE_LM",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "train",
+          "documents": 16434
+        },
+        {
+          "track": "SFT_CANDIDATES",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "dev",
+          "documents": 1
+        },
+        {
+          "track": "SFT_CANDIDATES",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "test",
+          "documents": 3
+        },
+        {
+          "track": "SFT_CANDIDATES",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "train",
+          "documents": 236
+        },
+        {
+          "track": "SFT_CANDIDATES",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "dev",
+          "documents": 7
+        },
+        {
+          "track": "SFT_CANDIDATES",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "test",
+          "documents": 8
+        },
+        {
+          "track": "SFT_CANDIDATES",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "train",
+          "documents": 510
+        }
+      ],
+      "text_byte_quantiles": {
+        "0": 50,
+        "0.25": 1180,
+        "0.5": 2284,
+        "0.75": 4371,
+        "0.9": 8429,
+        "0.99": 40006,
+        "1": 734893
+      },
+      "base_exact_duplicate_excess": 0
+    },
+    "curated500": {
+      "manifest": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/chinchilla-corpus/curation-v1/runs/500m-refined/release/manifest.json",
+      "manifest_sha256": "cab9201eba8bad454938483166ba06b72e3896aa06664317c95dff117adb4d11",
+      "counts": {
+        "BASE_LM_CLEAN": 257043,
+        "BASE_LM_CLEAN_text_bytes": 1219334156,
+        "SFT_CANDIDATES_REVIEW": 765,
+        "SFT_CANDIDATES_REVIEW_text_bytes": 1144840
+      },
+      "stored_jsonl_bytes": 1805875914,
+      "issues": {
+        "empty": 0,
+        "text_sha_mismatch": 0,
+        "byte_mismatch": 0,
+        "missing_required": 0,
+        "email_pattern_documents": 0,
+        "private_key_or_token_pattern_documents": 0
+      },
+      "groups": [
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "dev",
+          "documents": 1149
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "test",
+          "documents": 1206
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "train",
+          "documents": 145932
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "dev",
+          "documents": 752
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "test",
+          "documents": 728
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "train",
+          "documents": 74946
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "dev",
+          "documents": 108
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "test",
+          "documents": 61
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "train",
+          "documents": 14737
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "python/cpython",
+          "lang": "zxx",
+          "domain": "code",
+          "split": "train",
+          "documents": 7
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "dev",
+          "documents": 18
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "test",
+          "documents": 16
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "train",
+          "documents": 1626
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "dev",
+          "documents": 172
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "test",
+          "documents": 163
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "train",
+          "documents": 15422
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "dev",
+          "documents": 1
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "test",
+          "documents": 3
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "train",
+          "documents": 236
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "dev",
+          "documents": 7
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "test",
+          "documents": 8
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "train",
+          "documents": 510
+        }
+      ],
+      "text_byte_quantiles": {
+        "0": 80,
+        "0.25": 1242,
+        "0.5": 2423,
+        "0.75": 4688,
+        "0.9": 9344,
+        "0.99": 42632,
+        "1": 589494
+      },
+      "base_exact_duplicate_excess": 0
+    },
+    "curated1b": {
+      "manifest": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/chinchilla-corpus/curation-v1/runs/1b-refined/release/manifest.json",
+      "manifest_sha256": "b977adb087c1b680acd5563e0467de7148e1243d28f026b8d8e25d8d58be5e97",
+      "counts": {
+        "BASE_LM_CLEAN": 555914,
+        "BASE_LM_CLEAN_text_bytes": 2349726579,
+        "SFT_CANDIDATES_REVIEW": 765,
+        "SFT_CANDIDATES_REVIEW_text_bytes": 1144840
+      },
+      "stored_jsonl_bytes": 3603101026,
+      "issues": {
+        "empty": 0,
+        "text_sha_mismatch": 0,
+        "byte_mismatch": 0,
+        "missing_required": 0,
+        "email_pattern_documents": 0,
+        "private_key_or_token_pattern_documents": 0
+      },
+      "groups": [
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "dev",
+          "documents": 2218
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "test",
+          "documents": 3524
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-2",
+          "lang": "es",
+          "domain": "web",
+          "split": "train",
+          "documents": 329574
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "dev",
+          "documents": 1408
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "test",
+          "documents": 1366
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceFW/fineweb-edu",
+          "lang": "en",
+          "domain": "educational-web",
+          "split": "train",
+          "documents": 145212
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "dev",
+          "documents": 267
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "test",
+          "documents": 183
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "HuggingFaceTB/finemath",
+          "lang": "en",
+          "domain": "math",
+          "split": "train",
+          "documents": 40708
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "python/cpython",
+          "lang": "zxx",
+          "domain": "code",
+          "split": "train",
+          "documents": 7
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "dev",
+          "documents": 148
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "test",
+          "documents": 151
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "en",
+          "domain": "encyclopedia",
+          "split": "train",
+          "documents": 15392
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "dev",
+          "documents": 171
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "test",
+          "documents": 163
+        },
+        {
+          "track": "BASE_LM_CLEAN",
+          "source": "wikimedia/wikipedia",
+          "lang": "es",
+          "domain": "encyclopedia",
+          "split": "train",
+          "documents": 15422
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "dev",
+          "documents": 1
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "test",
+          "documents": 3
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "en",
+          "domain": "conversation",
+          "split": "train",
+          "documents": 236
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "dev",
+          "documents": 7
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "test",
+          "documents": 8
+        },
+        {
+          "track": "SFT_CANDIDATES_REVIEW",
+          "source": "OpenAssistant/oasst1",
+          "lang": "es",
+          "domain": "conversation",
+          "split": "train",
+          "documents": 510
+        }
+      ],
+      "text_byte_quantiles": {
+        "0": 50,
+        "0.25": 1170,
+        "0.5": 2260,
+        "0.75": 4306,
+        "0.9": 8175,
+        "0.99": 36449,
+        "1": 734893
+      },
+      "base_exact_duplicate_excess": 0
+    }
+  },
+  "relations": {
+    "curated500": {
+      "keys_without_master": 0,
+      "same_key_changed_text": 2
+    },
+    "curated1b": {
+      "keys_without_master": 0,
+      "same_key_changed_text": 3
+    },
+    "500_not_in_1b_keys": 411
+  },
+  "seconds": 370.636442899704
+}

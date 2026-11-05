@@ -1,0 +1,1122 @@
+[
+  {
+    "stage": "learning",
+    "arm": "b0_local",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.020833333333333332,
+    "dev_nll": 2.42948962499698
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_local",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.51545229802529
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_local",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.511193498969078
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_local",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.50010222569108
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_local",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.490883475790421
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_local",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.512934879710277
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_local",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4796831011772156
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_full",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.125,
+    "dev_nll": 2.1404270691176257
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_full",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.08333333333333333,
+    "dev_nll": 2.1743341957529387
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_full",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.13541666666666666,
+    "dev_nll": 2.1315180932482085
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_full",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.11458333333333333,
+    "dev_nll": 2.1436585361758866
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_full",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.13541666666666666,
+    "dev_nll": 2.1263285068174205
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_full",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.14583333333333334,
+    "dev_nll": 2.117415312677622
+  },
+  {
+    "stage": "learning",
+    "arm": "b0_full",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.10416666666666667,
+    "dev_nll": 2.1323494277894497
+  },
+  {
+    "stage": "learning",
+    "arm": "cryo_history",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.125,
+    "dev_nll": 2.148096565157175
+  },
+  {
+    "stage": "learning",
+    "arm": "cryo_history",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.08333333333333333,
+    "dev_nll": 2.1749272954960666
+  },
+  {
+    "stage": "learning",
+    "arm": "cryo_history",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.13541666666666666,
+    "dev_nll": 2.1335916270812354
+  },
+  {
+    "stage": "learning",
+    "arm": "cryo_history",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.11458333333333333,
+    "dev_nll": 2.143090609461069
+  },
+  {
+    "stage": "learning",
+    "arm": "cryo_history",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.14583333333333334,
+    "dev_nll": 2.126098124931256
+  },
+  {
+    "stage": "learning",
+    "arm": "cryo_history",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.14583333333333334,
+    "dev_nll": 2.1183618692060313
+  },
+  {
+    "stage": "learning",
+    "arm": "cryo_history",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.11458333333333333,
+    "dev_nll": 2.1382001700500646
+  },
+  {
+    "stage": "learning",
+    "arm": "event",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.020833333333333332,
+    "dev_nll": 2.4352825470268726
+  },
+  {
+    "stage": "learning",
+    "arm": "event",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.5083026587963104
+  },
+  {
+    "stage": "learning",
+    "arm": "event",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.5044063180685043
+  },
+  {
+    "stage": "learning",
+    "arm": "event",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4974951185286045
+  },
+  {
+    "stage": "learning",
+    "arm": "event",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4900178673366704
+  },
+  {
+    "stage": "learning",
+    "arm": "event",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.5011233389377594
+  },
+  {
+    "stage": "learning",
+    "arm": "event",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.472825056562821
+  },
+  {
+    "stage": "learning",
+    "arm": "delta",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.010416666666666666,
+    "dev_nll": 2.432518370449543
+  },
+  {
+    "stage": "learning",
+    "arm": "delta",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.5046457375089326
+  },
+  {
+    "stage": "learning",
+    "arm": "delta",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.497242850561937
+  },
+  {
+    "stage": "learning",
+    "arm": "delta",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4930251178642115
+  },
+  {
+    "stage": "learning",
+    "arm": "delta",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.483385427544514
+  },
+  {
+    "stage": "learning",
+    "arm": "delta",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4945089829464755
+  },
+  {
+    "stage": "learning",
+    "arm": "delta",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4692622125148773
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_memory",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.020833333333333332,
+    "dev_nll": 2.42948962499698
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_memory",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.51545229802529
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_memory",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.511193498969078
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_memory",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.50010222569108
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_memory",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.490883475790421
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_memory",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.512934879710277
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_memory",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4796831011772156
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_filter",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.010416666666666666,
+    "dev_nll": 2.4614241793751717
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_filter",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.5209850246707597
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_filter",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.509473449240128
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_filter",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.5001821915308633
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_filter",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.497897962729136
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_filter",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.49260671188434
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_filter",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4649219724039235
+  },
+  {
+    "stage": "learning",
+    "arm": "event_always_write",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.020833333333333332,
+    "dev_nll": 2.4400044195353985
+  },
+  {
+    "stage": "learning",
+    "arm": "event_always_write",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.508454389870167
+  },
+  {
+    "stage": "learning",
+    "arm": "event_always_write",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.503990489989519
+  },
+  {
+    "stage": "learning",
+    "arm": "event_always_write",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4947366528213024
+  },
+  {
+    "stage": "learning",
+    "arm": "event_always_write",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4931777454912663
+  },
+  {
+    "stage": "learning",
+    "arm": "event_always_write",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.500944148749113
+  },
+  {
+    "stage": "learning",
+    "arm": "event_always_write",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.474614600340525
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_persist",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.020833333333333332,
+    "dev_nll": 2.42948962499698
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_persist",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.51545229802529
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_persist",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.511193498969078
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_persist",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.50010222569108
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_persist",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.490883475790421
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_persist",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.512934879710277
+  },
+  {
+    "stage": "learning",
+    "arm": "event_no_persist",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4796831011772156
+  },
+  {
+    "stage": "learning",
+    "arm": "delta_no_persist",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.020833333333333332,
+    "dev_nll": 2.42948962499698
+  },
+  {
+    "stage": "learning",
+    "arm": "delta_no_persist",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.51545229802529
+  },
+  {
+    "stage": "learning",
+    "arm": "delta_no_persist",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.511193498969078
+  },
+  {
+    "stage": "learning",
+    "arm": "delta_no_persist",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.50010222569108
+  },
+  {
+    "stage": "learning",
+    "arm": "delta_no_persist",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.490883475790421
+  },
+  {
+    "stage": "learning",
+    "arm": "delta_no_persist",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.512934879710277
+  },
+  {
+    "stage": "learning",
+    "arm": "delta_no_persist",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 2.4796831011772156
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_local",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.974273106704156
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_local",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.888708295921485
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_local",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.969054172436397
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_local",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.809021793305874
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_local",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.940243755777677
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_local",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.882239105800788
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_local",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.701429737110932
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_full",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.4649642035365105
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_full",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.490626394748688
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_full",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.459479384124279
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_full",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.676676395038764
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_full",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.550596555074056
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_full",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.616828295091788
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "b0_full",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.598562086621921
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "cryo_history",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.90625,
+    "dev_nll": 0.30374698878343526
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "cryo_history",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.75,
+    "dev_nll": 0.8484107669404087
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "cryo_history",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.041666666666666664,
+    "dev_nll": 4.114385559378813
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "cryo_history",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.7916666666666666,
+    "dev_nll": 0.7518434732531508
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "cryo_history",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.9166666666666666,
+    "dev_nll": 0.4248956131826465
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "cryo_history",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.78125,
+    "dev_nll": 0.5832469689388139
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "cryo_history",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.020833333333333332,
+    "dev_nll": 3.9149253784368434
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.869536861777306
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.457685862978299
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.234311621636152
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.370353887478511
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.681200370192528
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.324304863810539
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.2383811337252455
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.011101891597112
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.005400521059831
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.124379436175029
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.02437799423933
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.114245288074017
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.073835243781407
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.853485022981961
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_memory",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.974273106704156
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_memory",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.888708295921485
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_memory",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.969054172436397
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_memory",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.809021793305874
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_memory",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.940243755777677
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_memory",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.882239105800788
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_memory",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.701429737110932
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_filter",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.034280836582184
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_filter",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.237188423673312
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_filter",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.989392871658008
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_filter",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.174363272885482
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_filter",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.0332029312849045
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_filter",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.279240286598603
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_filter",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.6995605031649275
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_always_write",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.932467019806306
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_always_write",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.129303157329559
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_always_write",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.077403915425141
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_always_write",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.026270459095637
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_always_write",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 5.094414254029592
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_always_write",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.9445590277512865
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_always_write",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.890682607889175
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_persist",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.974273106704156
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_persist",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.888708295921485
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_persist",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.969054172436397
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_persist",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.809021793305874
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_persist",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.940243755777677
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_persist",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.882239105800788
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "event_no_persist",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.701429737110932
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta_no_persist",
+    "task": "goal",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.974273106704156
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta_no_persist",
+    "task": "retention",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.888708295921485
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta_no_persist",
+    "task": "correction",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.969054172436397
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta_no_persist",
+    "task": "irrelevance",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.809021793305874
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta_no_persist",
+    "task": "constraint",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.940243755777677
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta_no_persist",
+    "task": "entities",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.882239105800788
+  },
+  {
+    "stage": "learning-1000",
+    "arm": "delta_no_persist",
+    "task": "hypothesis",
+    "seeds": 3,
+    "dev_accuracy": 0.0,
+    "dev_nll": 4.701429737110932
+  }
+]

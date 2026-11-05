@@ -1,0 +1,11 @@
+# Certificación e integridad
+
+Ocho tests originales PASS y ocho de datos PASS. preflight.json:causalidad train/eval,máscaras de padding,aislamiento de batch y dos documentos,prefijo inicial equivalente,gradientes haciaaddress/event_value,AdamW exactamente cubierto y copias iniciales idénticas. Reanudación continua8updates frente4+checkpoint+4 exactamente igual enA,B,P,conmodelo,decoder,AdamW,RNG torch/Python,sampler,cursor y orden. Configuración y datasets protegidos por hashes al restaurar. La variante de posición es un cambio de datos,con su elección recuperada del step y slot.
+
+Se mantiene el comportamiento del entrenador original:el factory carga el modelo en modo eval,con dropout0 y LayerNorm; las actualizaciones tienen autograd y AdamW. La ruta model.train también fue probada y es causal. No hay BatchNorm ni comportamiento estocástico diferente en la ruta usada. No se hereda certificado CUDA/BF16.
+
+A17 reproduce exactamente pesos,decoder y AdamW finales de Addressable V1. Todas las arquitecturas y el código congelado se verifican sin cambios,así como los85artefactos de SHA256SUMS V1. Iniciales y órdenesA/B exactos por semilla. Checkpoints nuevos y .pt de estados se guardan localmente,consha;no se sobreescriben los originales.
+
+Incidencia preservada:después de completar seis entrenamientos y sus evaluaciones,la rejilla disparó división por cero en `unjustified_changes_A` cuando todos los valores consultados cambiaban. execution.log conserva la excepción. evaluation_guard.py es copia estática del evaluador con solo denominador0→null;reporting-guard.json prueba reproducción del fallo y equivalencia exacta de métricas/predicciones/estados en caso definido. No cambia modelo,targets,tolerancias ni aprendizaje. continue_diagnostics.py usa solo checkpoints completos y entrenaP únicamente si la compuerta prefijada lo habilita. launch_original_preserved.py conserva el launcher anterior;el launcher actual instala ese guard para futuras reproducciones. Los archivos congelados FREEZE permanecen intactos.
+
+No GPU,Vast,Chinchilla,A4,NeoToken ni evaluaciones selladas previas. Nueva confirmatoria permanece sin evaluación;solo se verifica su hash. No se afirma revisión independiente.

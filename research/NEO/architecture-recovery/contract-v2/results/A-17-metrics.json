@@ -1,0 +1,320 @@
+{
+  "clean": {
+    "by_type": {
+      "clean_repeat": {
+        "tp": 384
+      },
+      "correction": {
+        "tp": 192
+      },
+      "initial": {
+        "tp": 384
+      }
+    },
+    "corrected": 0.8333333333333334,
+    "joint": 0.8125,
+    "n": 192,
+    "normal": 0.9166666666666666,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 960
+    },
+    "state_change": {
+      "accepted": {
+        "max": 6.935551643371582,
+        "mean": 3.114653463770325,
+        "n": 960
+      }
+    }
+  },
+  "compatible_swap": {
+    "follows_partner": 0.9166666666666666,
+    "n": 48,
+    "original_accuracy": 0.0625
+  },
+  "contaminated_pair": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 55
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 54
+      },
+      "out_of_goal": {
+        "fp": 220
+      },
+      "quoted": {
+        "fp": 55
+      }
+    },
+    "corrected": 0.75,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 0.7291666666666666,
+        "n": 192,
+        "prediction_invariance": 0.13020833333333334
+      },
+      "invalid": {
+        "joint_correct": 0.71875,
+        "n": 192,
+        "prediction_invariance": 0.8072916666666666
+      },
+      "obsolete": {
+        "joint_correct": 0.5208333333333334,
+        "n": 96,
+        "prediction_invariance": 0.5520833333333334
+      }
+    },
+    "joint": 0.6354166666666666,
+    "n": 192,
+    "normal": 0.796875,
+    "preserved": 0.84375,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.434516429901123,
+        "mean": 4.321405356936157,
+        "n": 960
+      }
+    }
+  },
+  "focus_change": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 55
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 54
+      },
+      "out_of_goal": {
+        "fp": 220
+      },
+      "quoted": {
+        "fp": 55
+      }
+    },
+    "corrected": 0.75,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 0.7552083333333334,
+        "n": 192,
+        "prediction_invariance": 0.11979166666666667
+      },
+      "invalid": {
+        "joint_correct": 0.765625,
+        "n": 192,
+        "prediction_invariance": 0.875
+      },
+      "obsolete": {
+        "joint_correct": 0.5416666666666666,
+        "n": 96,
+        "prediction_invariance": 0.5520833333333334
+      }
+    },
+    "joint": 0.6354166666666666,
+    "n": 192,
+    "normal": 0.8229166666666666,
+    "preserved": 0.8958333333333334,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.434516429901123,
+        "mean": 4.321405356936157,
+        "n": 960
+      }
+    }
+  },
+  "layout": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 55
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 54
+      },
+      "out_of_goal": {
+        "fp": 220
+      },
+      "quoted": {
+        "fp": 55
+      }
+    },
+    "corrected": 0.78125,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 0.7552083333333334,
+        "n": 192,
+        "prediction_invariance": 0.11458333333333333
+      },
+      "invalid": {
+        "joint_correct": 0.7552083333333334,
+        "n": 192,
+        "prediction_invariance": 0.8385416666666666
+      },
+      "obsolete": {
+        "joint_correct": 0.5416666666666666,
+        "n": 96,
+        "prediction_invariance": 0.5833333333333334
+      }
+    },
+    "joint": 0.640625,
+    "n": 192,
+    "normal": 0.8229166666666666,
+    "preserved": 0.8645833333333334,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.449609756469727,
+        "mean": 4.336063609768947,
+        "n": 960
+      }
+    }
+  },
+  "reset": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 55
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 54
+      },
+      "out_of_goal": {
+        "fp": 220
+      },
+      "quoted": {
+        "fp": 55
+      }
+    },
+    "n": 192,
+    "normal": 0.2916666666666667,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.434516429901123,
+        "mean": 4.321405356936157,
+        "n": 960
+      }
+    }
+  },
+  "surface": {
+    "by_type": {
+      "correction": {
+        "tp": 192
+      },
+      "hypothesis": {
+        "fp": 55
+      },
+      "initial": {
+        "tp": 384
+      },
+      "negated": {
+        "fp": 54
+      },
+      "out_of_goal": {
+        "fp": 220
+      },
+      "quoted": {
+        "fp": 55
+      }
+    },
+    "corrected": 0.75,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 0.7291666666666666,
+        "n": 192,
+        "prediction_invariance": 0.13020833333333334
+      },
+      "invalid": {
+        "joint_correct": 0.71875,
+        "n": 192,
+        "prediction_invariance": 0.8072916666666666
+      },
+      "obsolete": {
+        "joint_correct": 0.4895833333333333,
+        "n": 96,
+        "prediction_invariance": 0.5208333333333334
+      }
+    },
+    "joint": 0.640625,
+    "n": 192,
+    "normal": 0.796875,
+    "preserved": 0.84375,
+    "selection": {
+      "accepted_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 1.0,
+      "fp": 384,
+      "precision": 0.6,
+      "recall": 1.0,
+      "tp": 576
+    },
+    "state_change": {
+      "accepted": {
+        "max": 7.425102233886719,
+        "mean": 4.331120017232994,
+        "n": 960
+      }
+    }
+  }
+}

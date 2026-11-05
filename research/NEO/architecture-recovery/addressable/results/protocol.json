@@ -1,0 +1,20 @@
+{
+  "updates": 300,
+  "seed": 17,
+  "batch": 8,
+  "lr": 0.003,
+  "clip": 1.0,
+  "lambda_aux": 0.1,
+  "microfit_gate": "both marginal >= .9, joint >= .9, mean CE < .5",
+  "main_gate": "only after microfit",
+  "key_seed": 707,
+  "decoder_seed": 101,
+  "precision": "CPU FP32",
+  "normal_route": "shared learned addressing, no auxiliary decoder",
+  "state": [
+    8,
+    32
+  ],
+  "format": "observed four-ID records, accepted =/! only",
+  "limitations": "record-aware input embedding key branch, not generic natural-language event extraction"
+}

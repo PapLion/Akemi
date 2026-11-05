@@ -1,0 +1,262 @@
+{
+  "train": {
+    "n": 480,
+    "outside_window": 240,
+    "heuristics": {
+      "first": 0.17291666666666666,
+      "last": 0.21875,
+      "entity_last_any": 0.20625,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.2,
+        "last": 0.18333333333333332,
+        "entity_last_any": 0.3
+      },
+      "replace": {
+        "first": 0.15,
+        "last": 0.2,
+        "entity_last_any": 0.2
+      },
+      "multiple": {
+        "first": 0.13333333333333333,
+        "last": 0.26666666666666666,
+        "entity_last_any": 0.15
+      },
+      "other": {
+        "first": 0.26666666666666666,
+        "last": 0.2,
+        "entity_last_any": 0.25
+      },
+      "similar": {
+        "first": 0.3,
+        "last": 0.2,
+        "entity_last_any": 0.16666666666666666
+      },
+      "irrelevant": {
+        "first": 0.15,
+        "last": 0.21666666666666667,
+        "entity_last_any": 0.13333333333333333
+      },
+      "discard": {
+        "first": 0.05,
+        "last": 0.16666666666666666,
+        "entity_last_any": 0.18333333333333332
+      },
+      "goal": {
+        "first": 0.13333333333333333,
+        "last": 0.31666666666666665,
+        "entity_last_any": 0.26666666666666666
+      }
+    }
+  },
+  "iid": {
+    "n": 240,
+    "outside_window": 120,
+    "heuristics": {
+      "first": 0.24583333333333332,
+      "last": 0.19166666666666668,
+      "entity_last_any": 0.16666666666666666,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.16666666666666666,
+        "last": 0.26666666666666666,
+        "entity_last_any": 0.13333333333333333
+      },
+      "replace": {
+        "first": 0.1,
+        "last": 0.16666666666666666,
+        "entity_last_any": 0.26666666666666666
+      },
+      "multiple": {
+        "first": 0.2,
+        "last": 0.2,
+        "entity_last_any": 0.1
+      },
+      "other": {
+        "first": 0.3333333333333333,
+        "last": 0.16666666666666666,
+        "entity_last_any": 0.06666666666666667
+      },
+      "similar": {
+        "first": 0.43333333333333335,
+        "last": 0.23333333333333334,
+        "entity_last_any": 0.23333333333333334
+      },
+      "irrelevant": {
+        "first": 0.3333333333333333,
+        "last": 0.13333333333333333,
+        "entity_last_any": 0.16666666666666666
+      },
+      "discard": {
+        "first": 0.26666666666666666,
+        "last": 0.3,
+        "entity_last_any": 0.13333333333333333
+      },
+      "goal": {
+        "first": 0.13333333333333333,
+        "last": 0.06666666666666667,
+        "entity_last_any": 0.23333333333333334
+      }
+    }
+  },
+  "compositional": {
+    "n": 160,
+    "outside_window": 80,
+    "heuristics": {
+      "first": 0.25625,
+      "last": 0.2,
+      "entity_last_any": 0.125,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.3,
+        "last": 0.05,
+        "entity_last_any": 0.05
+      },
+      "replace": {
+        "first": 0.15,
+        "last": 0.25,
+        "entity_last_any": 0.15
+      },
+      "multiple": {
+        "first": 0.25,
+        "last": 0.05,
+        "entity_last_any": 0.1
+      },
+      "other": {
+        "first": 0.25,
+        "last": 0.25,
+        "entity_last_any": 0.1
+      },
+      "similar": {
+        "first": 0.4,
+        "last": 0.35,
+        "entity_last_any": 0.25
+      },
+      "irrelevant": {
+        "first": 0.25,
+        "last": 0.25,
+        "entity_last_any": 0.0
+      },
+      "discard": {
+        "first": 0.15,
+        "last": 0.2,
+        "entity_last_any": 0.15
+      },
+      "goal": {
+        "first": 0.3,
+        "last": 0.2,
+        "entity_last_any": 0.2
+      }
+    }
+  },
+  "structural": {
+    "n": 240,
+    "outside_window": 120,
+    "heuristics": {
+      "first": 0.19583333333333333,
+      "last": 0.19166666666666668,
+      "entity_last_any": 0.21666666666666667,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.36666666666666664,
+        "last": 0.2,
+        "entity_last_any": 0.23333333333333334
+      },
+      "replace": {
+        "first": 0.13333333333333333,
+        "last": 0.16666666666666666,
+        "entity_last_any": 0.2
+      },
+      "multiple": {
+        "first": 0.1,
+        "last": 0.2,
+        "entity_last_any": 0.26666666666666666
+      },
+      "other": {
+        "first": 0.06666666666666667,
+        "last": 0.1,
+        "entity_last_any": 0.36666666666666664
+      },
+      "similar": {
+        "first": 0.3333333333333333,
+        "last": 0.1,
+        "entity_last_any": 0.2
+      },
+      "irrelevant": {
+        "first": 0.3,
+        "last": 0.3333333333333333,
+        "entity_last_any": 0.16666666666666666
+      },
+      "discard": {
+        "first": 0.1,
+        "last": 0.23333333333333334,
+        "entity_last_any": 0.1
+      },
+      "goal": {
+        "first": 0.16666666666666666,
+        "last": 0.2,
+        "entity_last_any": 0.2
+      }
+    }
+  },
+  "both": {
+    "n": 160,
+    "outside_window": 80,
+    "heuristics": {
+      "first": 0.1625,
+      "last": 0.23125,
+      "entity_last_any": 0.16875,
+      "entity_valid": 1.0
+    },
+    "by_task": {
+      "retain": {
+        "first": 0.4,
+        "last": 0.4,
+        "entity_last_any": 0.3
+      },
+      "replace": {
+        "first": 0.05,
+        "last": 0.25,
+        "entity_last_any": 0.15
+      },
+      "multiple": {
+        "first": 0.1,
+        "last": 0.15,
+        "entity_last_any": 0.2
+      },
+      "other": {
+        "first": 0.25,
+        "last": 0.2,
+        "entity_last_any": 0.15
+      },
+      "similar": {
+        "first": 0.15,
+        "last": 0.3,
+        "entity_last_any": 0.2
+      },
+      "irrelevant": {
+        "first": 0.25,
+        "last": 0.2,
+        "entity_last_any": 0.15
+      },
+      "discard": {
+        "first": 0.1,
+        "last": 0.05,
+        "entity_last_any": 0.2
+      },
+      "goal": {
+        "first": 0.0,
+        "last": 0.3,
+        "entity_last_any": 0.0
+      }
+    }
+  }
+}

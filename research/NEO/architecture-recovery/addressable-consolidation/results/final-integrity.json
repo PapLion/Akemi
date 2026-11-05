@@ -1,0 +1,27 @@
+{
+  "previous_artifacts_verified": 85,
+  "architecture_unchanged": true,
+  "frozen_code_unchanged": true,
+  "paired_initializations_and_orders_exact": true,
+  "seeds": [
+    "17",
+    "29",
+    "43"
+  ],
+  "sealed_sha_unchanged": true,
+  "sealed_model_evaluations": 0,
+  "warmstart_sources": {
+    "17": {
+      "path": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/cryo-selective-memory-study/selective-memory/results/extend/delta_fast-normal-w16-17.pt",
+      "sha256": "f963ddf694b1e5801547c42538c5786c857ac58f4889deb54cfeab851358ae1c"
+    },
+    "29": {
+      "path": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/cryo-selective-memory-study/selective-memory/results/extend/delta_fast-normal-w16-29.pt",
+      "sha256": "98347e76e393638871373471a77b1e0a667e52a3595c6254c545ce2507b8e5ef"
+    },
+    "43": {
+      "path": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/cryo-selective-memory-study/selective-memory/results/extend/delta_fast-normal-w16-43.pt",
+      "sha256": "b42dc317fb82391d62e02ef11016474fdc6072d57b25cb10aa64cce22eb8099b"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "A": {
+    "preserve": {
+      "affected_correct": 0.25,
+      "other_correct": 0.246875,
+      "follows_initial": 0.25,
+      "n": 320
+    },
+    "correct": {
+      "affected_correct": 0.25,
+      "other_correct": 0.25,
+      "follows_initial": 0.25,
+      "n": 320
+    }
+  },
+  "B": {
+    "preserve": {
+      "affected_correct": 0.496875,
+      "other_correct": 0.25,
+      "follows_initial": 0.496875,
+      "n": 320
+    },
+    "correct": {
+      "affected_correct": 0.428125,
+      "other_correct": 0.28125,
+      "follows_initial": 0.19375,
+      "n": 320
+    }
+  },
+  "C": {
+    "preserve": {
+      "affected_correct": 0.803125,
+      "other_correct": 0.409375,
+      "follows_initial": 0.803125,
+      "n": 320
+    },
+    "correct": {
+      "affected_correct": 0.440625,
+      "other_correct": 0.46875,
+      "follows_initial": 0.215625,
+      "n": 320
+    }
+  }
+}

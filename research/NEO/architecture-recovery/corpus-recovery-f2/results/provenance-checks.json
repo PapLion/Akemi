@@ -1,0 +1,77 @@
+{
+  "cpython_exact_hash_matches": 9,
+  "cpython_quality_kept": 7,
+  "cpython_source_manifest_sha": "d2d66f5f7fb4cc22ab89f3ad5338e2a34e7424fc8fe6ba84baec9c2f2992f1fc",
+  "cpython_license_sha": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+  "held_out_family_policy": "Exclude entire CPython repository family from F2 train due D0 test metadata. No historical sealed evaluation contents opened. Raw corpus verification necessarily reads original source documents, not evaluation artifacts.",
+  "empty_source": 0,
+  "empty_url": 765,
+  "train_dev_family_conflicts": 0,
+  "source_split_counts": [
+    [
+      "HuggingFaceFW/fineweb-2",
+      "dev",
+      2218
+    ],
+    [
+      "HuggingFaceFW/fineweb-2",
+      "test",
+      3524
+    ],
+    [
+      "HuggingFaceFW/fineweb-2",
+      "train",
+      329574
+    ],
+    [
+      "HuggingFaceFW/fineweb-edu",
+      "dev",
+      1408
+    ],
+    [
+      "HuggingFaceFW/fineweb-edu",
+      "test",
+      1366
+    ],
+    [
+      "HuggingFaceFW/fineweb-edu",
+      "train",
+      145212
+    ],
+    [
+      "HuggingFaceTB/finemath",
+      "dev",
+      267
+    ],
+    [
+      "HuggingFaceTB/finemath",
+      "test",
+      183
+    ],
+    [
+      "HuggingFaceTB/finemath",
+      "train",
+      40708
+    ],
+    [
+      "python/cpython",
+      "train",
+      7
+    ],
+    [
+      "wikimedia/wikipedia",
+      "dev",
+      319
+    ],
+    [
+      "wikimedia/wikipedia",
+      "test",
+      314
+    ],
+    [
+      "wikimedia/wikipedia",
+      "train",
+      30814
+    ]
+  ]
+}

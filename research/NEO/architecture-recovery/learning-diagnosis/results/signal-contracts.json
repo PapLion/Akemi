@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "tests": 4,
+  "script_sha": "4b779f7a008ff47b3a22f71de792defdc4ce7b44af808b26832caca0e3d84d1a",
+  "tests_sha": "3e04872e14a110fac34932c29b1530b661b127e61f4f552950a098f170003c10",
+  "protocol_sha": "c74083e777225d135e22d8ac74c7c8d29550fdb9965189853e2acd82594d0307",
+  "historical_sources": {
+    "foreground-binding/harness.py": "4d96813aa714785105173d489127e536c900ef916a6fcaddc0f31ffe989cae19",
+    "foreground-binding/PROTOCOL.json": "5b2f2031eb9c80bc7f23a4f34fbeee3805dcd41109c49dfba9d92808300702ca",
+    "language-bridge/model.py": "5b15b2168731db020e75df6a020768cf6a6fe2e76a37736eb678023cb1015519",
+    "vendor/cryo_historical.py": "db8d573fdc5270bab22fdef97af3322006f68431339a7d7065b3e2ca2c8fa279",
+    "memory-bridge/runner.py": "228e98dc283850c8aac9a91838dd240d2b9e0535dc5ce672d2e8ba86d27f8323",
+    "query-conditioning/run.py": "efd08dbeca6c6ec4fcff8d9a8d5dfc1c1338a4f707228979f0ecf4b7be644512",
+    "binding-diagnostic/experiment.py": "6d488b533cbf245e07fb4320c04d685e613692a2c73ee7116a324cb9f4dbef88"
+  },
+  "tokenizer_sha": "8489cd9a98fb4a7339fe802be74621774f2ee68b465cfb0b16846a07fe99a156"
+}

@@ -1,0 +1,112 @@
+{
+  "train": {
+    "replace": {
+      "n": 60,
+      "distinct_accepted_target_values": 48,
+      "has_changed_other_entity": 51
+    },
+    "multiple": {
+      "n": 60,
+      "distinct_accepted_target_values": 60,
+      "has_changed_other_entity": 53
+    },
+    "other": {
+      "n": 60,
+      "distinct_accepted_target_values": 0,
+      "has_changed_other_entity": 51
+    },
+    "goal": {
+      "n": 60,
+      "distinct_accepted_target_values": 48,
+      "has_changed_other_entity": 43
+    }
+  },
+  "iid": {
+    "replace": {
+      "n": 30,
+      "distinct_accepted_target_values": 19,
+      "has_changed_other_entity": 26
+    },
+    "multiple": {
+      "n": 30,
+      "distinct_accepted_target_values": 28,
+      "has_changed_other_entity": 28
+    },
+    "other": {
+      "n": 30,
+      "distinct_accepted_target_values": 0,
+      "has_changed_other_entity": 25
+    },
+    "goal": {
+      "n": 30,
+      "distinct_accepted_target_values": 17,
+      "has_changed_other_entity": 21
+    }
+  },
+  "compositional": {
+    "replace": {
+      "n": 20,
+      "distinct_accepted_target_values": 13,
+      "has_changed_other_entity": 18
+    },
+    "multiple": {
+      "n": 20,
+      "distinct_accepted_target_values": 18,
+      "has_changed_other_entity": 18
+    },
+    "other": {
+      "n": 20,
+      "distinct_accepted_target_values": 0,
+      "has_changed_other_entity": 18
+    },
+    "goal": {
+      "n": 20,
+      "distinct_accepted_target_values": 12,
+      "has_changed_other_entity": 15
+    }
+  },
+  "structural": {
+    "replace": {
+      "n": 30,
+      "distinct_accepted_target_values": 24,
+      "has_changed_other_entity": 28
+    },
+    "multiple": {
+      "n": 30,
+      "distinct_accepted_target_values": 30,
+      "has_changed_other_entity": 25
+    },
+    "other": {
+      "n": 30,
+      "distinct_accepted_target_values": 0,
+      "has_changed_other_entity": 30
+    },
+    "goal": {
+      "n": 30,
+      "distinct_accepted_target_values": 24,
+      "has_changed_other_entity": 23
+    }
+  },
+  "both": {
+    "replace": {
+      "n": 20,
+      "distinct_accepted_target_values": 16,
+      "has_changed_other_entity": 14
+    },
+    "multiple": {
+      "n": 20,
+      "distinct_accepted_target_values": 20,
+      "has_changed_other_entity": 16
+    },
+    "other": {
+      "n": 20,
+      "distinct_accepted_target_values": 0,
+      "has_changed_other_entity": 19
+    },
+    "goal": {
+      "n": 20,
+      "distinct_accepted_target_values": 16,
+      "has_changed_other_entity": 15
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "A-17:core.address.weight": {
+    "min": 2.414416303508915e-05,
+    "max": 1.9852323532104492,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-17:core.event_value.weight": {
+    "min": 7.3689147939148825e-06,
+    "max": 0.8021721839904785,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-17:core.address_out.weight": {
+    "min": 9.663202035881113e-06,
+    "max": 0.6924856901168823,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-17:core.address.weight": {
+    "min": 6.280439720285358e-06,
+    "max": 3.0281407833099365,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-17:core.event_value.weight": {
+    "min": 5.426406914921245e-06,
+    "max": 0.8697245121002197,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-17:core.address_out.weight": {
+    "min": 2.432523388051777e-06,
+    "max": 0.7656322121620178,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-29:core.address.weight": {
+    "min": 1.735622572596185e-05,
+    "max": 1.556423544883728,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-29:core.event_value.weight": {
+    "min": 1.1975905181316193e-05,
+    "max": 2.707564115524292,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-29:core.address_out.weight": {
+    "min": 1.1198787433386315e-05,
+    "max": 2.2534844875335693,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-29:core.address.weight": {
+    "min": 9.304970262746792e-06,
+    "max": 1.9340375661849976,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-29:core.event_value.weight": {
+    "min": 1.1898764569195919e-05,
+    "max": 2.387132167816162,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-29:core.address_out.weight": {
+    "min": 4.785477358382195e-06,
+    "max": 1.737660527229309,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-43:core.address.weight": {
+    "min": 1.4301573173725046e-05,
+    "max": 4.6243367195129395,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-43:core.event_value.weight": {
+    "min": 1.4986008864070754e-05,
+    "max": 1.9580390453338623,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "A-43:core.address_out.weight": {
+    "min": 1.4650689081463497e-05,
+    "max": 2.177710771560669,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-43:core.address.weight": {
+    "min": 8.04053524916526e-06,
+    "max": 4.458845138549805,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-43:core.event_value.weight": {
+    "min": 9.736738320498262e-06,
+    "max": 2.719970226287842,
+    "nonzero": 300,
+    "steps": 300
+  },
+  "B-43:core.address_out.weight": {
+    "min": 4.108097982680192e-06,
+    "max": 1.6106828451156616,
+    "nonzero": 300,
+    "steps": 300
+  }
+}

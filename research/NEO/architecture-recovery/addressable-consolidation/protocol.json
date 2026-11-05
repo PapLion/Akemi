@@ -1,0 +1,48 @@
+{
+  "version": "addressable-v1.1-corrections",
+  "architecture": "unchanged addressable/address_model.py from 7d203aa",
+  "updates": 300,
+  "batch": 8,
+  "lr": 0.003,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "lambda_initial": 0.1,
+  "objective": "CE response at final position + 0.1 CE two bindings at initial-memory stage; NO post-stage auxiliary loss",
+  "precision": "CPU FP32",
+  "threads": 1,
+  "seed": 17,
+  "control": "literal original 160 records, original random.Random(seed).randrange(160) indices",
+  "treatment": "50% correction variants by fixed (step*8+slot)%12; same base indices; both corrected roles, all three nonzero deltas",
+  "paired_exposure": "one answer and two initial auxiliary targets per record; equal 2400 responses and 4800 auxiliary targets per arm; correction events differ necessarily",
+  "main_train_positions": {
+    "initial": [
+      2,
+      3
+    ],
+    "correction": 8,
+    "query_record": 15
+  },
+  "triage": {
+    "corrected_binding_fixed": 0.9,
+    "corrected_binding_layout": 0.9,
+    "unmodified_binding_min": 0.95,
+    "swap_strict": 0.95,
+    "novel_joint": 0.9,
+    "formation_joint": 0.95,
+    "normal_fixed": 0.9,
+    "normal_layout": 0.9,
+    "formation_normal": 0.95,
+    "current_cf_normal_pair": 0.9,
+    "stale_cf_normal_pair": 0.9
+  },
+  "confirmation": "only if all primary treatment thresholds pass; paired A/B seeds29 and43, same 300 updates; different historical seed-specific warmstarts plus new module seeds707+(seed-17) and decoder101+(seed-17); no sealed evaluation",
+  "position_arm": "after main closed and weight-frozen grid; if main has a >=10pp position-grid spread or layout error >=10%, allow ONE P seed17 300-update data-only comparison against B; initial pairs (0,1),(2,3),(4,5), correction positions6,8,10; no architectural/loss changes",
+  "position_evaluation": "new initial(6,7), correction11; unavailable to training; evaluate only after P final",
+  "sealed": "new family generated/hashed at freeze, no model evaluation or text inspection",
+  "selection": "final step300 only, no checkpoint or hyperparameter selection by dev; no early stopping except mechanical NaN/contract failure",
+  "evaluation_separation": "correction_fit is training-fit diagnostic, excluded from independent gates; correction_fixed uses unseen entity pair distance2; all other gate families have zero train overlap"
+}

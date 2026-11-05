@@ -1,0 +1,26 @@
+{
+  "A": {
+    "preserve": {
+      "affected_correct": 0.50625,
+      "unmodified_correct": 0.34375,
+      "n": 160
+    },
+    "correct": {
+      "affected_correct": 0.35,
+      "unmodified_correct": 0.35,
+      "n": 160
+    }
+  },
+  "B": {
+    "preserve": {
+      "affected_correct": 0.5375,
+      "unmodified_correct": 0.38125,
+      "n": 160
+    },
+    "correct": {
+      "affected_correct": 0.43125,
+      "unmodified_correct": 0.35625,
+      "n": 160
+    }
+  }
+}

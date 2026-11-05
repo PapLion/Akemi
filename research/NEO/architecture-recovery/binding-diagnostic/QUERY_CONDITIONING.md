@@ -1,0 +1,9 @@
+# Consulta: ruta real y limitación observada
+
+Los prefijos factuales son idénticos al consultar Nora/Iris. Las consultas difieren en posiciones111/112 del input; posición de respuesta118 (índices cero). Se usa el logit del último token de consulta para predecir un token siguiente ausente del input. Ambas entidades están tokenizadas en varios IDs distintos; no hay colisión de identidad ni unknown.
+
+Antes de entrenar, delta máximo de logits al cambiar solo consulta: 0.00414675. Después, corto: 1.6212463e-05; largo: 2.3841858e-05. Gradiente a embeddings de consulta corto:0.046501122; a prefijo:0.00025891478. Acceso y gradientes no implican binding aprendido.
+
+El foreground tiene UN bloque de atención y después operaciones por posición (MLP y refinamiento rápido). En esa única atención Q_t=Wq RMSNorm(embedding(token_t)), con RoPE de t. Para el token final “:” idéntico y misma posición, Q_t es idéntica entre preguntas: delta medido0. Las K/V de los hechos dependen de embeddings locales, no incorporan todavía la pregunta. Por tanto los scores de hechos son idénticos entre consultas. Cambiar tokens de la pregunta afecta el denominador softmax, pero no los cocientes de atención entre tokens factuales. Tras entrenamiento, delta de atención factual relativa:1.49e-08 (ruido FP32), ver audit.py para reconstrucción desde pesos reales.
+
+Esto restringe un mecanismo directo de direccionamiento contextual en esa única capa: el token de respuesta aún no ha integrado la entidad antes de seleccionar hechos. NO prueba incapacidad representacional absoluta: el MLP/normalización final podrían combinar una mezcla de hechos y señal de pregunta. El modelo no aprendió esa combinación bajo esta receta. No se ha demostrado que sea la causa única frente a optimización, ancho32, distribución e inicialización. No se cambió el backbone.

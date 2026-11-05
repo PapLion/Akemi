@@ -1,0 +1,314 @@
+{
+  "A-17": {
+    "correction_fit": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.75
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_fixed": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.75
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.8333333333333334
+      }
+    },
+    "correction_layout": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_alternate": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.75
+      }
+    },
+    "correction_distractor": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.6875
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.8625
+      }
+    }
+  },
+  "B-17": {
+    "correction_fit": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_fixed": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.9645833333333333
+      }
+    },
+    "correction_layout": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_alternate": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_distractor": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    }
+  },
+  "A-29": {
+    "correction_fit": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.75
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_fixed": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.7479166666666667
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.825
+      }
+    },
+    "correction_layout": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_alternate": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.9979166666666667
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.63125
+      }
+    },
+    "correction_distractor": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.975
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.8520833333333333
+      }
+    }
+  },
+  "B-29": {
+    "correction_fit": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_fixed": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.7958333333333333
+      }
+    },
+    "correction_layout": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_alternate": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_distractor": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.8020833333333334
+      }
+    }
+  },
+  "A-43": {
+    "correction_fit": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.3333333333333333
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_fixed": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.33541666666666664
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.9729166666666667
+      }
+    },
+    "correction_layout": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.9333333333333333
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_alternate": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.9354166666666667
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.675
+      }
+    },
+    "correction_distractor": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 0.8541666666666666
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.9708333333333333
+      }
+    }
+  },
+  "B-43": {
+    "correction_fit": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_fixed": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.825
+      }
+    },
+    "correction_layout": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      }
+    },
+    "correction_alternate": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.925
+      }
+    },
+    "correction_distractor": {
+      "corrected": {
+        "n": 480,
+        "normal_accuracy": 1.0
+      },
+      "preserved": {
+        "n": 480,
+        "normal_accuracy": 0.8625
+      }
+    }
+  }
+}

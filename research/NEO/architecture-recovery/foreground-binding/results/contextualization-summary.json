@@ -1,0 +1,247 @@
+{
+  "A": {
+    "initial": {
+      "program_id": "f5a5ea8554839ba59e697567bdab97b608af30b703b7da93eb20b0cdc71c98bd",
+      "value_positions": [
+        100,
+        105
+      ],
+      "embedding_at_value_delta": 0.0,
+      "logit_delta_name_swap": 0.004040751606225967,
+      "normal_correct": 0,
+      "names_swapped_correct": 0,
+      "layers": [
+        {
+          "layer": 0,
+          "value_input_delta_name_swap": 0.0,
+          "value_output_delta_name_swap": 0.0006762519478797913,
+          "value_key_delta_name_swap": 0.0,
+          "value_v_delta_name_swap": 0.0,
+          "q_delta_query_switch": 0.27196139097213745,
+          "fact_key_delta_query_switch": 0.0,
+          "relative_attention_delta_query_switch": 0.002653352916240692,
+          "both_facts_visible": true
+        }
+      ]
+    },
+    "final": {
+      "program_id": "f5a5ea8554839ba59e697567bdab97b608af30b703b7da93eb20b0cdc71c98bd",
+      "value_positions": [
+        100,
+        105
+      ],
+      "embedding_at_value_delta": 0.0,
+      "logit_delta_name_swap": 0.07002830505371094,
+      "normal_correct": 1,
+      "names_swapped_correct": 1,
+      "layers": [
+        {
+          "layer": 0,
+          "value_input_delta_name_swap": 0.0,
+          "value_output_delta_name_swap": 0.002688109874725342,
+          "value_key_delta_name_swap": 0.0,
+          "value_v_delta_name_swap": 0.0,
+          "q_delta_query_switch": 1.7061290740966797,
+          "fact_key_delta_query_switch": 0.0,
+          "relative_attention_delta_query_switch": 0.20259156823158264,
+          "both_facts_visible": true
+        }
+      ]
+    },
+    "response_gradients": {
+      "value_positions": [
+        100,
+        105
+      ],
+      "value_embedding_gradient_norms": [
+        2.1124155521392822,
+        1.2039265632629395
+      ],
+      "query_embedding_gradient_norm": 1.0358567237854004,
+      "block_gradient_norms": {
+        "blocks.0.n1.weight": 0.19935572147369385,
+        "blocks.0.n2.weight": 0.05209058150649071,
+        "blocks.0.q.weight": 0.5824655294418335,
+        "blocks.0.k.weight": 0.655920684337616,
+        "blocks.0.v.weight": 1.4976894855499268,
+        "blocks.0.o.weight": 0.7979718446731567,
+        "blocks.0.up.weight": 0.26337650418281555,
+        "blocks.0.down.weight": 0.11720338463783264
+      }
+    }
+  },
+  "B": {
+    "initial": {
+      "program_id": "f5a5ea8554839ba59e697567bdab97b608af30b703b7da93eb20b0cdc71c98bd",
+      "value_positions": [
+        100,
+        105
+      ],
+      "embedding_at_value_delta": 0.0,
+      "logit_delta_name_swap": 0.005274415016174316,
+      "normal_correct": 0,
+      "names_swapped_correct": 0,
+      "layers": [
+        {
+          "layer": 0,
+          "value_input_delta_name_swap": 0.0,
+          "value_output_delta_name_swap": 0.0006762519478797913,
+          "value_key_delta_name_swap": 0.0,
+          "value_v_delta_name_swap": 0.0,
+          "q_delta_query_switch": 0.27196139097213745,
+          "fact_key_delta_query_switch": 0.0,
+          "relative_attention_delta_query_switch": 0.002653352916240692,
+          "both_facts_visible": true
+        },
+        {
+          "layer": 1,
+          "value_input_delta_name_swap": 0.0006762519478797913,
+          "value_output_delta_name_swap": 0.0007701129652559757,
+          "value_key_delta_name_swap": 0.003444291651248932,
+          "value_v_delta_name_swap": 0.0034678876399993896,
+          "q_delta_query_switch": 0.3430054187774658,
+          "fact_key_delta_query_switch": 2.9802322387695312e-08,
+          "relative_attention_delta_query_switch": 0.002918750047683716,
+          "both_facts_visible": true
+        }
+      ],
+      "block1_output_equals_block2_input": true
+    },
+    "final": {
+      "program_id": "f5a5ea8554839ba59e697567bdab97b608af30b703b7da93eb20b0cdc71c98bd",
+      "value_positions": [
+        100,
+        105
+      ],
+      "embedding_at_value_delta": 0.0,
+      "logit_delta_name_swap": 0.017242431640625,
+      "normal_correct": 1,
+      "names_swapped_correct": 0,
+      "layers": [
+        {
+          "layer": 0,
+          "value_input_delta_name_swap": 0.0,
+          "value_output_delta_name_swap": 0.053835391998291016,
+          "value_key_delta_name_swap": 0.0,
+          "value_v_delta_name_swap": 0.0,
+          "q_delta_query_switch": 1.3271064758300781,
+          "fact_key_delta_query_switch": 0.0,
+          "relative_attention_delta_query_switch": 0.16368204355239868,
+          "both_facts_visible": true
+        },
+        {
+          "layer": 1,
+          "value_input_delta_name_swap": 0.053835391998291016,
+          "value_output_delta_name_swap": 0.05317211151123047,
+          "value_key_delta_name_swap": 0.0012851953506469727,
+          "value_v_delta_name_swap": 0.000762939453125,
+          "q_delta_query_switch": 1.643470048904419,
+          "fact_key_delta_query_switch": 1.1920928955078125e-07,
+          "relative_attention_delta_query_switch": 0.13994073867797852,
+          "both_facts_visible": true
+        }
+      ],
+      "block1_output_equals_block2_input": true
+    },
+    "response_gradients": {
+      "value_positions": [
+        100,
+        105
+      ],
+      "value_embedding_gradient_norms": [
+        0.6267332434654236,
+        0.492944598197937
+      ],
+      "query_embedding_gradient_norm": 0.3290499448776245,
+      "block_gradient_norms": {
+        "blocks.0.n1.weight": 0.16607095301151276,
+        "blocks.0.n2.weight": 0.034527070820331573,
+        "blocks.0.q.weight": 0.13242486119270325,
+        "blocks.0.k.weight": 0.19778741896152496,
+        "blocks.0.v.weight": 2.444782018661499,
+        "blocks.0.o.weight": 0.5666300058364868,
+        "blocks.0.up.weight": 0.09495753049850464,
+        "blocks.0.down.weight": 0.19823674857616425,
+        "blocks.1.n1.weight": 0.0012241459917277098,
+        "blocks.1.n2.weight": 0.00498869176954031,
+        "blocks.1.q.weight": 0.0003598705807235092,
+        "blocks.1.k.weight": 0.0010818230221047997,
+        "blocks.1.v.weight": 0.023125553503632545,
+        "blocks.1.o.weight": 0.022748783230781555,
+        "blocks.1.up.weight": 0.022206854075193405,
+        "blocks.1.down.weight": 0.03914813697338104
+      }
+    }
+  },
+  "C": {
+    "initial": {
+      "program_id": "f5a5ea8554839ba59e697567bdab97b608af30b703b7da93eb20b0cdc71c98bd",
+      "value_positions": [
+        100,
+        105
+      ],
+      "embedding_at_value_delta": 0.0,
+      "logit_delta_name_swap": 0.004023566842079163,
+      "normal_correct": 0,
+      "names_swapped_correct": 0,
+      "layers": [
+        {
+          "layer": 0,
+          "value_input_delta_name_swap": 0.0,
+          "value_output_delta_name_swap": 0.0006815288215875626,
+          "value_key_delta_name_swap": 0.0,
+          "value_v_delta_name_swap": 0.0,
+          "q_delta_query_switch": 0.27196139097213745,
+          "fact_key_delta_query_switch": 0.0,
+          "relative_attention_delta_query_switch": 0.002653352916240692,
+          "both_facts_visible": true
+        }
+      ]
+    },
+    "final": {
+      "program_id": "f5a5ea8554839ba59e697567bdab97b608af30b703b7da93eb20b0cdc71c98bd",
+      "value_positions": [
+        100,
+        105
+      ],
+      "embedding_at_value_delta": 0.0,
+      "logit_delta_name_swap": 0.0055866241455078125,
+      "normal_correct": 1,
+      "names_swapped_correct": 1,
+      "layers": [
+        {
+          "layer": 0,
+          "value_input_delta_name_swap": 0.0,
+          "value_output_delta_name_swap": 0.003445863723754883,
+          "value_key_delta_name_swap": 0.0,
+          "value_v_delta_name_swap": 0.0,
+          "q_delta_query_switch": 0.8176453709602356,
+          "fact_key_delta_query_switch": 0.0,
+          "relative_attention_delta_query_switch": 0.08461856842041016,
+          "both_facts_visible": true
+        }
+      ]
+    },
+    "response_gradients": {
+      "value_positions": [
+        100,
+        105
+      ],
+      "value_embedding_gradient_norms": [
+        0.21429531276226044,
+        0.3014630377292633
+      ],
+      "query_embedding_gradient_norm": 0.11471511423587799,
+      "block_gradient_norms": {
+        "blocks.0.n1.weight": 0.020778032019734383,
+        "blocks.0.n2.weight": 0.009749679826200008,
+        "blocks.0.q.weight": 0.1793845295906067,
+        "blocks.0.k.weight": 0.22587759792804718,
+        "blocks.0.v.weight": 0.03893398493528366,
+        "blocks.0.o.weight": 0.12238719314336777,
+        "blocks.0.up.weight": 0.03175055980682373,
+        "blocks.0.down.weight": 0.08966708183288574
+      }
+    }
+  }
+}

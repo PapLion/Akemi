@@ -1,0 +1,12 @@
+{
+  "cryo-chunk-boundary-v1/chunk-boundary": {
+    "returncode": 0,
+    "verified": 62,
+    "stderr": ""
+  },
+  "cryo-two-bindings-v1/two-bindings": {
+    "returncode": 0,
+    "verified": 63,
+    "stderr": ""
+  }
+}

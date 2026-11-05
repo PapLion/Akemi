@@ -1,0 +1,24 @@
+{
+  "arms": {
+    "A": [
+      1,
+      "same"
+    ],
+    "B": [
+      2,
+      "same"
+    ],
+    "C": [
+      1,
+      "separate"
+    ]
+  },
+  "updates": 300,
+  "seed": 17,
+  "batch": 8,
+  "lr": 0.003,
+  "clip": 1,
+  "lambda_aux": 0.1,
+  "additional_seed_gate": "B exceeds A joint train and dev by >=10 percentage points AND B dev joint>=.5 AND strict swapped joint>=.25; fixed before outcomes",
+  "capacity_control": "Not trained; +32 query parameters explicitly counted; compute/init not matched"
+}

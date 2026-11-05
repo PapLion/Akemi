@@ -1,0 +1,11 @@
+# Protocolo fijado antes de nuevos updates
+
+Padre congelado78373cc, rama nueva cryo-mechanism-v1, worktree separado. No tocar corpus/tokenizer/otros procesos ni GPU. Los resultados históricos completos se leen de ../cryo-next-generation/results, incluidos pesos seguros.
+
+A: reproducir exactitud/logits con checkpoints originales, verificar argmax completo, posiciones, etiquetas/oráculo, sampler y particiones; distinguir cambio de soporte composicional de errores del arnés. Sobreajuste:16registros train fijos, mismos índices para cinco brazos originales, 200updates, batch16, receta original, semilla17. No tocar dev para ajustar hiperparámetros. No atribuir generalización a memorización.
+
+B: backbone/embeddings/cabezal atado/normalización de salida inicializados exactamente desde el histórico por semilla. Brazos: intacto (control existente, reproducido sin nuevos updates), Transformer histórico sin cabeza recurrente, sinHielo conservando procesamiento rápido, sinTrapos (gate1), unpaso rápido en lugar de2, Event sobre backbone histórico, Delta sobre backbone histórico. Ablación de receta separada: detach temporal del estado sin cambiar forward. Se mantienen lr.003/AdamW betas(.9,.95)/decay.01/clip1, batch8, mismo sampler1000updates, train448/dev224, seeds17/29/43. Si wallCPU excede2400s, terminar brazo actual y registrar faltantes. No seleccionar mejor checkpoint. No exigir igualFLOPs cuando se controla targets.
+
+D: candidato mínimo preregistrado: histórico con escritura del estado solo en fronteras de2tokens y procesamiento rápido vectorizado dentro de cada par, conservando pesos,2pasos, gates y normalizaciones. Lecturas previas al cierre y salida del token frontera usando estado actualizado; nunca cerrar anticipadamente un bloque parcial. Comparar contra histórico. Si no conserva calidad, no promover. No añadir otros mecanismos a posteriori para conseguir un buen resultado.
+
+Ingeniería antes de entrenar: paridad exacta de la referencia, causa train/eval, packing/reset, gradientes, AdamW y reanudación. ToleranciasFP32 logits2e-5/rtol2e-4, gradientes3e-6/rtol2e-3; reanudación misma rutaCPU exacta. Nuevas variantes no heredanCUDA/BF16. Bench fuera del entrenamiento concurrente. Todos los casos y fallos se guardan, independientemente de que favorezcan al diseño.

@@ -1,0 +1,16 @@
+{
+  "foreground": {
+    "causal": true,
+    "isolation": true,
+    "shift_mask": true,
+    "optimizer_coverage": true,
+    "resume_7_vs_3_plus_4_exact": true
+  },
+  "baseline": {
+    "causal": true,
+    "isolation": true,
+    "shift_mask": true,
+    "optimizer_coverage": true,
+    "resume_7_vs_3_plus_4_exact": true
+  }
+}

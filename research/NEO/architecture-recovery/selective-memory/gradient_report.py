@@ -1,0 +1,11 @@
+"""Render gradient diagnostics, not a causal attribution of learning failure."""
+import json
+from pathlib import Path
+R=Path(__file__).resolve().parent
+def main():
+ data=json.loads((R/'results/gradient-horizons.json').read_text());lines=['# Gradientes, estado y filtro','','Probe diagnóstico sin updates sobre8ejemplos fuera de ventana fijos (dos por replace/multiple/discard/goal). IDs y top5 de salida antes/después en results/gradient-horizons.json. Normas de gradiente son del batch y dependen de dimensión/posición; no comparar absolutos entre arquitecturas como calidad de aprendizaje.','','|Checkpoint|Gate medio inicial→final|Fracción final <0.05|Gradiente primer estado|Gradiente penúltimo estado|','|---|---:|---:|---:|---:|']
+ for r in data['results']:
+  a,b=r['initial'],r['trained'];g=b['gate_summary'];ss=b['state_gradients'];lines.append(f"|{r['checkpoint']}|{a['gate_summary']['mean']:.4f}→{g['mean']:.4f}|{g['fraction_low']:.4f}|{ss[0]['norm']:.6g}|{ss[-2]['norm']:.6g}|")
+ lines+=['','Los nueve probes tienen gradientes finitos, incluidos parámetros de compuerta/control. La conexión atraviesa fragmentos y los estados cambian; no hay un fallo universal de gradiente ausente que explique el resultado. El último estado híbrido queda sin gradiente porque su escritura ocurre después de la última respuesta: es esperado, no un parámetro huérfano.','','El histórico muestra horizontes muy diferentes entre semillas; por ejemplo, su primer estado tiene norma7,7e-6 en seed29 frente a0,077 en seed17. Es una observación compatible con atenuación variable, no una prueba de que eso cause el fracaso. Los híbridos mantienen gradientes tempranos medibles y también fallan en edición de valores: no basta atribuirlo todo a desaparición de gradiente.','','Gates finales más pequeños y diferencias entre actualizaciones aceptadas/propuestas muestran adaptación de parámetros, no selección útil de VALORES. El control de presencia sin valores alcanza53,33% en IID/estructural fuera y explica por qué una mejora de exactitud sobre noHielo no certifica binding. La representación interna exacta no se ha identificado; se propone un probe de contenido antes de otro rediseño.']
+ (R/'GRADIENTS_AND_FILTER.md').write_text('\n'.join(lines)+'\n')
+if __name__=='__main__':main()

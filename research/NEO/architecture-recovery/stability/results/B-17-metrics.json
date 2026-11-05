@@ -1,0 +1,155 @@
+{
+  "alternate": {
+    "cf": {
+      "current": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 0.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 1.0
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 960,
+    "normal": 1.0,
+    "pair_accuracy": {
+      "('A', 'B')": 1.0,
+      "('A', 'E')": 1.0,
+      "('B', 'C')": 1.0,
+      "('C', 'D')": 1.0,
+      "('D', 'E')": 1.0
+    },
+    "preserved": 1.0
+  },
+  "held_distractor": {
+    "cf": {
+      "current": {
+        "joint_correct": 0.5130208333333334,
+        "prediction_invariance": 0.453125
+      },
+      "obsolete": {
+        "joint_correct": 0.6302083333333334,
+        "prediction_invariance": 0.9010416666666666
+      }
+    },
+    "corrected": 1.0,
+    "joint": 0.296875,
+    "n": 384,
+    "normal": 0.6484375,
+    "pair_accuracy": {
+      "('A', 'C')": 0.6484375
+    },
+    "preserved": 0.296875
+  },
+  "held_formation": {
+    "cf": {
+      "swap": {
+        "joint_correct": 0.625,
+        "prediction_invariance": 0.25
+      }
+    },
+    "joint": 0.25,
+    "n": 64,
+    "normal": 0.625,
+    "pair_accuracy": {
+      "('A', 'C')": 0.625
+    }
+  },
+  "held_pair": {
+    "cf": {
+      "current": {
+        "joint_correct": 0.5104166666666666,
+        "prediction_invariance": 0.4635416666666667
+      },
+      "obsolete": {
+        "joint_correct": 0.6302083333333334,
+        "prediction_invariance": 0.9140625
+      }
+    },
+    "corrected": 1.0,
+    "joint": 0.2838541666666667,
+    "n": 384,
+    "normal": 0.6432291666666666,
+    "pair_accuracy": {
+      "('A', 'C')": 0.6432291666666666
+    },
+    "preserved": 0.2864583333333333
+  },
+  "interventions": {
+    "normal": {
+      "accuracy": 0.625,
+      "follows_partner": 0.125
+    },
+    "reset": {
+      "accuracy": 0.25,
+      "follows_partner": 0.25
+    },
+    "swap": {
+      "accuracy": 0.125,
+      "follows_partner": 0.625
+    }
+  },
+  "key_gram": [
+    [
+      1.0,
+      0.002350110560655594,
+      0.6860709190368652,
+      -0.23770925402641296,
+      0.01189391314983368
+    ],
+    [
+      0.002350110560655594,
+      0.9999998807907104,
+      -0.004084363579750061,
+      0.5802462100982666,
+      0.14979003369808197
+    ],
+    [
+      0.6860709190368652,
+      -0.004084363579750061,
+      1.0000001192092896,
+      0.006858339067548513,
+      0.5194025635719299
+    ],
+    [
+      -0.23770925402641296,
+      0.5802462100982666,
+      0.006858339067548513,
+      0.9999998807907104,
+      0.0025716349482536316
+    ],
+    [
+      0.01189391314983368,
+      0.14979003369808197,
+      0.5194025635719299,
+      0.0025716349482536316,
+      0.9999998807907104
+    ]
+  ],
+  "new_layout": {
+    "cf": {
+      "current": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 0.0
+      },
+      "obsolete": {
+        "joint_correct": 1.0,
+        "prediction_invariance": 1.0
+      }
+    },
+    "corrected": 1.0,
+    "joint": 1.0,
+    "n": 960,
+    "normal": 1.0,
+    "pair_accuracy": {
+      "('A', 'B')": 1.0,
+      "('A', 'E')": 1.0,
+      "('B', 'C')": 1.0,
+      "('C', 'D')": 1.0,
+      "('D', 'E')": 1.0
+    },
+    "preserved": 1.0
+  }
+}

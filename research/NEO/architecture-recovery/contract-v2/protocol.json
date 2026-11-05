@@ -1,0 +1,41 @@
+{
+  "name": "trapos-contract-v2",
+  "base": "23cb2d7; Addressable V1.2 C weights per seed",
+  "updates": 300,
+  "batch": 8,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "lr": 0.003,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "decay": 0.01,
+  "clip": 1.0,
+  "precision": "CPU FP32 one thread",
+  "loss": "answer CE + C only .1 acceptance BCE; hard-forward STE unchanged",
+  "architecture": "byte-identical V1 trapos_model.py; 545 policy parameters; shared weights trainable",
+  "policy": "pair retention scope; first header entity is focus; both may be retained and queried; final focus change supplied causally",
+  "acceptance": "confirmed AND not negated AND member of retention scope; valid repeat accepted; outside scope is not declared false",
+  "data": "2400 sequences; paired focal/secondary queries; 1200 programs; no A-C train; 12000 proposal labels",
+  "initialization": "identical A/C from Addressable V1.2, NOT V1 final; same recipe and head seed",
+  "checkpoint": "final300 only",
+  "aux_weight": 0.1,
+  "controls": "A trained; D and random and deterministic heuristics same-C-weight inference interventions, no extra training; random calibrated TRAIN only",
+  "triage": {
+    "precision": 0.95,
+    "recall": 0.95,
+    "functional": 0.95,
+    "joint": 0.9,
+    "advantage_A": 0.05,
+    "advantage_random": 0.05,
+    "advantage_confirmed": 0.05,
+    "clean_drop": 0.05,
+    "counterfactual": 0.9
+  },
+  "confirmation": "A/C29,43 only when all pilot gates pass; unchanged recipe",
+  "limits": "CPU only, no sealed evaluation, no paid resources, no language training"
+}

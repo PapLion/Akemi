@@ -1,0 +1,19 @@
+# Diseño experimental v1 — decisiones anteriores a las mediciones
+
+Dos prototipos propios, sin código de papers copiado. Backbone causal por fragmentos con SDPA, RMSNorm y SwiGLU. Se usa el núcleo real NeoToken V3 BPE 8192; no vistas adicionales ni pesos históricos. Prototipos pequeños, FP32, un thread CPU, sin servicios externos. La implementación histórica se copia sin cambios a vendor con SHA-256.
+
+Event: slots latentes, resumen de atención aprendida por slot y actualización al cerrar cada fragmento. Trapos controla borrado, escritura y recuperación. El entrenamiento usa compuertas continuas diferenciables, sin afirmar ahorro de cómputo por ceros aproximados. Un modo hard solo de inferencia omite materialmente proyecciones de candidato y registra el número de slots ejecutados. No se traslada automáticamente el aprendizaje soft a ese modo.
+
+Delta: matriz asociativa. Resumen local z independiente de memoria previa, k normalizada, valor v, retención a en (0.9,0.99), borrado e y escritura w. M'=a(I-e kkᵀ)M+k(w⊙v)ᵀ. Lectura qᵀM anterior al fragmento. Separar e/w permite corregir asociaciones; no garantiza aprender a hacerlo. Es adaptación propia, no reproducción de Gated DeltaNet-2.
+
+Causalidad: ninguna escritura del fragmento j afecta logits de j. Lectura solo de M anterior. Backbone y resumen se calculan en paralelo por fragmentos, sin dependencias entre fragmentos en sus entradas. Documentos independientes tienen estado cero explícito; no identidad por token de documento reutilizado después de otro documento. BPTT a través del estado conservado, sin detach implícito. API de continuación exige cortes alineados a fragmentos completos; continuar tras fragmento parcial se rechaza en vez de producir una equivalencia falsa. Los límites de documento pueden ser arbitrarios; se empaquetan fragmentos por documento, no por posiciones globales.
+
+Composición afín Delta: (A₂,B₂)∘(A₁,B₁)=(A₂A₁,A₂B₁+B₂), asociativa con orden preservado. Puede usar scan por doblado; un reset fija A=0. Gates calculadas usando M romperían esta prueba: deliberadamente no se hacen. Scan denso cuesta O(N K³ log N), no promesa de kernel eficiente. Comparar estados, logits y gradientes secuencial/scan.
+
+Controles: B0 por fragmentos; B0 contexto completo visible equivalente; CryoTiny histórico contexto completo; Event; Delta; Event sin Hielo; sin Trapos; escritura siempre activa; sin persistencia; Delta sin persistencia. Diferencias en parámetros/FLOPs y visibilidad se informan. No atribuir memoria útil comparando exclusivamente con un baseline que nunca ve el antecedente.
+
+Ingeniería antes de aprendizaje: perturbación futura train/eval, fronteras/batch, padding/loss desplazada, gradientes, cobertura AdamW, dos o más updates, continuación, gates, intervención de memoria y reanudación tras updates. Tolerancias FP32 logits/estados atol=2e-5 rtol=2e-4; gradientes atol=3e-6 rtol=2e-3. Resume CPU determinista igualdad exacta con misma ruta y RNG. BF16/CUDA no certificados.
+
+Aprendizaje: tareas simbólicas verificables, no competencia lingüística. Objetivo next-token solo en respuesta; la pérdida se calcula sobre vocabulario completo. Siete familias: objetivo, recuerdo, corrección, irrelevancia, restricción, entidades, hipótesis. Combinaciones train/dev disjuntas por entidad/valor y estructuras de distractores; conservar diagnóstico separado de estructura no vista. No son siete habilidades naturales independientes. Se registrará toda salida, no solo aciertos. Seeds 17,29,43; presupuesto inicial fijo 100 updates por brazo, batch 8, d32/L1, fragmento8, AdamW lr0.003, clip1. Tres seeds si coste permite; límite total CPU 2400s, sin selección por resultado. Ninguna elección posterior de umbral para favorecer un brazo.
+
+Tests y evaluación CPU de contextos fragmento32/64; benchmark secuencias64/128/256, batch1/4 si coste permite. Sin GPU ahora. Las cifras y decisiones científicas se escribirán después de ejecutar.

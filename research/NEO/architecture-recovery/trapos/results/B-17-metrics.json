@@ -1,0 +1,313 @@
+{
+  "clean": {
+    "by_type": {
+      "clean_repeat": {
+        "fn": 225,
+        "tp": 735
+      }
+    },
+    "corrected": 0.7708333333333334,
+    "joint": 0.5729166666666666,
+    "n": 192,
+    "normal": 0.8854166666666666,
+    "preserved": 1.0,
+    "selection": {
+      "accepted_rate": 0.765625,
+      "false_negative_rate": 0.234375,
+      "false_positive_rate": 0.0,
+      "fn": 225,
+      "precision": 1.0,
+      "recall": 0.765625,
+      "tp": 735
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.599297523498535,
+        "mean": 3.5005639757834324,
+        "n": 735
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 225
+      }
+    }
+  },
+  "compatible_swap": {
+    "follows_partner": 0.6666666666666666,
+    "n": 48,
+    "original_accuracy": 0.020833333333333332
+  },
+  "contaminated_pair": {
+    "by_type": {
+      "correction": {
+        "fn": 36,
+        "tp": 156
+      },
+      "hypothesis": {
+        "fp": 68,
+        "tn": 28
+      },
+      "initial": {
+        "fn": 116,
+        "tp": 268
+      },
+      "negated": {
+        "fp": 75,
+        "tn": 21
+      },
+      "out_of_goal": {
+        "fp": 83,
+        "tn": 13
+      },
+      "quoted": {
+        "fp": 77,
+        "tn": 19
+      }
+    },
+    "corrected": 0.7083333333333334,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 0.5364583333333334,
+        "n": 192,
+        "prediction_invariance": 0.2552083333333333
+      },
+      "invalid": {
+        "joint_correct": 0.5520833333333334,
+        "n": 192,
+        "prediction_invariance": 0.6145833333333334
+      },
+      "obsolete": {
+        "joint_correct": 0.6145833333333334,
+        "n": 96,
+        "prediction_invariance": 0.6979166666666666
+      }
+    },
+    "joint": 0.4739583333333333,
+    "n": 192,
+    "normal": 0.7864583333333334,
+    "preserved": 0.8645833333333334,
+    "selection": {
+      "accepted_rate": 0.7572916666666667,
+      "false_negative_rate": 0.2638888888888889,
+      "false_positive_rate": 0.7890625,
+      "fn": 152,
+      "fp": 303,
+      "precision": 0.5832187070151307,
+      "recall": 0.7361111111111112,
+      "tn": 81,
+      "tp": 424
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.601873397827148,
+        "mean": 4.737676212761392,
+        "n": 727
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 233
+      }
+    }
+  },
+  "layout": {
+    "by_type": {
+      "correction": {
+        "fn": 42,
+        "tp": 150
+      },
+      "hypothesis": {
+        "fp": 69,
+        "tn": 27
+      },
+      "initial": {
+        "fn": 104,
+        "tp": 280
+      },
+      "negated": {
+        "fp": 78,
+        "tn": 18
+      },
+      "out_of_goal": {
+        "fp": 75,
+        "tn": 21
+      },
+      "quoted": {
+        "fp": 80,
+        "tn": 16
+      }
+    },
+    "corrected": 0.6770833333333334,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 0.5052083333333334,
+        "n": 192,
+        "prediction_invariance": 0.19791666666666666
+      },
+      "invalid": {
+        "joint_correct": 0.5989583333333334,
+        "n": 192,
+        "prediction_invariance": 0.6666666666666666
+      },
+      "obsolete": {
+        "joint_correct": 0.5416666666666666,
+        "n": 96,
+        "prediction_invariance": 0.625
+      }
+    },
+    "joint": 0.4635416666666667,
+    "n": 192,
+    "normal": 0.734375,
+    "preserved": 0.7916666666666666,
+    "selection": {
+      "accepted_rate": 0.7625,
+      "false_negative_rate": 0.2534722222222222,
+      "false_positive_rate": 0.7864583333333334,
+      "fn": 146,
+      "fp": 302,
+      "precision": 0.587431693989071,
+      "recall": 0.7465277777777778,
+      "tn": 82,
+      "tp": 430
+    },
+    "state_change": {
+      "accepted": {
+        "max": 9.077705383300781,
+        "mean": 4.856936157319715,
+        "n": 732
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 228
+      }
+    }
+  },
+  "reset": {
+    "by_type": {
+      "correction": {
+        "fn": 36,
+        "tp": 156
+      },
+      "hypothesis": {
+        "fp": 68,
+        "tn": 28
+      },
+      "initial": {
+        "fn": 116,
+        "tp": 268
+      },
+      "negated": {
+        "fp": 75,
+        "tn": 21
+      },
+      "out_of_goal": {
+        "fp": 83,
+        "tn": 13
+      },
+      "quoted": {
+        "fp": 77,
+        "tn": 19
+      }
+    },
+    "n": 192,
+    "normal": 0.25,
+    "selection": {
+      "accepted_rate": 0.7572916666666667,
+      "false_negative_rate": 0.2638888888888889,
+      "false_positive_rate": 0.7890625,
+      "fn": 152,
+      "fp": 303,
+      "precision": 0.5832187070151307,
+      "recall": 0.7361111111111112,
+      "tn": 81,
+      "tp": 424
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.601873397827148,
+        "mean": 4.737676212761392,
+        "n": 727
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 233
+      }
+    }
+  },
+  "surface": {
+    "by_type": {
+      "correction": {
+        "fn": 49,
+        "tp": 143
+      },
+      "hypothesis": {
+        "fp": 75,
+        "tn": 21
+      },
+      "initial": {
+        "fn": 84,
+        "tp": 300
+      },
+      "negated": {
+        "fp": 80,
+        "tn": 16
+      },
+      "out_of_goal": {
+        "fp": 82,
+        "tn": 14
+      },
+      "quoted": {
+        "fp": 67,
+        "tn": 29
+      }
+    },
+    "corrected": 0.6979166666666666,
+    "counterfactuals": {
+      "current": {
+        "joint_correct": 0.578125,
+        "n": 192,
+        "prediction_invariance": 0.21875
+      },
+      "invalid": {
+        "joint_correct": 0.578125,
+        "n": 192,
+        "prediction_invariance": 0.6145833333333334
+      },
+      "obsolete": {
+        "joint_correct": 0.6354166666666666,
+        "n": 96,
+        "prediction_invariance": 0.7291666666666666
+      }
+    },
+    "joint": 0.484375,
+    "n": 192,
+    "normal": 0.7916666666666666,
+    "preserved": 0.8854166666666666,
+    "selection": {
+      "accepted_rate": 0.778125,
+      "false_negative_rate": 0.2309027777777778,
+      "false_positive_rate": 0.7916666666666666,
+      "fn": 133,
+      "fp": 304,
+      "precision": 0.5930388219544847,
+      "recall": 0.7690972222222222,
+      "tn": 80,
+      "tp": 443
+    },
+    "state_change": {
+      "accepted": {
+        "max": 8.606514930725098,
+        "mean": 4.816151395061089,
+        "n": 747
+      },
+      "rejected": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 213
+      }
+    }
+  }
+}

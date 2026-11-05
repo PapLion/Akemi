@@ -1,0 +1,61 @@
+{
+  "version": "stability-v1.2",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "updates": 300,
+  "batch": 8,
+  "lr": 0.003,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "objective": "response CE ONLY, both arms; prior V1.1 initial auxiliary removed from BOTH",
+  "selection": "final update300 only",
+  "correction_fraction": 0.5,
+  "query_corrected_fraction_given_correction": 0.5,
+  "reserve_pair": [
+    "A",
+    "C"
+  ],
+  "train_C_initial": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "train_C_correction": [
+    6,
+    8,
+    10
+  ],
+  "train_C_distractor": "25% third-entity writes at record11; never overwrites queried pair",
+  "triage": {
+    "corrected": 0.95,
+    "preserved": 0.95,
+    "joint": 0.9,
+    "swap": 0.95,
+    "obsolete_cf": 0.95,
+    "current_cf": 0.95,
+    "novel_joint": 0.9,
+    "layout_joint": 0.9,
+    "max_drop_vs_B": 0.05
+  },
+  "sealed": "never opened; no confirmatory evaluation",
+  "precision": "CPU FP32 single thread",
+  "initialization": "V1.1 seed-specific historical warmstart; identical B/C; auxiliary decoder retained frozen, no inference or loss use",
+  "comparison": "B original V1.1 treatment DISTRIBUTION, not original combined objective; C changes only data distribution",
+  "capacity": "architecture unchanged; optimizer contains all and only trainable model parameters; decoder excluded identically"
+}

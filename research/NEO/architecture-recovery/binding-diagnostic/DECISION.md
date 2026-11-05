@@ -1,0 +1,11 @@
+# Decisión: detener la línea de memoria lingüística
+
+Ambos brazos fallan incluso en train:25% respuesta,0% conjunta,0/12 intercambios, tras200updates fijados. El control corto no alcanza las compuertas prospectivas. No se entrena Hielo ni se añaden semillas, updates o variantes arquitectónicas aquí.
+
+No se aisló un problema exclusivo de distancia. La consulta llega al modelo y recibe gradientes; las máscaras permiten ambos hechos, hay identidad de inputs/targets correcta y AdamW/reanudación certificados. La red colapsa a una respuesta constante. No se demuestra incapacidad absoluta del foreground ni del tokenizer ni de Hielo.
+
+Observación técnica concreta: una sola capa de atención lee hechos desde la Q del token final idéntico. La entidad consultada no puede condicionar los scores relativos hacia los hechos en esa misma atención; las operaciones posteriores son por posición. Esa limitación se deduce de las ecuaciones y está comprobada con pesos reales antes/después del entrenamiento. Podría todavía aprenderse binding vía mezclas y no linealidades; el fallo actual no demuestra que esa vía sea imposible. Optimización, inicialización, capacidad y composición siguen sin separarse causalmente.
+
+Próxima intervención mínima recomendada, NO EJECUTADA: mantener arquitectura/tokenizer/receta y cambiar únicamente el punto de lectura en un nuevo contraste preregistrado, formulando la pregunta para que el nombre consultado termine justo antes de la respuesta y usando ese último token para el siguiente-token. Así Q sí depende de la entidad desde la única capa. Compararlo con el sufijo común actual, mismos ejemplos/budget, para probar el cuello de condicionamiento sin añadir capas ni memoria. Los nombres son multitoken; preregistrar exactamente el token final y evaluar más de un nombre/pares para evitar un resultado accidental. Cambia el formato/posición de supervisión, no la memoria: exige una autorización/experimento posterior, no una búsqueda automática.
+
+No se reclama superioridad ni capacidad lingüística. La conclusión firme es negativa bajo estas dos distribuciones y presupuesto. Se conserva todo el histórico V1/V2 y este negativo. La investigación de Hielo lingüístico queda detenida hasta certificar un control neuronal de binding válido.

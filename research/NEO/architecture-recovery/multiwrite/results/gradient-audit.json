@@ -1,0 +1,11 @@
+{
+  "trainable_without_gradient": [],
+  "frozen": [
+    "core.memory_init",
+    "core.slow.weight",
+    "core.slow.bias",
+    "core.gate.weight",
+    "core.gate.bias"
+  ],
+  "finite": true
+}

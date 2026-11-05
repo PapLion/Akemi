@@ -1,0 +1,26 @@
+{
+  "live": {
+    "path": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/chinchilla-corpus/curation-v1/token-cache.sqlite",
+    "tokenizer": "ae2910fcb4b82ac10684d255dc2c6c9826a4ba51ba563d14accd6660a8dc2962",
+    "certificates": [
+      [
+        "pass",
+        131876,
+        390088259,
+        389956383
+      ]
+    ]
+  },
+  "frozen500": {
+    "path": "/PATH/TO/NEO_HOME/research/neo-architecture-recovery/chinchilla-corpus/curation-v1/runs/500m/token-certificates-snapshot.sqlite",
+    "tokenizer": "ae2910fcb4b82ac10684d255dc2c6c9826a4ba51ba563d14accd6660a8dc2962",
+    "certificates": [
+      [
+        "pass",
+        24562,
+        115211015,
+        115186453
+      ]
+    ]
+  }
+}

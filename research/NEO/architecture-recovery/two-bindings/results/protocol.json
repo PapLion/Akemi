@@ -1,0 +1,29 @@
+{
+  "config": {
+    "seed": 17,
+    "decoder_seed": 101,
+    "updates": 150,
+    "batch": 8,
+    "lr": 0.003,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "lambda_initial": 0.1,
+    "lambda_post": 0.1,
+    "precision": "CPU FP32",
+    "threads": 1,
+    "aux_pass_accuracy": 0.9,
+    "aux_pass_ce": 0.5
+  },
+  "objective_A": "LM + .1 CE_initial",
+  "objective_B": "LM + .1 CE_initial + .1 CE_post",
+  "dataset_sha256": "c03ad5e543c3547f66fb681f17cb23c5584574d0cbc39be1749605151a130a45",
+  "dev_sha256": "5de6e8bfb4788ec00a528817a1ab71ec613eba1b61aa055d576f4643a5721bc5",
+  "train_records": 320,
+  "dev_records": 320,
+  "torch_version": "2.14.1+cu130",
+  "platform": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44"
+}

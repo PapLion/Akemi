@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "token_multisets_equal": true,
+  "target_alignment": true,
+  "balanced_queries": true,
+  "causality_train_eval": true,
+  "batch_isolation": true,
+  "no_target_in_forward": true,
+  "exact_resume_8_vs_3_plus_5": true,
+  "optimizer_finite_gradients_updates": true
+}

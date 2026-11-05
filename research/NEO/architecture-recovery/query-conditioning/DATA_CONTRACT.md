@@ -1,0 +1,11 @@
+# Contrato de datos
+
+Reutilizamos las historias de binding-diagnostic/experiment.py sin modificarlo. Train: Nora/Iris, dos valores distintos entre cuatro colores, ambos órdenes, ambas preguntas:48respuestas/24historias. Dev pares: Nora/Mira; dev layout: Nora/Iris con holds/holding en vez de has/have.48respuestas por panel. Son plantillas experimentales EN, no lenguaje abierto ni evaluación ES. Luna se comprueba en tests de tokenización, no se añade al entrenamiento. Los dev son nuevos pares o reformulaciones, no nuevos valores (los cuatro se entrenan).
+
+A conserva literalmente “What does Nora have? Answer:”. B permuta sus IDs y produce “What does have? Answer: Nora”. En layouts alternativos se aplica la MISMA permutación al nombre. No se corrige la gramática de B: es una intervención de orden, no una comparación de naturalidad. Los textos B vuelven a codificar exactamente los IDs permutados, sin byte injection ni modificación del tokenizer. Conservan11 tokens por consulta del panel principal, predicción en posición118, prefijo108 con11tokens de hechos al final, tras96tokens neutrales y BOS. El hecho queda cerca de la pregunta, no todos sus tokens quedan dentro de los últimos16 respecto a la respuesta.
+
+A termina en ID58(:); B en1318(Nora),1544(Iris),2141(Mira),2184(Luna), todos distintos y verificados con V3 real. Las entidades son multitoken: se mueven las dos piezas, no solo el ID final. Se conservan los tokens de ambos nombres; los targets de color jamás aparecen en la pregunta. Los valores están únicamente en las historias.
+
+Balance dataset:6ejemplos por entidad–valor,48targets. Cada paso usa batch8, mismo sampler V2. Exposición1600targets/brazo:800por entidad; valores402/400/399/399 (ciclo parcial, no balance exacto de valores consumidos). Exactamente iguales en A/B, explícitos en diagnostics.json. La primera/última escritura global resuelve50%; presencia sin valores25%. Ambos modelos terminan siguiendo un color constante en train (25%), no una asociación.
+
+Cambios inevitables: posiciones internas de la entidad y sufijo, token desde el que se predice, sintaxis/orden de pregunta y relación posicional con hechos. La longitud total y posición del target no cambian. No se atribuye causalidad exclusiva a Q frente a toda la intervención de formato.
