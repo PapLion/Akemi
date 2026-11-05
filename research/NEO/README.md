@@ -1,23 +1,21 @@
 # NEO — índice de investigación para revisión
 
-Este directorio reúne los informes, código de referencia y métricas agregadas de NEO/CryoCCM. Es una publicación de consulta del trabajo local, no el corpus ni un paquete completo de entrenamiento. **No supone que NEO comprenda lenguaje ni que F2 esté autorizado para entrenar.**
+Informes, código de referencia y métricas agregadas. Es una copia de consulta del trabajo local: corpus, pesos, tokens privados y conjuntos sellados quedan fuera.
 
-## Estado más reciente
+## Estado más reciente: primer F2 GPU completado
 
-**Release F2: BLOQUEADO.** [Decisión actual](architecture-recovery/f2-corpus-release/DECISION.md) · [Requisitos restantes](architecture-recovery/f2-corpus-release/REMAINING_BLOCKERS.md) · [Conteos exactos](architecture-recovery/f2-corpus-release/NEOTOKEN_V3_EXACT_COUNTS.md).
+- [Decisión del entrenamiento](architecture-recovery/neo-f2-gpu-training-v1/DECISION.md).
+- [Resultados de entrenamiento](architecture-recovery/neo-f2-gpu-training-v1/TRAINING_RESULTS.md).
+- [Comparación con Transformer](architecture-recovery/neo-f2-gpu-training-v1/BASELINE_COMPARISON.md).
+- [Validación por idioma](architecture-recovery/neo-f2-gpu-training-v1/EVALUATION.md).
+- [Generaciones completas, incluidas las repetitivas](architecture-recovery/neo-f2-gpu-training-v1/GENERATIONS.md).
+- [Rendimiento y límites de medida](architecture-recovery/neo-f2-gpu-training-v1/GPU_PERFORMANCE.md).
+- [Coste y cierre de Vast.ai](architecture-recovery/neo-f2-gpu-training-v1/COST_REPORT.md).
+- [Configuración y alcance privado de los derechos](architecture-recovery/neo-f2-gpu-training-v1/TRAINING_CONFIG.md).
 
-Se contaron 5.006.879 targets train candidatos Wikipedia ES/EN y 212.105 dev. Siguen CONDITIONAL; aprobados: 25.355 train / 8.637 dev. Siete tests adicionales PASS y reanudación exacta del lector aprobado real. No se entrenó F2. Procedencia local: rama neo-f2-corpus-release-v1, commit14aa06d.
+F2: 4,922,444 targets ES/EN; NLL dev 5.559083; PPL 259.585. Checkpoint final descargado y verificado localmente. GPU destruida y ausencia confirmada por API. Descenso de crédito observado USD 0.159799, sujeto a ajustes pendientes. Generaciones muy repetitivas; no demuestra capacidad conversacional. Hielo y Trapos OFF. Los límites documentales históricos del corpus se preservan; no hay aprobación general de publicación de pesos/corpus.
 
-### Recuperación previa
-
-- [Decisión: corpus recuperado y preparación F2](architecture-recovery/corpus-recovery-f2/DECISION.md).
-- [Inventario y recuperación del corpus](architecture-recovery/corpus-recovery-f2/CORPUS_RECOVERY.md).
-- [Derechos y fuentes pendientes](architecture-recovery/corpus-recovery-f2/LICENSE_AUDIT.md).
-- [Conteos NeoToken V3: exactos parciales, no total certificado](architecture-recovery/corpus-recovery-f2/NEOTOKEN_V3_COUNTS.md).
-- [Benchmark real F2 CPU](architecture-recovery/corpus-recovery-f2/F2_CPU_BENCHMARK.md).
-- [Compuertas pendientes antes de F2](architecture-recovery/corpus-recovery-f2/TRAINING_READINESS.md).
-
-**Resultado actual:** corpus bruto564.789BASE+765SFT; curado500M257.043BASE; curado1B555.914BASE. Nombres1B/500Mson objetivos históricos. Solo25.355targets train aprobados y libres de reservas en la selección preparada; no se ejecutó el entrenamiento5M. F2=2.082.176parámetros; nueve tests técnicosPASS.
+[Release histórico de datos](architecture-recovery/f2-corpus-release/DECISION.md): su clasificación CONDITIONAL no se sobrescribe. Esta ejecución documenta el uso privado concreto autorizado.
 
 ## Cómo analizarlo con otro modelo
 
@@ -47,6 +45,7 @@ Algunos enlaces históricos apuntan a artefactos excluidos o rutas de máquina. 
 - **mechanism-study**: [README.md](architecture-recovery/mechanism-study/README.md), [DECISION.md](architecture-recovery/mechanism-study/DECISION.md)
 - **memory-bridge**: [README.md](architecture-recovery/memory-bridge/README.md), [DECISION.md](architecture-recovery/memory-bridge/DECISION.md)
 - **multiwrite**: [README.md](architecture-recovery/multiwrite/README.md), [DECISION.md](architecture-recovery/multiwrite/DECISION.md)
+- **neo-f2-gpu-training-v1**: [README.md](architecture-recovery/neo-f2-gpu-training-v1/README.md), [DECISION.md](architecture-recovery/neo-f2-gpu-training-v1/DECISION.md)
 - **order-curriculum**: [README.md](architecture-recovery/order-curriculum/README.md), [DECISION.md](architecture-recovery/order-curriculum/DECISION.md)
 - **query-conditioning**: [README.md](architecture-recovery/query-conditioning/README.md), [DECISION.md](architecture-recovery/query-conditioning/DECISION.md)
 - **selective-memory**: [README.md](architecture-recovery/selective-memory/README.md), [DECISION.md](architecture-recovery/selective-memory/DECISION.md)

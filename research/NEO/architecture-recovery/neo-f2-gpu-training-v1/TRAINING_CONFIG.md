@@ -1,0 +1,13 @@
+# Configuración fijada antes del alquiler
+
+F2 existente, 2.082.176 parámetros; baseline existente, 2.032.768. Contexto128, batch 2, semilla 17, AdamW LR0,003 betas0,9/0,95 decay0,01 foreach=false, clipping1. Sin scheduler, compile, Hielo ni Trapos. FP32 referencia; BF16 únicamente diagnóstico numérico separado, sin cambiar la receta principal. Máximo5M targets train independientes, una pasada de ventanas barajadas, stride127 y EOS; sin padding loss ni transiciones entre documentos. Checkpoint final fijo y cada 1M targets, sin selección por dev. NLL dev completa inicial/final, muestra fija intermedia. Prompts antes del entrenamiento: «La historia de», «The purpose of», «En matemáticas,», «A Python function».
+
+## Alcance de uso de datos para esta ejecución
+
+La clasificación histórica CONDITIONAL no se reescribe. Se permite este experimento privado sobre texto original declarado CC BY-SA3.0, con copia de licencia, atribución individual, revisión HF fijada y trazabilidad del contenido. Se apoya en la concesión de reproducción/adaptación de la licencia, no en una excepción genérica de fair use ni en que todo contenido público sea libre. Fuente: https://creativecommons.org/licenses/by-sa/3.0/legalcode y card fijada en LICENSE_EVIDENCE histórico.
+
+Esta ejecución distingue la aprobación general para publicar dataset/pesos del uso concreto privado solicitado: no publica ninguno. No se declara resuelto el debate de licencia de pesos. La licencia original y los créditos se conservan en el bundle privado; cualquier distribución futura exige nueva revisión. Se comprueban individualmente hash, URL, revisión y tokens, y se excluyen artículos con marcadores explícitos de excepción/restricción para revisión aparte; se registra cada exclusión, sin reemplazar artículos con otra fuente. El cribado no garantiza ausencia de material de terceros ni equivale a revisión manual íntegra. No se observó incompatibilidad específica en los documentos admitidos bajo la declaración upstream; subsiste esa limitación documental, que se hace explícita en vez de fabricar una aprobación global.
+
+## Presupuesto operativo
+
+Una instancia. Tarifa total máxima0,30USD/h; deadline2h desde create; reserva de transferencias1USD y contingencia1USD: cota operativa2,60USD, inferior al máximo5USD autorizado. Se elige oferta con tráfico <=0,05USD/GB y transferencia máxima reservada20GB. No volúmenes adicionales. Destrucción independiente con --yes y verificación API; watchdog es mitigación, no garantía financiera. Prioridad F2, exportación y carga local; baseline solo tras rescate de F2 y tiempo suficiente. No descargar imágenes/datos adicionales no previstos dentro del contenedor.

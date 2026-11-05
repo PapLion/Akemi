@@ -1,0 +1,7 @@
+# Entorno GPU medido
+
+{"python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]", "torch": "2.14.0+cu126", "cuda": "12.6", "gpu": "NVIDIA GeForce RTX 3090", "vram": 25296044032, "bf16": true, "platform": "Linux-5.15.0-181-generic-x86_64-with-glibc2.39"}
+
+Imagen por digest en results/rental-plan.json. Una RTX3090, sin volúmenes extra. Hashes del paquete comprobados después de transferir; dos dependencias V3 fijadas regex2026.9.29/tokenizers0.23.3. SSH con primera clave fijada desde endpoint Vast autenticado y StrictHostKeyChecking=yes; la API execute rechazó consultas sobre instancia activa, así que no se obtuvo una huella independiente por ese canal. No se desactivó comprobación posterior de cambios de clave.
+
+CUDA preflight PASS, con causalidad, padding, aislamiento, gradientes y AdamW; recuperación exacta4vs2+2 sobre corpus real. Primer preflight falló por map_location CUDA que desplazaba el contador escalar de AdamW: se preservó fallo y se reparó solamente el cargador. No se cambió el modelo ni las tolerancias. BF16 diagnóstico finito, máximo delta de logits 0.00863124430179596; no certificado para entrenamiento BF16. Receta principal FP32. Tras completar F2 apareció una dependencia de empaquetado ausente en generación: packing.py. Se transfirió el original sin modificaciones, se conservaron el error y su SHA, y se completó evaluación/generación desde final.pt sin pasos de optimizador adicionales. El preflight inicial no había cubierto esa importación de generación; no se presenta como certificado previo de generación.

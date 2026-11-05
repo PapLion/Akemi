@@ -1,0 +1,56 @@
+{
+  "kind": "F2",
+  "parameters": 2082176,
+  "targets": 4922444,
+  "updates": 19878,
+  "online_train_nll": 6.059437888688841,
+  "final_train_fixed_sample_nll": 5.8138312743237135,
+  "final_train_sample_targets": 31658,
+  "dev": {
+    "en": {
+      "nll": 5.82211167584879,
+      "ppl": 337.6843812152186,
+      "targets": 104772,
+      "domain": "encyclopedia"
+    },
+    "all": {
+      "nll": 5.559082889590607,
+      "ppl": 259.58465932915516,
+      "targets": 212105,
+      "domain": "encyclopedia"
+    },
+    "es": {
+      "nll": 5.3023300550118435,
+      "ppl": 200.80415001549372,
+      "targets": 107333,
+      "domain": "encyclopedia"
+    },
+    "seconds": 27.66552262287587
+  },
+  "update_seconds": 1205.3139723222703,
+  "wall_seconds_this_process": 1436.0899933944456,
+  "wall_time_note": "reconstructed from log birth UTC rounded to second; includes dependency repair/re-evaluation pause; not uninterrupted worker time",
+  "targets_per_second": 4083.9516615873627,
+  "peak_gpu_allocated": 83974656,
+  "peak_gpu_note": "finalization process only; training allocation recorded per update",
+  "peak_rss_MiB": 1365.37890625,
+  "dataset_sha": "c31b0e6f4b3a597b21dc4152f51f6d5b5f53b6b064bba9bf9c5fe70ea9c855b9",
+  "checkpoint_sha": "a8f9b4eed8aa76432e424ddea62c1aa9ed8a6e2e6260eca09f5d032ec62af21c",
+  "config": {
+    "seed": 17,
+    "context": 128,
+    "batch": 2,
+    "max_targets": 5000000,
+    "lr": 0.003,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "precision": "FP32",
+    "Hielo": false,
+    "Trapos": false
+  },
+  "recovered_evaluation_without_optimizer_updates": true
+}

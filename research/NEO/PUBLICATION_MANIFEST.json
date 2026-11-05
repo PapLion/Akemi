@@ -1,7 +1,7 @@
 {
   "scope": "public review snapshot, not original Git history or complete reproducibility bundle",
-  "source_branch": "neo-f2-corpus-release-v1",
-  "source_commit": "14aa06d618312a252733b114a1352a82c20bb05b",
+  "source_branch": "neo-f2-gpu-training-v1",
+  "source_commit": "c326aaeeb03e25119f4ffae8b1d02184a8b40a94",
   "transform": "/home/dani.pp -> /PATH/TO/NEO_HOME; trailing blank lines normalized; original hashes retained",
   "included_files": [
     {
@@ -2627,6 +2627,198 @@
       "original_sha256": "e7f83d79ec3a110521ede0ceac749712bf27d201ee6630cd5ec7eedfcb30218b"
     },
     {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/BASELINE_COMPARISON.md",
+      "source_path": "neo-f2-gpu-training-v1/BASELINE_COMPARISON.md",
+      "sha256": "fe19fe57aa0bab327b034a01e6ed4fa8f2094b467dc5a664abaa117f4984ae39",
+      "original_sha256": "fe19fe57aa0bab327b034a01e6ed4fa8f2094b467dc5a664abaa117f4984ae39"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/COST_REPORT.md",
+      "source_path": "neo-f2-gpu-training-v1/COST_REPORT.md",
+      "sha256": "27fe5237636ba31a08e12c4c9f9f48068c307fa04c6d582e548561b3a37f41c7",
+      "original_sha256": "27fe5237636ba31a08e12c4c9f9f48068c307fa04c6d582e548561b3a37f41c7"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/DECISION.md",
+      "source_path": "neo-f2-gpu-training-v1/DECISION.md",
+      "sha256": "ce7925e014a98e8fb5beafd4cac05848a3e9fc0a64b41367c33232db759a38f2",
+      "original_sha256": "ce7925e014a98e8fb5beafd4cac05848a3e9fc0a64b41367c33232db759a38f2"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/EVALUATION.md",
+      "source_path": "neo-f2-gpu-training-v1/EVALUATION.md",
+      "sha256": "6d8615f7c9abe663aee2bd35dac6adc23f16776b0853c653b22a61f1f2e871d6",
+      "original_sha256": "6d8615f7c9abe663aee2bd35dac6adc23f16776b0853c653b22a61f1f2e871d6"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/GENERATIONS.md",
+      "source_path": "neo-f2-gpu-training-v1/GENERATIONS.md",
+      "sha256": "69a43b874f6bccf5cc545f9d557b8718f3be5c0fb4d23bc168c72d09ff1e53bd",
+      "original_sha256": "69a43b874f6bccf5cc545f9d557b8718f3be5c0fb4d23bc168c72d09ff1e53bd"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/GPU_ENVIRONMENT.md",
+      "source_path": "neo-f2-gpu-training-v1/GPU_ENVIRONMENT.md",
+      "sha256": "581f877111d39d10de39ec3d4efb021e271cedbde6168479c886eb474518a3cf",
+      "original_sha256": "581f877111d39d10de39ec3d4efb021e271cedbde6168479c886eb474518a3cf"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/GPU_PERFORMANCE.md",
+      "source_path": "neo-f2-gpu-training-v1/GPU_PERFORMANCE.md",
+      "sha256": "4224c6e9ca545404a2c7a649eb10f006ec3a13ef33e2d83d065d71b4a2d66487",
+      "original_sha256": "4224c6e9ca545404a2c7a649eb10f006ec3a13ef33e2d83d065d71b4a2d66487"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/README.md",
+      "source_path": "neo-f2-gpu-training-v1/README.md",
+      "sha256": "24c03fd38fe8e63e6ff1377e27b49982ec6a20e1dfa117b328380697b1c14a9d",
+      "original_sha256": "24c03fd38fe8e63e6ff1377e27b49982ec6a20e1dfa117b328380697b1c14a9d"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/TRAINING_CONFIG.md",
+      "source_path": "neo-f2-gpu-training-v1/TRAINING_CONFIG.md",
+      "sha256": "2916e305fe7e4cfc06ba3b990632e972f7d6a61232d67dc33f3e02cc52cce609",
+      "original_sha256": "2916e305fe7e4cfc06ba3b990632e972f7d6a61232d67dc33f3e02cc52cce609"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/TRAINING_RESULTS.md",
+      "source_path": "neo-f2-gpu-training-v1/TRAINING_RESULTS.md",
+      "sha256": "1250225025a300f4d7f979a312f1573b93d874b598961b1f43a20ffa3ff6b7f5",
+      "original_sha256": "1250225025a300f4d7f979a312f1573b93d874b598961b1f43a20ffa3ff6b7f5"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/close_billing.py",
+      "source_path": "neo-f2-gpu-training-v1/close_billing.py",
+      "sha256": "4534fa4ace7e930fd4fb0242c4c865b4958445ff28a24ad3925e7376211dee70",
+      "original_sha256": "4534fa4ace7e930fd4fb0242c4c865b4958445ff28a24ad3925e7376211dee70"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/finalize_checkpoint.py",
+      "source_path": "neo-f2-gpu-training-v1/finalize_checkpoint.py",
+      "sha256": "911e531dbc6f7b75acad61b115c9bae11155eecd12d26806b60de7b49b13a839",
+      "original_sha256": "911e531dbc6f7b75acad61b115c9bae11155eecd12d26806b60de7b49b13a839"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/finish_pipeline.py",
+      "source_path": "neo-f2-gpu-training-v1/finish_pipeline.py",
+      "sha256": "cd19382ee0a022a17d1f6d137fffe455fb7c38a47b4636869334057bcca6fcd6",
+      "original_sha256": "2454c24bf97ae06fe28971e9489c74f879003f2f8dc321d4843f9430cda55c9f"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/hash_artifacts.py",
+      "source_path": "neo-f2-gpu-training-v1/hash_artifacts.py",
+      "sha256": "bafea50bcea5a5b0d91a19e2ed0c784ba7039b080f0f555f83c923243a6a68cc",
+      "original_sha256": "bafea50bcea5a5b0d91a19e2ed0c784ba7039b080f0f555f83c923243a6a68cc"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/lifecycle.py",
+      "source_path": "neo-f2-gpu-training-v1/lifecycle.py",
+      "sha256": "4b55627255221bc0601c9e5ef00a169c3bce12af22fda58024d5aae3c36fa816",
+      "original_sha256": "4b55627255221bc0601c9e5ef00a169c3bce12af22fda58024d5aae3c36fa816"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/monitor.py",
+      "source_path": "neo-f2-gpu-training-v1/monitor.py",
+      "sha256": "d9880deca3e7b25cf8b90f13aa750f6fba1f2bfeb2beba19325711f2e712ec0e",
+      "original_sha256": "d9880deca3e7b25cf8b90f13aa750f6fba1f2bfeb2beba19325711f2e712ec0e"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/plot_curves.py",
+      "source_path": "neo-f2-gpu-training-v1/plot_curves.py",
+      "sha256": "fbea54f4762ecb1bd01ead87c49cc3d97218bbb7dd0fed9f32eb9fd30a3142eb",
+      "original_sha256": "fbea54f4762ecb1bd01ead87c49cc3d97218bbb7dd0fed9f32eb9fd30a3142eb"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/polish_reports.py",
+      "source_path": "neo-f2-gpu-training-v1/polish_reports.py",
+      "sha256": "75a257a15dec5be637d00509de8d882294d2076531ecb122d4554496f00d1f32",
+      "original_sha256": "75a257a15dec5be637d00509de8d882294d2076531ecb122d4554496f00d1f32"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/prepare.py",
+      "source_path": "neo-f2-gpu-training-v1/prepare.py",
+      "sha256": "5eecf4e86632591991d9f7ec6c914001a9b5356abb0e85c07d19eead78bf0580",
+      "original_sha256": "5eecf4e86632591991d9f7ec6c914001a9b5356abb0e85c07d19eead78bf0580"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/publish_review.py",
+      "source_path": "neo-f2-gpu-training-v1/publish_review.py",
+      "sha256": "295fb789671bdd940e1820f601ad3b424ca74dabfb56dbb42e9c49f506fe467f",
+      "original_sha256": "465936e6a349414c779811b89073d30f25e028fae638e47f8e7c03984d96ce48"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/remote.py",
+      "source_path": "neo-f2-gpu-training-v1/remote.py",
+      "sha256": "02089486a491a65a7c9f16466034a6e5222b230d889cdd5abeb6bb06fa8ccad7",
+      "original_sha256": "02089486a491a65a7c9f16466034a6e5222b230d889cdd5abeb6bb06fa8ccad7"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/reports.py",
+      "source_path": "neo-f2-gpu-training-v1/reports.py",
+      "sha256": "34d623a942ad190e74d289e876e4de39569284801bb05ebc6f611cc6a4b02a84",
+      "original_sha256": "34d623a942ad190e74d289e876e4de39569284801bb05ebc6f611cc6a4b02a84"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/rescue.py",
+      "source_path": "neo-f2-gpu-training-v1/rescue.py",
+      "sha256": "6ec342b447d65970115501e8f7997c13316e74131d6c226d87beaa1e61c92830",
+      "original_sha256": "6ec342b447d65970115501e8f7997c13316e74131d6c226d87beaa1e61c92830"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/F2-summary.json",
+      "source_path": "neo-f2-gpu-training-v1/results/F2-summary.json",
+      "sha256": "c23d356ab679a385eece7b4d1c03db10c885c2ca1cf55ce8fc662aa2d9d73fb4",
+      "original_sha256": "c23d356ab679a385eece7b4d1c03db10c885c2ca1cf55ce8fc662aa2d9d73fb4"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/Transformer-summary.json",
+      "source_path": "neo-f2-gpu-training-v1/results/Transformer-summary.json",
+      "sha256": "f6b1eddd5fa5da79f713e9d3de2fb42fe13b83e590ec72630873c034a2091ab0",
+      "original_sha256": "f6b1eddd5fa5da79f713e9d3de2fb42fe13b83e590ec72630873c034a2091ab0"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/bundle-summary.json",
+      "source_path": "neo-f2-gpu-training-v1/results/bundle-summary.json",
+      "sha256": "24ab8f5800ef5ad3c59070919083a4fef63c3d44102d128292bfd04b19b788e3",
+      "original_sha256": "24ab8f5800ef5ad3c59070919083a4fef63c3d44102d128292bfd04b19b788e3"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/data-contracts.json",
+      "source_path": "neo-f2-gpu-training-v1/results/data-contracts.json",
+      "sha256": "9e95df125ed8ac7c6c35fcbb956f0edd4111466bc684d1c7260265a54f3469d7",
+      "original_sha256": "9e95df125ed8ac7c6c35fcbb956f0edd4111466bc684d1c7260265a54f3469d7"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/dataset-summary.json",
+      "source_path": "neo-f2-gpu-training-v1/results/dataset-summary.json",
+      "sha256": "126eb31070d09d72fd5bf4261d75515c5a26af169f379788f986a5c55542e52d",
+      "original_sha256": "126eb31070d09d72fd5bf4261d75515c5a26af169f379788f986a5c55542e52d"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/summarize_runtime.py",
+      "source_path": "neo-f2-gpu-training-v1/summarize_runtime.py",
+      "sha256": "85880f657d4f1c280a6d8b6995d036ebbd410517d7537128b792d5264acc09f8",
+      "original_sha256": "85880f657d4f1c280a6d8b6995d036ebbd410517d7537128b792d5264acc09f8"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/verify_local.py",
+      "source_path": "neo-f2-gpu-training-v1/verify_local.py",
+      "sha256": "b68afd348b5038405760db4597b8f9d8912d9e8ffa346b43ffd25817fa06555c",
+      "original_sha256": "b68afd348b5038405760db4597b8f9d8912d9e8ffa346b43ffd25817fa06555c"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/verify_release.py",
+      "source_path": "neo-f2-gpu-training-v1/verify_release.py",
+      "sha256": "be6fba4e347e5b7e559130e58a93e0fb3ad08fd1ba178e698edb05514d774bcb",
+      "original_sha256": "be6fba4e347e5b7e559130e58a93e0fb3ad08fd1ba178e698edb05514d774bcb"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/worker.py",
+      "source_path": "neo-f2-gpu-training-v1/worker.py",
+      "sha256": "44181d9e177b05ce3898043c960c73a3d446139d0f7454226e75e1f5768113eb",
+      "original_sha256": "44181d9e177b05ce3898043c960c73a3d446139d0f7454226e75e1f5768113eb"
+    },
+    {
       "path": "architecture-recovery/order-curriculum/COUNTERFACTUALS.md",
       "source_path": "order-curriculum/COUNTERFACTUALS.md",
       "sha256": "715457a0eeb1b3e74c3d60943bb1e68f92626ac6a620e862c9b0b395b5fb4f90",
@@ -3969,10 +4161,28 @@
       "source_path": "verify_artifacts.py",
       "sha256": "dfbba6143cf7fe68daac9034de25e0a620e065a105a62588d7329615973f314a",
       "original_sha256": "dfbba6143cf7fe68daac9034de25e0a620e065a105a62588d7329615973f314a"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/F2-curve-100-updates.csv",
+      "source_path": "neo-f2-gpu-training-v1/results/F2-curve-100-updates.csv",
+      "sha256": "070139f20a0488bec8e6dc561f0ae5f3f96f6b5b0d3c9e5659fb4577650ade14",
+      "original_sha256": "070139f20a0488bec8e6dc561f0ae5f3f96f6b5b0d3c9e5659fb4577650ade14"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/Transformer-curve-100-updates.csv",
+      "source_path": "neo-f2-gpu-training-v1/results/Transformer-curve-100-updates.csv",
+      "sha256": "2efc5b19e51d0914ad9cfb08ae016d332a6135988cc7c02098635d3e65d99e86",
+      "original_sha256": "2efc5b19e51d0914ad9cfb08ae016d332a6135988cc7c02098635d3e65d99e86"
+    },
+    {
+      "path": "architecture-recovery/neo-f2-gpu-training-v1/results/learning-curves.svg",
+      "source_path": "neo-f2-gpu-training-v1/results/learning-curves.svg",
+      "sha256": "98a96cded96f2ba6f7b0b6d8770c7c1acd4c467e5af74bd8ec86d9462301daa9",
+      "original_sha256": "98a96cded96f2ba6f7b0b6d8770c7c1acd4c467e5af74bd8ec86d9462301daa9"
     }
   ],
   "excluded_counts": {
-    "not-allowlisted": 2033,
+    "not-allowlisted": 2076,
     "sealed-generation-or-artifact": 4,
     "json-with-data-or-prediction-payload": 14
   },
@@ -4094,9 +4304,15 @@
       "subject": "Prepare conditional bilingual F2 selection and certify approved corpus reader"
     },
     {
+      "local_branch": "neo-f2-gpu-training-v1",
+      "original_local_commit": "c326aaeeb03e25119f4ffae8b1d02184a8b40a94",
+      "subject": "Train F2 and comparable Transformer on RTX 3090; preserve checkpoints and verified cleanup"
+    },
+    {
       "local_branch": "neo-language-learning-foundation-v1",
       "original_local_commit": "6115bb686c707cf3fbdcdd82deef025c34e9b209",
       "subject": "Establish language learning foundation with bounded real-text CPU pilot"
     }
-  ]
+  ],
+  "review_index_updated_for": "F2 GPU training; private checkpoints and corpus intentionally omitted"
 }

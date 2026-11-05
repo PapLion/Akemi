@@ -1,0 +1,9 @@
+{
+  "documents": 2017,
+  "excluded": 9,
+  "available": {
+    "train": 4922444,
+    "dev": 212105
+  },
+  "tokenizer": "813e5d1b255d832728941a570052afb59b1ad1be13100ae6d6698cd1d95f127b"
+}

@@ -1,0 +1,11 @@
+{
+  "key": true,
+  "sha256": true,
+  "family": true,
+  "component": true,
+  "no_test_opened": true,
+  "original_tokenizer_sha256": "8489cd9a98fb4a7339fe802be74621774f2ee68b465cfb0b16846a07fe99a156",
+  "excluded_articles": 9,
+  "train_documents": 1947,
+  "dev_documents": 70
+}

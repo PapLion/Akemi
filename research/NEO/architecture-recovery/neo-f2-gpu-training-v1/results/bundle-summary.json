@@ -1,0 +1,16 @@
+{
+  "files": [
+    "train.npz",
+    "dev.npz",
+    "tokenizer.json",
+    "f2.py",
+    "worker.py",
+    "attribution.jsonl",
+    "dataset.json",
+    "core.py",
+    "LICENSE_CC_BY_SA_3.txt",
+    "vendor/cryo_historical.py"
+  ],
+  "sha256": "c081910bd80021539818de7665b0295568c18ddd1d65843f53695bf5cce22bde",
+  "bytes": 6498070
+}
