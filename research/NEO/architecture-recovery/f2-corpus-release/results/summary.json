@@ -1,0 +1,17 @@
+{
+  "wiki_current_keep_documents": 31447,
+  "wiki_status": "CONDITIONAL",
+  "candidate_documents": 2026,
+  "exact_candidate_targets": {
+    "train/en": 2500059,
+    "train/es": 2506820,
+    "dev/en": 104772,
+    "dev/es": 107333
+  },
+  "approved_train_targets": 25355,
+  "approved_dev_targets": 8637,
+  "deficit": 4974645,
+  "ready": false,
+  "full_corpus_v3_counted": false,
+  "seconds": 77.21969509124756
+}

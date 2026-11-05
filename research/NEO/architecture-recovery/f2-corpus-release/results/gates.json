@@ -1,0 +1,17 @@
+{
+  "provenance": "CONDITIONAL",
+  "rights": "BLOCKED",
+  "attribution": "CONDITIONAL",
+  "integrity": "PASS",
+  "diversity_ES_EN": "CONDITIONAL",
+  "sufficient_approved_volume": "BLOCKED",
+  "deduplication": "CONDITIONAL",
+  "splits": "CONDITIONAL",
+  "V3_selection_count": "PASS",
+  "effective_targets": "PASS",
+  "approved_small_reader": "PASS",
+  "approved_small_exact_resume": "PASS",
+  "full_release_reader": "BLOCKED",
+  "evaluation": "CONDITIONAL",
+  "budget": "CONDITIONAL"
+}

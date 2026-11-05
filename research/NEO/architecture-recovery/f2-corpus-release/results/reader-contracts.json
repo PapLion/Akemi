@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": [
+    "approved-only",
+    "content hashes",
+    "V3 lengths",
+    "one shifted target per document token plus EOS",
+    "no cross-document packing",
+    "deterministic shuffled windows",
+    "manifest/order identity",
+    "cursor",
+    "padding and shift",
+    "causality on real documents",
+    "row isolation",
+    "finite gradients",
+    "continuous 4 vs interrupted 2+2 exact parameters AdamW RNG cursor losses batch order"
+  ],
+  "updates_executed": 6,
+  "maximum_training_updates_authorized": 0,
+  "purpose": "technical integration only, not F2 training",
+  "reader_setup_seconds": 0.10984089800058427,
+  "windows": 200,
+  "targets_per_pass": 25355,
+  "losses": [
+    8.994685173034668,
+    8.747937202453613,
+    8.607094764709473,
+    8.040172576904297
+  ],
+  "seconds": 2.9491487579998648
+}

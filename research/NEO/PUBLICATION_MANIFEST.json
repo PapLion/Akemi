@@ -1,7 +1,7 @@
 {
   "scope": "public review snapshot, not original Git history or complete reproducibility bundle",
-  "source_branch": "neo-corpus-recovery-f2-readiness-v1",
-  "source_commit": "ddbd348269d56f36dbf058b3c578ad89f5269a5b",
+  "source_branch": "neo-f2-corpus-release-v1",
+  "source_commit": "14aa06d618312a252733b114a1352a82c20bb05b",
   "transform": "/home/dani.pp -> /PATH/TO/NEO_HOME; trailing blank lines normalized; original hashes retained",
   "included_files": [
     {
@@ -1455,6 +1455,132 @@
       "source_path": "extend_learning.py",
       "sha256": "0951761161700fc14dfad96b1c3c1999bec76eccba03364b552fecd779c69777",
       "original_sha256": "0951761161700fc14dfad96b1c3c1999bec76eccba03364b552fecd779c69777"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/APPROVAL_DECISIONS.md",
+      "source_path": "f2-corpus-release/APPROVAL_DECISIONS.md",
+      "sha256": "ab289b5bcb2fff082b1f882ed5321cb411fd86f27990697625ac2a98da61c08f",
+      "original_sha256": "ab289b5bcb2fff082b1f882ed5321cb411fd86f27990697625ac2a98da61c08f"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/ATTRIBUTION_MANIFEST.md",
+      "source_path": "f2-corpus-release/ATTRIBUTION_MANIFEST.md",
+      "sha256": "91432bd8fb0a5d0b7ebc82354beaa3474fa69a59b350c35cca12b55cdec3f26e",
+      "original_sha256": "91432bd8fb0a5d0b7ebc82354beaa3474fa69a59b350c35cca12b55cdec3f26e"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/CPU_BUDGET.md",
+      "source_path": "f2-corpus-release/CPU_BUDGET.md",
+      "sha256": "4180ac43b7aac06ce955862ae54544e4307070ff0846cb0d013202a89046604c",
+      "original_sha256": "4180ac43b7aac06ce955862ae54544e4307070ff0846cb0d013202a89046604c"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/DATA_READER_CONTRACTS.md",
+      "source_path": "f2-corpus-release/DATA_READER_CONTRACTS.md",
+      "sha256": "9cf5d577e235a56e9d66e4849940c2cc80cf44f018925f157c24320ac70211d2",
+      "original_sha256": "9cf5d577e235a56e9d66e4849940c2cc80cf44f018925f157c24320ac70211d2"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/DECISION.md",
+      "source_path": "f2-corpus-release/DECISION.md",
+      "sha256": "9e25e16df9795305affb1791eb2d30103b033d231dc07b631881247db29d37c6",
+      "original_sha256": "9e25e16df9795305affb1791eb2d30103b033d231dc07b631881247db29d37c6"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/F2_CORPUS_SELECTION.md",
+      "source_path": "f2-corpus-release/F2_CORPUS_SELECTION.md",
+      "sha256": "05be0c437f708dabce88de1c67eda310752b0b3509c70ea8ab67477d655f3486",
+      "original_sha256": "05be0c437f708dabce88de1c67eda310752b0b3509c70ea8ab67477d655f3486"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/F2_TRAINING_CONFIG.md",
+      "source_path": "f2-corpus-release/F2_TRAINING_CONFIG.md",
+      "sha256": "88eb2fa0b50c81af2e2d23c9ae7d2e628944fc32e0be406d44240c1d17050a86",
+      "original_sha256": "88eb2fa0b50c81af2e2d23c9ae7d2e628944fc32e0be406d44240c1d17050a86"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/LICENSE_EVIDENCE.md",
+      "source_path": "f2-corpus-release/LICENSE_EVIDENCE.md",
+      "sha256": "298b3703e8b193a8642d1a8017f9b20bc758accd21aec7282353028a37c52777",
+      "original_sha256": "298b3703e8b193a8642d1a8017f9b20bc758accd21aec7282353028a37c52777"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/NEOTOKEN_V3_EXACT_COUNTS.md",
+      "source_path": "f2-corpus-release/NEOTOKEN_V3_EXACT_COUNTS.md",
+      "sha256": "d9a5e05724725afc1dcedff6928c5e766185bbfdbac7cf4b1f241a0db7f95cc0",
+      "original_sha256": "d9a5e05724725afc1dcedff6928c5e766185bbfdbac7cf4b1f241a0db7f95cc0"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/PROTOCOL.json",
+      "source_path": "f2-corpus-release/PROTOCOL.json",
+      "sha256": "151595d5d4ce734b70b9651089f2815e09a073f1490bde4ed7dd626ecbe954de",
+      "original_sha256": "151595d5d4ce734b70b9651089f2815e09a073f1490bde4ed7dd626ecbe954de"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/README.md",
+      "source_path": "f2-corpus-release/README.md",
+      "sha256": "16e49bbd43a63860fdef0afce82f7e157c8f44e9cca4bb59a3a389d068389416",
+      "original_sha256": "16e49bbd43a63860fdef0afce82f7e157c8f44e9cca4bb59a3a389d068389416"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/REMAINING_BLOCKERS.md",
+      "source_path": "f2-corpus-release/REMAINING_BLOCKERS.md",
+      "sha256": "23b6325b1672d5478df1e35df5be8503ed5a5c09737ffecd641b7f0caef1de9e",
+      "original_sha256": "23b6325b1672d5478df1e35df5be8503ed5a5c09737ffecd641b7f0caef1de9e"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/SOURCE_RIGHTS_MATRIX.md",
+      "source_path": "f2-corpus-release/SOURCE_RIGHTS_MATRIX.md",
+      "sha256": "362160042e26287fdd75db3e9b91e4bf0c5336a318415d7c63979f71d0e28766",
+      "original_sha256": "362160042e26287fdd75db3e9b91e4bf0c5336a318415d7c63979f71d0e28766"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/TRAIN_DEV_ISOLATION.md",
+      "source_path": "f2-corpus-release/TRAIN_DEV_ISOLATION.md",
+      "sha256": "a2d0930aad29f591809bf8c1af22461dd619326ecdb5a2a9fea073e508b600bf",
+      "original_sha256": "a2d0930aad29f591809bf8c1af22461dd619326ecdb5a2a9fea073e508b600bf"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/finalize.py",
+      "source_path": "f2-corpus-release/finalize.py",
+      "sha256": "a2e212ea6540ac3a2d978f421b9f7ee291c302e80e12ba74e0df18286f0fbee2",
+      "original_sha256": "a2e212ea6540ac3a2d978f421b9f7ee291c302e80e12ba74e0df18286f0fbee2"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/reader.py",
+      "source_path": "f2-corpus-release/reader.py",
+      "sha256": "f9bf5a517c7ccaf352d7b965cf2e2c0a5dce36faf0312a55ed4fad8526241c69",
+      "original_sha256": "f9bf5a517c7ccaf352d7b965cf2e2c0a5dce36faf0312a55ed4fad8526241c69"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/release.py",
+      "source_path": "f2-corpus-release/release.py",
+      "sha256": "8245a08a19601a77fa919dd79a25d8dd099b360006a7782488ce4db994fa634f",
+      "original_sha256": "8245a08a19601a77fa919dd79a25d8dd099b360006a7782488ce4db994fa634f"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/results/gates.json",
+      "source_path": "f2-corpus-release/results/gates.json",
+      "sha256": "930c67208972f2ddf60ad77ea0fa4eda55ea40f9ca131780c69958f29ae1c414",
+      "original_sha256": "930c67208972f2ddf60ad77ea0fa4eda55ea40f9ca131780c69958f29ae1c414"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/results/reader-contracts.json",
+      "source_path": "f2-corpus-release/results/reader-contracts.json",
+      "sha256": "a2a1fbfa522d0e55e5ff78fa5a99b35c557521ed3376ee86549073b20d9d0abf",
+      "original_sha256": "a2a1fbfa522d0e55e5ff78fa5a99b35c557521ed3376ee86549073b20d9d0abf"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/results/summary.json",
+      "source_path": "f2-corpus-release/results/summary.json",
+      "sha256": "6335cbbbbd2c63193db6b8a765b86d3d41e726eb397c168577a3a19048e8cfa0",
+      "original_sha256": "6335cbbbbd2c63193db6b8a765b86d3d41e726eb397c168577a3a19048e8cfa0"
+    },
+    {
+      "path": "architecture-recovery/f2-corpus-release/test_release.py",
+      "source_path": "f2-corpus-release/test_release.py",
+      "sha256": "4b308c3d335e7788e9a3b065f35d34a37e28e4bdc383cc7950d007868740ba9a",
+      "original_sha256": "4b308c3d335e7788e9a3b065f35d34a37e28e4bdc383cc7950d007868740ba9a"
     },
     {
       "path": "architecture-recovery/foreground-binding/ARCHITECTURE.md",
@@ -3846,7 +3972,7 @@
     }
   ],
   "excluded_counts": {
-    "not-allowlisted": 2015,
+    "not-allowlisted": 2033,
     "sealed-generation-or-artifact": 4,
     "json-with-data-or-prediction-payload": 14
   },
@@ -3961,6 +4087,11 @@
       "local_branch": "neo-corpus-recovery-f2-readiness-v1",
       "original_local_commit": "ddbd348269d56f36dbf058b3c578ad89f5269a5b",
       "subject": "Recover historical NEO corpus and certify bounded F2 CPU readiness"
+    },
+    {
+      "local_branch": "neo-f2-corpus-release-v1",
+      "original_local_commit": "14aa06d618312a252733b114a1352a82c20bb05b",
+      "subject": "Prepare conditional bilingual F2 selection and certify approved corpus reader"
     },
     {
       "local_branch": "neo-language-learning-foundation-v1",

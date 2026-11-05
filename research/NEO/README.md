@@ -4,6 +4,12 @@ Este directorio reúne los informes, código de referencia y métricas agregadas
 
 ## Estado más reciente
 
+**Release F2: BLOQUEADO.** [Decisión actual](architecture-recovery/f2-corpus-release/DECISION.md) · [Requisitos restantes](architecture-recovery/f2-corpus-release/REMAINING_BLOCKERS.md) · [Conteos exactos](architecture-recovery/f2-corpus-release/NEOTOKEN_V3_EXACT_COUNTS.md).
+
+Se contaron 5.006.879 targets train candidatos Wikipedia ES/EN y 212.105 dev. Siguen CONDITIONAL; aprobados: 25.355 train / 8.637 dev. Siete tests adicionales PASS y reanudación exacta del lector aprobado real. No se entrenó F2. Procedencia local: rama neo-f2-corpus-release-v1, commit14aa06d.
+
+### Recuperación previa
+
 - [Decisión: corpus recuperado y preparación F2](architecture-recovery/corpus-recovery-f2/DECISION.md).
 - [Inventario y recuperación del corpus](architecture-recovery/corpus-recovery-f2/CORPUS_RECOVERY.md).
 - [Derechos y fuentes pendientes](architecture-recovery/corpus-recovery-f2/LICENSE_AUDIT.md).
@@ -33,6 +39,7 @@ Algunos enlaces históricos apuntan a artefactos excluidos o rutas de máquina. 
 - **contract-v2**: [README.md](architecture-recovery/contract-v2/README.md), [DECISION.md](architecture-recovery/contract-v2/DECISION.md)
 - **corpus-recovery-f2**: [README.md](architecture-recovery/corpus-recovery-f2/README.md), [DECISION.md](architecture-recovery/corpus-recovery-f2/DECISION.md)
 - **distribution-scaling**: [README.md](architecture-recovery/distribution-scaling/README.md), [DECISION.md](architecture-recovery/distribution-scaling/DECISION.md)
+- **f2-corpus-release**: [README.md](architecture-recovery/f2-corpus-release/README.md), [DECISION.md](architecture-recovery/f2-corpus-release/DECISION.md)
 - **foreground-binding**: [README.md](architecture-recovery/foreground-binding/README.md), [DECISION.md](architecture-recovery/foreground-binding/DECISION.md)
 - **language-bridge**: [README.md](architecture-recovery/language-bridge/README.md), [DECISION.md](architecture-recovery/language-bridge/DECISION.md)
 - **language-foundation**: [README.md](architecture-recovery/language-foundation/README.md), [DECISION.md](architecture-recovery/language-foundation/DECISION.md)
