@@ -14,12 +14,14 @@ test_watchdog_only_destroys_owned_job (test_operations.Tests.test_watchdog_only_
 test_archive_preserved_when_optional_validator_fails (test_recovery.Recovery.test_archive_preserved_when_optional_validator_fails) ... ok
 test_cloud_deployment_probe_never_deletes (test_recovery.Recovery.test_cloud_deployment_probe_never_deletes) ... ok
 test_deletion_failure_never_claims_shutdown (test_recovery.Recovery.test_deletion_failure_never_claims_shutdown) ... ok
+test_external_arm_failure_prevents_any_paid_create (test_recovery.Recovery.test_external_arm_failure_prevents_any_paid_create) ... ok
 test_failure_and_success_are_distinct_from_archive_and_cleanup (test_recovery.Recovery.test_failure_and_success_are_distinct_from_archive_and_cleanup) ... ok
 test_missing_authorization_cannot_start_service (test_recovery.Recovery.test_missing_authorization_cannot_start_service) ... ok
+test_nonfinite_budget_fails_closed (test_recovery.Recovery.test_nonfinite_budget_fails_closed) ... ok
 test_remote_process_survives_launcher_exit (test_recovery.Recovery.test_remote_process_survives_launcher_exit) ... ok
 test_state_does_not_destroy_unrelated_label (test_recovery.Recovery.test_state_does_not_destroy_unrelated_label) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 1.099s
+Ran 22 tests in 1.225s
 
 OK

@@ -1,0 +1,66 @@
+{
+  "job_id": "neo-binding-20261116-200409",
+  "authorization_reference": null,
+  "offer_id": null,
+  "instance_id": null,
+  "max_usd": 0.75,
+  "max_runtime_seconds": 3600,
+  "recovery_seconds": 900,
+  "hourly_usd": 0.3,
+  "transfer_reserve_usd": 0.2,
+  "max_transfer_gb": 8,
+  "disk_gb": 40,
+  "python": "/home/dani.pp/evaluations/cryo-legacy-viability/.venv/bin/python",
+  "bundle": "/home/dani.pp/research/neo-architecture-recovery/neo-f2-corpus-release-v1/neo-binding-objective-contrast-v1/private/bundle.tar.gz",
+  "bundle_sha256": "f3c8c101f116b8c057eb716fc0852267987da58e4af0b5c8c84faf5d06086c98",
+  "source_root": "/home/dani.pp/research/neo-architecture-recovery/neo-f2-corpus-release-v1/neo-binding-objective-contrast-v1",
+  "architecture": [
+    "F8 normalized 8195840 parameters",
+    "Transformer8 7998720 parameters"
+  ],
+  "dataset": {
+    "version": "preregistered contrastive panel",
+    "hashes": {
+      "objective.py": "1b4a23596c22a3979e91dc5c033a1a3f96b592fe224a73af3d06a6405aff4a92",
+      "learning.py": "69cd32fde9e8d414e03c07b9bfa3e7638e32be0f2b27f68812d7db600c79a6f3",
+      "adaptation.jsonl": "887ec304b804dfe6781b0e943db8947da24c58107dee994878a11d84c0d0b4f5",
+      "panel.jsonl": "c4c50bab1159c3942821ba81a3d9336fcff2215e650ebdae97d3b09712998bdb",
+      "OBJECTIVE_PROTOCOL.md": "e9b5433593b117d01ea8f26125decab4c242e50c4ecd752f6111edbff4c8efd1"
+    }
+  },
+  "seed": 17,
+  "remote_dir": "/workspace/neo/neo-binding-objective-contrast-v1",
+  "env": {
+    "PYTHONPATH": "/workspace/neo/deps",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "training_command": [
+    "python",
+    "objective_driver.py",
+    "--device",
+    "cuda"
+  ],
+  "setup_commands": [
+    "cd /workspace/neo && python -m pip install --target deps --no-deps regex==2026.9.29 tokenizers==0.23.3",
+    "cd /workspace/neo && python -c \"import hashlib,json,pathlib;m=json.load(open('HASHES.json'));assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==h for p,h in m.items())\"",
+    "cd /workspace/neo/neo-binding-objective-contrast-v1 && env PYTHONPATH=/workspace/neo/deps OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 CUBLAS_WORKSPACE_CONFIG=:4096:8 python objective_driver.py --device cuda --contracts"
+  ],
+  "artifact_paths": [
+    "results/gpu",
+    "private/trained"
+  ],
+  "required_files": [
+    "results/gpu/complete.json",
+    "private/trained/F8-0.0001.pt",
+    "private/trained/F8-0.003.pt",
+    "private/trained/Transformer8-0.0001.pt",
+    "private/trained/Transformer8-0.003.pt"
+  ],
+  "validate_command": [
+    "/home/dani.pp/evaluations/cryo-legacy-viability/.venv/bin/python",
+    "/home/dani.pp/research/neo-architecture-recovery/neo-f2-corpus-release-v1/neo-training-operations/validate_archive.py"
+  ],
+  "sync_seconds": 300
+}

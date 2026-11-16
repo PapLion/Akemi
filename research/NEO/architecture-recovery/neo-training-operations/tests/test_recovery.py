@@ -14,6 +14,38 @@ from test_operations import Provider
 
 
 class Recovery(unittest.TestCase):
+    def test_external_arm_failure_prevents_any_paid_create(self):
+        class ReadOnlyAPI:
+            def __init__(self):self.calls=[]
+            def cli(self,*args):
+                self.calls.append(args)
+                if args==('show','volumes'):return []
+                if args==('show','user'):return {'credit':1}
+                if args[:2]==('search','offers'):
+                    return [{'id':123,'dph_total':.1,'storage_cost':0,'inet_up_cost':0,'inet_down_cost':0}]
+                raise AssertionError('Unexpected provider mutation')
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td);bundle=root/'bundle';bundle.write_bytes(b'frozen')
+            cfg={'job_id':'neo-test-123456789012','max_runtime_seconds':120,'recovery_seconds':30,
+                 'hourly_usd':.1,'max_usd':1,'transfer_reserve_usd':.1,
+                 'authorization_reference':'TEST ONLY (no actual authorization)',
+                 'bundle':str(bundle),'bundle_sha256':o.sha(bundle),'python':sys.executable,
+                 'required_files':['checkpoint'],'validate_command':['dummy'],
+                 'offer_id':123,'disk_gb':40,'max_transfer_gb':1}
+            config=root/'config.json';o.atomic(config,cfg);api=ReadOnlyAPI()
+            with patch.object(o,'PRIVATE',root/'state'),patch.object(o,'helpers',return_value=api),\
+                 patch.object(o,'Provider') as provider,patch.object(o,'credential_preflight'),\
+                 patch.object(o,'command',return_value=b''),patch.object(o,'DriveStore',return_value=o.LocalStore(root/'storage')),\
+                 patch.object(o,'arm',side_effect=TimeoutError('No external receipt')):
+                provider.return_value.instances.return_value=[]
+                with self.assertRaises(TimeoutError):o.run(config)
+            self.assertFalse(any(c[:2]==('create','instance') for c in api.calls))
+
+    def test_nonfinite_budget_fails_closed(self):
+        cfg={'job_id':'neo-test-123456789012','max_runtime_seconds':120,'recovery_seconds':30,
+             'hourly_usd':float('nan'),'max_usd':1,'transfer_reserve_usd':.1}
+        with self.assertRaises(ValueError):o.validate_budget(cfg)
+
     def test_cloud_deployment_probe_never_deletes(self):
         import watchdog
         p=Provider()

@@ -18,6 +18,7 @@ def config():
         'max_usd':.75,'max_runtime_seconds':3600,'recovery_seconds':900,'hourly_usd':.3,
         'transfer_reserve_usd':.2,'max_transfer_gb':8,'disk_gb':40,
         'python':PY,'bundle':str(bundle),'bundle_sha256':o.sha(bundle),
+        'source_root':str(study),
         'architecture':['F8 normalized 8195840 parameters','Transformer8 7998720 parameters'],
         'dataset':{'version':'preregistered contrastive panel','hashes':source},'seed':17,
         'remote_dir':remote,'env':env,'training_command':['python','objective_driver.py','--device','cuda'],

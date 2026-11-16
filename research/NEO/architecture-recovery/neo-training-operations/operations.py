@@ -9,6 +9,7 @@ import fcntl
 import hashlib
 import importlib.util
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -63,6 +64,9 @@ def credential_preflight(key, rclone_config):
 def validate_budget(cfg):
     if not re.fullmatch(r'neo-[a-z0-9-]{12,75}',cfg['job_id']):raise ValueError('Unique neo- job ID required')
     seconds=float(cfg['max_runtime_seconds']);rate=float(cfg['hourly_usd']);reserve=float(cfg['recovery_seconds'])
+    if not all(math.isfinite(float(cfg[k])) for k in ('max_runtime_seconds','hourly_usd','recovery_seconds','transfer_reserve_usd','max_usd')):
+        raise ValueError('Budget must contain finite numbers')
+    if float(cfg['transfer_reserve_usd'])<0 or float(cfg['max_usd'])<=0:raise ValueError('Invalid expense bounds')
     if not 60 <= seconds <= 14400 or not 30 <= reserve < seconds or rate <= 0:
         raise ValueError('Invalid runtime/rate/recovery reserve')
     maximum=rate*seconds/3600+float(cfg['transfer_reserve_usd'])
@@ -193,8 +197,9 @@ def snapshot(a,cfg,private,timeout):
 def arm(cfg,private):
     """Publish only a non-sensitive plan; wait for authenticated external runner receipt."""
     import base64
-    plan={'job_id':cfg['job_id'],'label':cfg['job_id'],'armed_at':time.time(),
-          'deadline':time.time()+cfg['max_runtime_seconds'], 'maximum_usd':validate_budget(cfg)['maximum_usd']}
+    now=time.time()
+    plan={'job_id':cfg['job_id'],'label':cfg['job_id'],'armed_at':now,
+          'deadline':now+cfg['max_runtime_seconds'], 'maximum_usd':validate_budget(cfg)['maximum_usd']}
     if cfg.get('instance_id'):plan['instance_id']=int(cfg['instance_id'])
     # Reject a second watcher/job. A pending stale plan cannot silently authorize another lease.
     runs=json.loads(command(['gh','run','list','-R',REPO,'--branch',BRANCH,'--workflow','neo-watchdog.yml',
@@ -242,6 +247,12 @@ def run(config_path):
                 if not cfg.get('authorization_reference'):raise PermissionError('Explicit job authorization reference missing')
                 if not cfg.get('required_files') or not cfg.get('validate_command'):
                     raise ValueError('Explicit completion outputs and scientific checkpoint validator required')
+                if sha(Path(cfg['bundle']))!=cfg['bundle_sha256']:
+                    raise ValueError('Frozen bundle changed; rental prohibited')
+                if cfg.get('source_root'):
+                    for name,digest in cfg['dataset']['hashes'].items():
+                        if sha(Path(cfg['source_root'])/name)!=digest:
+                            raise ValueError('Frozen scientific source/data changed; rental prohibited')
                 if not Path(cfg['python']).is_file():raise FileNotFoundError('Configured ML Python missing')
                 # Smoke-load torch before renting, avoids previous controller interpreter failure.
                 command([cfg['python'],'-c','import torch'],timeout=30)
@@ -353,6 +364,7 @@ def setup_connection(a,cfg,m,private,soft):
     try:
         status=a.ssh('cat '+shlex.quote(remote+'/.neo-worker/running.json'),timeout=20)
         if json.loads(status)['job_id']==cfg['job_id']:return  # attach without a second Popen
+        raise ValueError('Remote work directory belongs to another experiment')
     except RuntimeError:pass
     if cfg.get('attach_only'):raise RuntimeError('Existing worker lacks exit-status wrapper; refusing restart')
     bundle=Path(cfg['bundle'])

@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-11-16T20:02:01Z",
+  "paid_instance_created": false,
+  "external_watchdog": {
+    "provider": "GitHub Actions",
+    "run_id": 43945224522,
+    "url": "https://github.com/PapLion/Akemi/actions/runs/43945224522",
+    "read_only_probe": "PASS",
+    "credential_verified": true,
+    "paid_job_armed": false,
+    "probe_status": {
+      "confirmed": false,
+      "active_ids": [],
+      "probe_read_only": true,
+      "armed_for_paid_job": false
+    }
+  },
+  "local_fallback_timer": {
+    "unit": "neo-deadline-guard.timer",
+    "active": true,
+    "persistent": true,
+    "linger": true
+  },
+  "storage": {
+    "destination": "pa-drive:NEO-Research-Archives-v1",
+    "actual_upload_and_SHA256_readback": "PASS"
+  },
+  "integration_service": {
+    "unit": "neo-archive-integration-test.service",
+    "result": "success",
+    "exit_status": 0,
+    "GPU_provider": "mock"
+  },
+  "vast": {
+    "instances": [],
+    "volumes": []
+  },
+  "limitations": [
+    "No live training job existed to adopt; no paid launch was tested.",
+    "Provider destruction tested with mocks; real API credential and instances endpoint checked read-only.",
+    "Provider/API outage and GitHub outage remain residual risks; shutdown failure is never called confirmed."
+  ]
+}
