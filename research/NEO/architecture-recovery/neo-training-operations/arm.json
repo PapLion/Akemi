@@ -1,7 +1,7 @@
 {
-  "job_id": "neo-probe-20261116-200017",
-  "armed_at": 1794859217.0730705,
-  "deadline": 1794859817.0730705,
-  "probe_only": true,
-  "label": "neo-probe-20261116-200017"
+  "job_id": "neo-binding-20261116-203925",
+  "label": "neo-binding-20261116-203925",
+  "armed_at": 1794870512.8791647,
+  "deadline": 1794875012.8791647,
+  "maximum_usd": 0.575
 }
