@@ -14,6 +14,14 @@ from test_operations import Provider
 
 
 class Recovery(unittest.TestCase):
+    @unittest.skipUnless(Path('/home/dani.pp/evaluations/cryo-legacy-viability/.venv/bin/python').exists(),
+                         'Local ML dependency environment is not present on this host')
+    def test_actual_scientific_verifier_imports_in_configured_python(self):
+        r=subprocess.run(['/home/dani.pp/evaluations/cryo-legacy-viability/.venv/bin/python',
+                          str(o.ROOT/'validate_archive.py'),'--import-check'],capture_output=True,text=True,timeout=30)
+        self.assertEqual(r.returncode,0,r.stderr)
+        self.assertEqual(json.loads(r.stdout)['scientific_validator_imports'],'PASS')
+
     def test_external_arm_failure_prevents_any_paid_create(self):
         class ReadOnlyAPI:
             def __init__(self):self.calls=[]

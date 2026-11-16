@@ -11,6 +11,7 @@ test_upload_failure_is_bounded_and_always_destroys (test_operations.Tests.test_u
 test_watchdog_does_not_destroy_before_deadline (test_operations.Tests.test_watchdog_does_not_destroy_before_deadline) ... ok
 test_watchdog_fails_closed_on_wrong_label (test_operations.Tests.test_watchdog_fails_closed_on_wrong_label) ... ok
 test_watchdog_only_destroys_owned_job (test_operations.Tests.test_watchdog_only_destroys_owned_job) ... ok
+test_actual_scientific_verifier_imports_in_configured_python (test_recovery.Recovery.test_actual_scientific_verifier_imports_in_configured_python) ... ok
 test_archive_preserved_when_optional_validator_fails (test_recovery.Recovery.test_archive_preserved_when_optional_validator_fails) ... ok
 test_cloud_deployment_probe_never_deletes (test_recovery.Recovery.test_cloud_deployment_probe_never_deletes) ... ok
 test_deletion_failure_never_claims_shutdown (test_recovery.Recovery.test_deletion_failure_never_claims_shutdown) ... ok
@@ -22,6 +23,6 @@ test_remote_process_survives_launcher_exit (test_recovery.Recovery.test_remote_p
 test_state_does_not_destroy_unrelated_label (test_recovery.Recovery.test_state_does_not_destroy_unrelated_label) ... ok
 
 ----------------------------------------------------------------------
-Ran 22 tests in 1.225s
+Ran 23 tests in 2.915s
 
 OK

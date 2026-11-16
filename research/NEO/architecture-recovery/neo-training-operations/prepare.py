@@ -30,7 +30,8 @@ def config():
         'required_files':['results/gpu/complete.json','private/trained/F8-0.0001.pt',
                           'private/trained/F8-0.003.pt','private/trained/Transformer8-0.0001.pt',
                           'private/trained/Transformer8-0.003.pt'],
-        'validate_command':[PY,str(o.ROOT/'validate_archive.py')], 'sync_seconds':300}
+        'validate_command':[PY,str(o.ROOT/'validate_archive.py')],
+        'validation_preflight_command':[PY,str(o.ROOT/'validate_archive.py'),'--import-check'], 'sync_seconds':300}
 
 if __name__=='__main__':
     ap=argparse.ArgumentParser();ap.add_argument('--output',default=str(o.PRIVATE/'job-DRAFT.json'));args=ap.parse_args()

@@ -1,5 +1,5 @@
 {
-  "job_id": "neo-binding-20261116-200409",
+  "job_id": "neo-binding-20261116-200618",
   "authorization_reference": null,
   "offer_id": null,
   "instance_id": null,
@@ -61,6 +61,11 @@
   "validate_command": [
     "/home/dani.pp/evaluations/cryo-legacy-viability/.venv/bin/python",
     "/home/dani.pp/research/neo-architecture-recovery/neo-f2-corpus-release-v1/neo-training-operations/validate_archive.py"
+  ],
+  "validation_preflight_command": [
+    "/home/dani.pp/evaluations/cryo-legacy-viability/.venv/bin/python",
+    "/home/dani.pp/research/neo-architecture-recovery/neo-f2-corpus-release-v1/neo-training-operations/validate_archive.py",
+    "--import-check"
   ],
   "sync_seconds": 300
 }

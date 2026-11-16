@@ -256,6 +256,8 @@ def run(config_path):
                 if not Path(cfg['python']).is_file():raise FileNotFoundError('Configured ML Python missing')
                 # Smoke-load torch before renting, avoids previous controller interpreter failure.
                 command([cfg['python'],'-c','import torch'],timeout=30)
+                if cfg.get('validation_preflight_command'):
+                    command(cfg['validation_preflight_command'],timeout=30)
                 if not cfg.get('instance_id') and provider.instances():raise RuntimeError('Other instances active; no new lease')
                 if a.cli('show','volumes'):raise RuntimeError('Unexpected existing volumes; manual classification required')
                 credit=float(a.cli('show','user')['credit'])
