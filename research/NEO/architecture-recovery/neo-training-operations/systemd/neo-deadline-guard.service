@@ -1,0 +1,9 @@
+[Unit]
+Description=Neo independent local fallback deadline guard
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/dani.pp/research/neo-architecture-recovery/neo-f2-corpus-release-v1/neo-training-operations/operations.py guard
+Environment=PATH=/home/dani.pp/.local/bin:/usr/local/bin:/usr/bin:/bin
+UMask=0077

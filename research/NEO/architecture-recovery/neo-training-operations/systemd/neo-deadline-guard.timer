@@ -1,0 +1,11 @@
+[Unit]
+Description=Persistent Neo fallback deadline checks
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+Persistent=true
+AccuracySec=1s
+Unit=neo-deadline-guard.service
+
+[Install]
+WantedBy=timers.target

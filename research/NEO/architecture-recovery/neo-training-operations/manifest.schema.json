@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Neo autonomous experiment lifecycle receipt",
+  "type": "object",
+  "required": ["job_id", "label"],
+  "properties": {
+    "job_id": {"type":"string", "pattern":"^neo-[a-z0-9-]{12,75}$"},
+    "label": {"type":"string"},
+    "config": {"type":"object", "description":"Frozen architecture, source/data hashes, seed, commands and budget"},
+    "instance_id": {"type":["integer","null"]},
+    "started": {"type":"number"},
+    "ended": {"type":"number"},
+    "deadline": {"type":"number"},
+    "phase": {"type":"string"},
+    "training": {"type":"object", "properties": {
+      "outcome":{"enum":["completed","failed","timeout","interrupted","supervisor_failure"]},
+      "returncode":{"type":["integer","null"]},
+      "outputs_valid":{"type":"boolean"},
+      "files":{"type":"object", "description":"Relative artifact references, sizes and SHA-256; metrics remain in hashed experiment outputs"}
+    }},
+    "archive": {"type":"object", "properties": {
+      "verified":{"type":"boolean"}, "uri":{"type":"string"}, "sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"}, "attempts":{"type":"integer"}
+    }},
+    "cleanup": {"type":"object", "properties":{"confirmed":{"type":"boolean"},"attempted":{"type":"boolean"},"active_ids":{"type":"array"}}},
+    "outcome": {"enum":["completed_archived_shutdown_confirmed","failed_or_unknown_training_artifacts_recovered_shutdown_confirmed","shutdown_confirmed_archive_failed","shutdown_attempted_unconfirmed"]}
+  },
+  "additionalProperties": true
+}

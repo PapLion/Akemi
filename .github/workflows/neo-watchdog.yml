@@ -1,0 +1,54 @@
+name: Neo autonomous watchdog
+on:
+  push:
+    branches: [neo-contextual-causal-diagnosis-v1]
+    paths:
+      - '.github/workflows/neo-watchdog.yml'
+      - 'research/NEO/architecture-recovery/neo-training-operations/**'
+permissions:
+  contents: read
+concurrency:
+  group: neo-autonomous-watchdog
+  cancel-in-progress: false
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Lifecycle failure and recovery tests
+        run: python3 -m unittest discover -s research/NEO/architecture-recovery/neo-training-operations/tests -v
+  watchdog:
+    if: startsWith(github.event.head_commit.message, 'Arm bounded Neo GPU deadline ') || startsWith(github.event.head_commit.message, 'Verify Neo watchdog deployment')
+    runs-on: ubuntu-latest
+    timeout-minutes: 245
+    env:
+      VAST_API_KEY: ${{ secrets.NEO_VAST_WATCHDOG_API_KEY }}
+    defaults:
+      run:
+        working-directory: research/NEO/architecture-recovery/neo-training-operations
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Authenticate read-only and prepare armed receipt
+        run: python3 watchdog.py prepare arm.json
+      - name: Publish authenticated armed receipt
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: neo-watchdog-armed
+          path: research/NEO/architecture-recovery/neo-training-operations/armed.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Enforce deadline outside GPU and workstation
+        run: python3 watchdog.py watch arm.json
+      - name: Preserve watchdog receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: neo-watchdog-status
+          path: research/NEO/architecture-recovery/neo-training-operations/watchdog-status.json
+          retention-days: 14
+          if-no-files-found: warn

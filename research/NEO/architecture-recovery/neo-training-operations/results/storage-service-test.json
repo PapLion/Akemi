@@ -1,0 +1,13 @@
+{
+  "test_only": true,
+  "GPU_operations": "none (mock provider)",
+  "job_id": "neo-selftest-20261116-195610",
+  "storage": {
+    "uri": "pa-drive:NEO-Research-Archives-v1/neo-selftest-20261116-195610/b474b64a89e29f0c223cb845b6e7d2f106e573c63e2190b7cb6623dbb7e0ca60.tar",
+    "sha256": "b474b64a89e29f0c223cb845b6e7d2f106e573c63e2190b7cb6623dbb7e0ca60",
+    "verified": true,
+    "attempts": 1
+  },
+  "outcome": "completed_archived_shutdown_confirmed",
+  "local_manifest": "/home/dani.pp/research/neo-architecture-recovery/neo-f2-corpus-release-v1/neo-training-operations/private/neo-selftest-20261116-195610/manifest.json"
+}
