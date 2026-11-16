@@ -8,6 +8,7 @@ import sys
 import tempfile
 import time
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -39,6 +40,21 @@ class FailingStore:
 
 
 class Tests(unittest.TestCase):
+    def test_attach_accepts_installed_cli_python_dict_and_json(self):
+        for raw in (b"{'success': True}\n",b'{"success":true}\n'):
+            with patch.object(o,'command',return_value=raw) as run:
+                self.assertTrue(o.attach_ssh(42,'public.pub')['success'])
+                self.assertEqual(run.call_args.args[0],
+                                 ['vastai','attach','ssh','42','public.pub','--raw'])
+
+    def test_attach_rejects_failed_exit_unconfirmed_or_invalid_response(self):
+        with patch.object(o,'command',side_effect=RuntimeError('exit 1')):
+            with self.assertRaises(RuntimeError):o.attach_ssh(42,'public.pub')
+        for raw in (b"{'success': False}",b'{}',b'[]',b'not-data'):
+            with patch.object(o,'command',return_value=raw):
+                with self.assertRaises((RuntimeError,ValueError,SyntaxError)):
+                    o.attach_ssh(42,'public.pub')
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)

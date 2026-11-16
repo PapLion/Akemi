@@ -4,6 +4,7 @@ No torch dependency: archiving and GPU deletion must work even if ML imports fai
 All runtime state is private. Never automatically rerent, retry training, or reset a cursor.
 """
 import argparse
+import ast
 import contextlib
 import fcntl
 import hashlib
@@ -358,12 +359,28 @@ def run(config_path):
                 except Exception:pass
 
 
+def attach_ssh(instance,public_key):
+    """Installed Vast CLI prints a Python dict for attach, even with --raw.
+
+    The historical JSON-only helper rejects a successful response. Decode only
+    this command's data response; never eval code or suppress a failed exit.
+    """
+    raw=command(['vastai','attach','ssh',str(instance),str(public_key),'--raw'])
+    try:result=json.loads(raw)
+    except ValueError:result=ast.literal_eval(raw.decode('utf-8'))
+    if not isinstance(result,dict) or result.get('success') is not True:
+        raise RuntimeError('SSH attachment was not confirmed')
+    return result
+
+
 def setup_connection(a,cfg,m,private,soft):
     """Reuse tested Vast key, SSH transfer and hash mechanics; never rerun a scientific process."""
     if not (private/'ssh_key').exists():
         command(['ssh-keygen','-q','-t','ed25519','-N','','-f',private/'ssh_key','-C',cfg['job_id']])
     # Attach works for an existing account key too. Provider credentials never leave this workstation.
-    a.cli('attach','ssh',str(m['instance_id']),str(private/'ssh_key.pub'))
+    m['phase']='ssh_key_attachment';atomic(private/'manifest.json',m)
+    attach_ssh(m['instance_id'],private/'ssh_key.pub')
+    m['phase']='ssh_boot_wait';atomic(private/'manifest.json',m)
     a.BOOT_TIMEOUT_S=min(300,max(1,int(soft-time.time())))
     a.connect(m['instance_id'])
     remote=cfg['remote_dir']

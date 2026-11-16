@@ -1,0 +1,30 @@
+test_attach_accepts_installed_cli_python_dict_and_json (test_operations.Tests.test_attach_accepts_installed_cli_python_dict_and_json) ... ok
+test_attach_rejects_failed_exit_unconfirmed_or_invalid_response (test_operations.Tests.test_attach_rejects_failed_exit_unconfirmed_or_invalid_response) ... ok
+test_budget_and_recovery_reserve (test_operations.Tests.test_budget_and_recovery_reserve) ... ok
+test_finalization_idempotent_and_hash_verified (test_operations.Tests.test_finalization_idempotent_and_hash_verified) ... ok
+test_hash_corruption_rejected (test_operations.Tests.test_hash_corruption_rejected) ... ok
+test_interruption (test_operations.Tests.test_interruption) ... ok
+test_missing_credentials_no_launch (test_operations.Tests.test_missing_credentials_no_launch) ... ok
+test_no_duplicate_worker_on_reentry (test_operations.Tests.test_no_duplicate_worker_on_reentry) ... ok
+test_success_exit_and_output_inventory (test_operations.Tests.test_success_exit_and_output_inventory) ... ok
+test_timeout (test_operations.Tests.test_timeout) ... ok
+test_training_failure_retains_partial_output (test_operations.Tests.test_training_failure_retains_partial_output) ... ok
+test_upload_failure_is_bounded_and_always_destroys (test_operations.Tests.test_upload_failure_is_bounded_and_always_destroys) ... ok
+test_watchdog_does_not_destroy_before_deadline (test_operations.Tests.test_watchdog_does_not_destroy_before_deadline) ... ok
+test_watchdog_fails_closed_on_wrong_label (test_operations.Tests.test_watchdog_fails_closed_on_wrong_label) ... ok
+test_watchdog_only_destroys_owned_job (test_operations.Tests.test_watchdog_only_destroys_owned_job) ... ok
+test_actual_scientific_verifier_imports_in_configured_python (test_recovery.Recovery.test_actual_scientific_verifier_imports_in_configured_python) ... ok
+test_archive_preserved_when_optional_validator_fails (test_recovery.Recovery.test_archive_preserved_when_optional_validator_fails) ... ok
+test_cloud_deployment_probe_never_deletes (test_recovery.Recovery.test_cloud_deployment_probe_never_deletes) ... ok
+test_deletion_failure_never_claims_shutdown (test_recovery.Recovery.test_deletion_failure_never_claims_shutdown) ... ok
+test_external_arm_failure_prevents_any_paid_create (test_recovery.Recovery.test_external_arm_failure_prevents_any_paid_create) ... ok
+test_failure_and_success_are_distinct_from_archive_and_cleanup (test_recovery.Recovery.test_failure_and_success_are_distinct_from_archive_and_cleanup) ... ok
+test_missing_authorization_cannot_start_service (test_recovery.Recovery.test_missing_authorization_cannot_start_service) ... ok
+test_nonfinite_budget_fails_closed (test_recovery.Recovery.test_nonfinite_budget_fails_closed) ... ok
+test_remote_process_survives_launcher_exit (test_recovery.Recovery.test_remote_process_survives_launcher_exit) ... ok
+test_state_does_not_destroy_unrelated_label (test_recovery.Recovery.test_state_does_not_destroy_unrelated_label) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.861s
+
+OK

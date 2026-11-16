@@ -1,6 +1,6 @@
 {
   "job_id": "neo-binding-20261116-203925",
-  "status": "PRELAUNCH",
+  "status": "BLOCKED",
   "max_usd": 0.75,
   "max_runtime_seconds": 4500,
   "offer_id": 58645851,
@@ -8,5 +8,38 @@
   "bundle_sha256": "f3c8c101f116b8c057eb716fc0852267987da58e4af0b5c8c84faf5d06086c98",
   "authorization": "User final handoff instruction: one contrastive experiment, total USD0.75, no replacements",
   "first_prelaunch_issue": "Vast id filter did not identify returned offer ID; no rental; fixed host-filter exact-ID lookup",
-  "artifact_destination": "pa-drive:NEO-Research-Archives-v1/neo-binding-20261116-203925"
+  "artifact_destination": "pa-drive:NEO-Research-Archives-v1/neo-binding-20261116-203925",
+  "instance_id": 60986555,
+  "targets_processed": 0,
+  "supervisor": "inactive; cleanup confirmed; unit disabled after completion",
+  "deadline_utc": "2026-11-17T00:23:32.879165+00:00",
+  "github_watchdog": {
+    "run_id": 43976632281,
+    "receipt_verified": true,
+    "status_at_last_check": "in_progress",
+    "armed_before_rental": true
+  },
+  "cleanup": {
+    "confirmed": true,
+    "instances": [],
+    "volumes": [],
+    "checked_utc": "2026-11-16T23:14:16.753661+00:00"
+  },
+  "credit_before_usd": 8.336752810370001,
+  "credit_after_usd": 8.336752810370001,
+  "observed_account_delta_usd": 0.0,
+  "billing_note": "Observed account delta only; delayed billing may settle later.",
+  "manifest_archive": {
+    "uri": "pa-drive:NEO-Research-Archives-v1/neo-binding-20261116-203925/manifests/9c06eb1085382bee78ed9586cc0880d8ffe23fb59ea25134ed4d99a58fa1204f.json",
+    "sha256": "9c06eb1085382bee78ed9586cc0880d8ffe23fb59ea25134ed4d99a58fa1204f",
+    "verified": true
+  },
+  "training_archive_available": false,
+  "blocker": "SSH attachment stage failed before endpoint creation. Installed CLI prints Python dict even with --raw; successful mocked response is rejected by historical JSON-only helper. Original provider response was not retained, so other provider-side causes cannot be excluded.",
+  "repair": "Dedicated attachment decoder accepts JSON or safe Python literal dictionary; requires success=True and successful process exit. No further rental authorized or attempted.",
+  "tests": {
+    "run": 25,
+    "passed": 25
+  },
+  "scientific_bundle_sha256_unchanged": "f3c8c101f116b8c057eb716fc0852267987da58e4af0b5c8c84faf5d06086c98"
 }
