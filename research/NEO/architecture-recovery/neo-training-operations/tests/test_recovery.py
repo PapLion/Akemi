@@ -39,7 +39,7 @@ class Recovery(unittest.TestCase):
                  'authorization_reference':'TEST ONLY (no actual authorization)',
                  'bundle':str(bundle),'bundle_sha256':o.sha(bundle),'python':sys.executable,
                  'required_files':['checkpoint'],'validate_command':['dummy'],
-                 'offer_id':123,'disk_gb':40,'max_transfer_gb':1}
+                 'offer_id':123,'selected_offer':{'machine_id':30501},'disk_gb':40,'max_transfer_gb':1}
             config=root/'config.json';o.atomic(config,cfg);api=ReadOnlyAPI()
             with patch.object(o,'PRIVATE',root/'state'),patch.object(o,'helpers',return_value=api),\
                  patch.object(o,'Provider') as provider,patch.object(o,'credential_preflight'),\
@@ -48,6 +48,7 @@ class Recovery(unittest.TestCase):
                 provider.return_value.instances.return_value=[]
                 with self.assertRaises(TimeoutError):o.run(config)
             self.assertFalse(any(c[:2]==('create','instance') for c in api.calls))
+            self.assertTrue(any(c[:3]==('search','offers','machine_id=30501') for c in api.calls))
 
     def test_nonfinite_budget_fails_closed(self):
         cfg={'job_id':'neo-test-123456789012','max_runtime_seconds':120,'recovery_seconds':30,

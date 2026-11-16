@@ -263,7 +263,11 @@ def run(config_path):
                 credit=float(a.cli('show','user')['credit'])
                 if credit<float(cfg['max_usd']):raise PermissionError('Insufficient existing credit; never buy credits')
                 if not cfg.get('instance_id'):
-                    offers=a.cli('search','offers','id='+str(int(cfg['offer_id'])),'--limit','1')
+                    # Vast's search `id` filter does not match the returned rental-offer ID.
+                    # Query the selected host, then require the exact offered contract locally.
+                    host=cfg.get('selected_offer',{}).get('machine_id')
+                    query='machine_id='+str(int(host)) if host is not None else 'id='+str(int(cfg['offer_id']))
+                    offers=a.cli('search','offers',query,'--limit','100')
                     offer=next(r for r in offers if int(r['id'])==int(cfg['offer_id']))
                     hourly=float(offer['dph_total'])+float(cfg['disk_gb'])*float(offer['storage_cost'])/730
                     if hourly>float(cfg['hourly_usd']):raise ValueError('Live GPU/storage price exceeds configured ceiling')

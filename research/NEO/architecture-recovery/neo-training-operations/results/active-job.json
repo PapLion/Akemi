@@ -1,0 +1,12 @@
+{
+  "job_id": "neo-binding-20261116-203925",
+  "status": "PRELAUNCH",
+  "max_usd": 0.75,
+  "max_runtime_seconds": 4500,
+  "offer_id": 58645851,
+  "host_id": 30501,
+  "bundle_sha256": "f3c8c101f116b8c057eb716fc0852267987da58e4af0b5c8c84faf5d06086c98",
+  "authorization": "User final handoff instruction: one contrastive experiment, total USD0.75, no replacements",
+  "first_prelaunch_issue": "Vast id filter did not identify returned offer ID; no rental; fixed host-filter exact-ID lookup",
+  "artifact_destination": "pa-drive:NEO-Research-Archives-v1/neo-binding-20261116-203925"
+}
